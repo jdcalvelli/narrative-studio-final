@@ -462,6 +462,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2666237996671107841, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
+      propertyPath: patchHoleValue
+      value: engineering
+      objectReference: {fileID: 0}
     - target: {fileID: 7909598627497260923, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
       propertyPath: m_Name
       value: PatchHole
@@ -480,6 +484,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6842084171732369844}
     m_Modifications:
+    - target: {fileID: 76412437531335248, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
+      propertyPath: cordValue
+      value: jv
+      objectReference: {fileID: 0}
     - target: {fileID: 1796030204233516907, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -494,7 +502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796030204233516907, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 1796030204233516907, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -586,6 +594,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2666237996671107841, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
+      propertyPath: patchHoleValue
+      value: medical
+      objectReference: {fileID: 0}
     - target: {fileID: 7909598627497260923, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
       propertyPath: m_Name
       value: PatchHole
@@ -604,6 +616,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 531720476445639544}
     m_Modifications:
+    - target: {fileID: 76412437531335248, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
+      propertyPath: cordValue
+      value: ducksley
+      objectReference: {fileID: 0}
     - target: {fileID: 941150203029470095, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -630,7 +646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796030204233516907, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 1796030204233516907, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -678,6 +694,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3457749062152899867}
     m_Modifications:
+    - target: {fileID: 76412437531335248, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
+      propertyPath: cordValue
+      value: baha
+      objectReference: {fileID: 0}
     - target: {fileID: 941150203029470095, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_Color.b
       value: 0.10895181
@@ -704,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796030204233516907, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 1796030204233516907, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -796,6 +816,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2666237996671107841, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
+      propertyPath: patchHoleValue
+      value: bridge
+      objectReference: {fileID: 0}
     - target: {fileID: 7909598627497260923, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
       propertyPath: m_Name
       value: PatchHole
@@ -865,6 +889,10 @@ PrefabInstance:
     - target: {fileID: 127630803653456151, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666237996671107841, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
+      propertyPath: patchHoleValue
+      value: comms
       objectReference: {fileID: 0}
     - target: {fileID: 7909598627497260923, guid: 582aacdc348e8496bacf2883c2f3652c, type: 3}
       propertyPath: m_Name
