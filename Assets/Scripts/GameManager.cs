@@ -35,9 +35,22 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (patchResult.Item1 != null && patchResult.Item2 != null)
+        if (currentState == GameStates.InitialCalls)
         {
-            Debug.Log(patchResult);
+            if (patchResult.Item1 != null && patchResult.Item2 != null)
+            {
+                Debug.Log(patchResult);
+                if (patchResult.Item1 == "bridge" && patchResult.Item2 == "jv")
+                {
+                    narrativeDirector.JumpTo("D1_Baha_JV");
+                    currentState = GameStates.ListenIn;
+                }
+                else if (patchResult.Item1 == "bridge" && patchResult.Item2 == "ducksly")
+                {
+                    narrativeDirector.JumpTo("D1_Baha_Ducksly");
+                    currentState = GameStates.ListenIn;
+                }
+            }
         }
     }
 }

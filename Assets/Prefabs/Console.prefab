@@ -108,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 531720476445639544}
   m_Layer: 0
-  m_Name: DucksleyCord
+  m_Name: DuckslyCord
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -618,7 +618,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 76412437531335248, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: cordValue
-      value: ducksley
+      value: ducksly
       objectReference: {fileID: 0}
     - target: {fileID: 941150203029470095, guid: 219851296c90449f29fab6ec6f85ad0e, type: 3}
       propertyPath: m_Color.b
