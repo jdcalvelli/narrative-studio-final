@@ -1,10 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using InkFungus;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    //reference to narrative director
+    [SerializeField] private NarrativeDirector narrativeDirector;
+    
     // enum for state management
     public enum GameStates
     {
@@ -20,11 +24,13 @@ public class GameManager : MonoBehaviour
     
     // to hold result of patch
     public Tuple<string, string> patchResult = new Tuple<string, string>(null, null);
-    
+
     // Start is called before the first frame update
     void Start()
     {
         currentState = GameStates.InitialCalls;
+        
+        narrativeDirector.Resume();
     }
 
     private void Update()
