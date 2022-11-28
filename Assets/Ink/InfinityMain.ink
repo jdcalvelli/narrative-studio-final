@@ -1,8 +1,14 @@
 INCLUDE Day1_Baha_JV
 INCLUDE Day1_Baha_Ducksly
+INCLUDE Day2_Start
+INCLUDE Day3_Start
+
+
 
 
 //THEY SENT US TO INFINITY MAIN
+
+//GLOBAL VARIABLES
 
 //uncomment lines here to test knots stored in different files due to our use of DONE. 
 -> Day1_Start
@@ -20,3 +26,6 @@ Bonjour Dover, might you be so kind as to connect me with Captain Baha? Urgent b
 
 -> DONE //NOTE: DONE and END are effectively the same in that they finish the story. Ideally, we want to call a new knot. 
 
+=== Day1_PrivateConvoChoice ===
+
+-> DONE
