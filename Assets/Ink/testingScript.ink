@@ -2,9 +2,11 @@
 
 === Day_1 ===
 
-Hey PLAYER, what's up? Can you patch me in to Baha in the bridge? 
+test
+
+Officer JV "Hey PLAYER, what's up? Can you patch me in to Baha in the bridge?
  
-Bonjour PLAYER, might you be so kind as to connect me with Captain Baha in the bridge? Urgent business. - Ducksly
+Emperor Ducksly "Bonjour PLAYER, might you be so kind as to connect me with Captain Baha in the bridge? Urgent business. - Ducksly
 
 -> END
 
