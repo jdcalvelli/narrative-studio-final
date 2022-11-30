@@ -1,5 +1,12 @@
 === Day1_Dover_JV ===
-CONTENT TBD
+FOR TESTING PURPOSES: This choice is rerouting to the Day1_Dover_JV knot to test variables. 
+
+// {day1_scenechoice == false:
+//     ~ current_location = "Engineering"
+// - else:
+//     ~ current_location = "Med Bay"
+// }
+// Current Scene: {day1_scenechoice}, {current_location}
 
 * [KILL THEM] Choice ONE
 * [KISS THEM] Choice TWO

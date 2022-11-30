@@ -1,4 +1,27 @@
 === Day1_Dover_Ducksly ===
-CONTENT TBD
+FOR TESTING PURPOSES: This choice is rerouting to the Day1_Dover_Ducksly knot to test variables. 
+
+// {Day1_Dover_Ducksly:
+//     day1_scenechoice == false
+//     ~ current_location = "Engineering"
+// - else:
+//     ~ current_location = "Med Bay"
+// }
+// Current Scene: {day1_scenechoice}, {current_location}
+
+* [KILL THEM] Choice ONE
+* [KISS THEM] Choice TWO
+
+- gather for choices
+
+* [KILL THEM] Choice ONE
+-> BEEP_1
+* [KISS THEM] Choice TWO
+-> BOOP_1
+
+=== BEEP_1 ===
+-> BOOP_1
+
+=== BOOP_1 ===
 
 -> DONE

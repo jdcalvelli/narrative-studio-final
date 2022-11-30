@@ -33,15 +33,22 @@ INCLUDE Finale_1
 
 //Playtesting (INCLUDE A PLAYTESTING SCRIPT)
 INCLUDE Playtesting_1
-
-
-
+INCLUDE Day1_Start
 
 
 //THEY SENT US TO INFINITY MAIN
 
-//GLOBAL VARIABLES
+//GLOBAL VARIABLES___________________________
 
+//SCENE VISITATION BOOLS
+VAR day1_scenechoice = ""
+
+VAR current_location = "" //will change the printed name of the location with temporary variables located in relevant scenes.
+
+//CHARACTER RELATIONSHIP (Scale of 1 - 5, 1 being negative and 5 being positive) 
+VAR B_JV_rel = 3
+
+//___________________________________________
 //uncomment lines here to test knots stored in different files.
     //this is due to our use of -> DONE at the end of each file. 
 //KNOT TESTING
@@ -77,15 +84,3 @@ INCLUDE Playtesting_1
 
 // OTHER 
 // -> Playtesting_1
-
-    
-=== Day1_Start ===
-Heeeeeey Dover, what's up? Can you patch me in to Baha? He's probably on the Bridge. #JV
-
-//If connected, link to Day1_Baha_JV
-//NOTE: #JV is a speech tag to mark who is saying which words during dialogue. Might be helpful if we need need to reference the tag in code. They should not appear in dialogue text in Fungus, but will appear in the Ink editor. 
-
-Bonjour Dover, might you be so kind as to connect me with Captain Baha? Urgent business. Statistically, he's on the Bridge at this hour. #Ducksly
-
-// -> Day1_Baha_Ducksly
--> DONE //NOTE: DONE and END are effectively the same in that they finish the story. Ideally, we want to call a new knot. 
