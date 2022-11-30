@@ -1,7 +1,25 @@
+//DAY 1 FILES
 INCLUDE Day1_Baha_JV
 INCLUDE Day1_Baha_Ducksly
+    //POST-LISTENING, PRIVATE CONVOS
+INCLUDE Day_PrivateConvoChoice
+INCLUDE Day1_Dover_Baha
+INCLUDE Day1_Dover_JV
+INCLUDE Day1_Dover_Ducksly
+
+//DAY 2 FILES
 INCLUDE Day2_Start
+    //POST-LISTENING, PRIVATE CONVOS
+
+//DAY 3 FILES
 INCLUDE Day3_Start
+
+
+
+
+
+
+    //POST-LISTENING, PRIVATE CONVOS
 
 
 
@@ -24,6 +42,7 @@ Heeeeeey Dover, what's up? Can you patch me in to Baha? He's probably on the Bri
 
 Bonjour Dover, might you be so kind as to connect me with Captain Baha? Urgent business. Statistically, he's on the Bridge at this hour. #Ducksly
 
+// -> Day1_Baha_Ducksly
 -> DONE //NOTE: DONE and END are effectively the same in that they finish the story. Ideally, we want to call a new knot. 
 
 === Day1_PrivateConvoChoice ===
