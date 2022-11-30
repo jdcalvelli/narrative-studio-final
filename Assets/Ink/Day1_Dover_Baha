@@ -63,9 +63,49 @@ Cpt Baha "Right. #Baha
 
 Lt Dover "So doesn't that imply that you're checking up on the patients health condition as well? #Dover
 
-Oh. #Baha
+Cpt Baha "Oh. #Baha
+
+Lt Dover "Did you guys not realize that? That you were both on the same page? #Dover
+
+Cpt Baha "I guess you're right. But then there's the other problem. #Baha
+
+Lt Dover "Other Problem? #Dover
+->OtherProblem
+
+=== Well ===
+Cpt Baha "You're right. You know I don't like to be the bad guy. But we need to maintain order. #Baha
+
+Lt Dover "Exactly! Show them what for! #Dover
+
+Cpt Baha "Then there's this other problem. #Baha
+
+Lt Dover "Other Problem? #Dover
+->OtherProblem
 
 ->DONE
-=== Well ===
+=== OtherProblem ===
+Cpt Baha "Regardless of what I said before, Ducksly has displayed zero care for the ship or anyone on this crew. #Baha
 
+Lt Dover " Oh what! They're nice to me? # Dover
+
+Cpt Baha "Hmm. I just don't know what to do with him. #Baha
+
+Cpt Baha "I've served with a lot of hard heads over my career, but Ducksly... #Baha
+
+Cpt Baha "And he also has this weird rivalry with Officer Veldspar? #Baha
+
+*Maybe you should take interest in his Work? Might open him up a bit mroe? #Dover
+->Consider
+
+*Inviting to our crew happy hours might be worth something. #Dover
+->Consider
+
+=== Consider ===
+Cpt Baha "Something to defintitely consider. Thank you Dover. #Baha
+
+Lt Dover "Happy to help captain. #Dover
+
+Cpt Baha "Well then, back to work. #Baha
+
+//baha Signs off. 
 -> DONE
