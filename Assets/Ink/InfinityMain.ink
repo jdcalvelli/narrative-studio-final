@@ -42,10 +42,41 @@ INCLUDE Playtesting_1
 
 //GLOBAL VARIABLES
 
-//uncomment lines here to test knots stored in different files due to our use of DONE. 
+//uncomment lines here to test knots stored in different files.
+    //this is due to our use of -> DONE at the end of each file. 
+//KNOT TESTING
+//DAY 1
 -> Day1_Start
 // -> Day1_Baha_JV
 // -> Day1_Baha_Ducksly
+// -> Day1_PrivateConvoChoice
+// -> Day1_Dover_Baha
+// -> Day1_Dover_JV
+// -> Day1_Dover_Ducksly
+
+//DAY 2
+// -> Day2_Start
+// -> Day2_JV_Baha
+// -> Day2_JV_Ducksly
+// -> Day2_PrivateConvoChoice
+// -> Day2_Dover_Baha
+// -> Day2_Dover_JV
+// -> Day2_Day_Ducksly
+
+//DAY 3
+// -> Day3_Start
+// -> Day3_Ducksly_Baha
+// -> Day3_Ducksly_JV
+// -> Day3_PrivateConvoChoice
+// -> Day3_Dover_Baha
+// -> Day3_Dover_JV
+// -> Day3_Dover_Ducksly
+
+// FINALE
+// -> Finale_1
+
+// OTHER 
+// -> Playtesting_1
 
     
 === Day1_Start ===
