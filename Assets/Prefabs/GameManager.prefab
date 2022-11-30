@@ -44,5 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fcdd1253a6a543f8b74d1793a736729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  narrativeDirector: {fileID: 0}
+  narrativeDirectorReference: {fileID: 0}
+  sayDialogReference: {fileID: 0}
   currentState: 0

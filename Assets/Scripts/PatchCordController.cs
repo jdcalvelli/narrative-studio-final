@@ -24,41 +24,40 @@ public class PatchCordController : MonoBehaviour
         _initialPosition = gameObject.transform.position;
     }
 
-    // drag logic
-    private void OnMouseDown()
-    {
-        Debug.Log(gameObject.name);
-    }
-
     private void OnMouseDrag()
     {
-        Debug.Log("drag");
-        gameObject.transform.position = 
-            _mainCam.ScreenToWorldPoint(
-                new Vector3(
-                    Input.mousePosition.x, 
-                    Input.mousePosition.y, 
-                    _mainCam.WorldToScreenPoint(gameObject.transform.position).z));
+        if (_gameManagerReference.currentState == GameManager.GameStates.DeterminePatching)
+        {
+            gameObject.transform.position = 
+                _mainCam.ScreenToWorldPoint(
+                    new Vector3(
+                        Input.mousePosition.x, 
+                        Input.mousePosition.y, 
+                        _mainCam.WorldToScreenPoint(gameObject.transform.position).z));
+        }
     }
 
     private void OnMouseUp()
     {
-        if (_isColliding)
+        if (_gameManagerReference.currentState == GameManager.GameStates.DeterminePatching)
         {
-            // snap into place
-            gameObject.transform.position = new Vector3(
-                _collidedHole.transform.position.x,
-                _collidedHole.transform.position.y,
-                gameObject.transform.position.z);
+            if (_isColliding)
+            {
+                // snap into place
+                gameObject.transform.position = new Vector3(
+                    _collidedHole.transform.position.x,
+                    _collidedHole.transform.position.y,
+                    gameObject.transform.position.z);
             
-            // pass info to game manager
-            _gameManagerReference.patchResult = new Tuple<string, string>(
-                _collidedHole.GetComponent<PatchHoleController>().patchHoleValue,
-                cordValue);
-        }
-        else
-        {
-            gameObject.transform.position = _initialPosition;
+                // pass info to game manager
+                _gameManagerReference.PatchResult = new Tuple<string, string>(
+                    _collidedHole.GetComponent<PatchHoleController>().patchHoleValue,
+                    cordValue);
+            }
+            else
+            {
+                gameObject.transform.position = _initialPosition;
+            }
         }
     }
 
