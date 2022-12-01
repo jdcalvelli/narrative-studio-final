@@ -26,7 +26,8 @@ public class PatchCordController : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        if (_gameManagerReference.currentState == GameManager.GameStates.DeterminePatching)
+        if (_gameManagerReference.currentState is GameManager.GameStates.DeterminePatching
+            or GameManager.GameStates.DeterminePostConvoPatching)
         {
             gameObject.transform.position = 
                 _mainCam.ScreenToWorldPoint(
@@ -39,7 +40,8 @@ public class PatchCordController : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (_gameManagerReference.currentState == GameManager.GameStates.DeterminePatching)
+        if (_gameManagerReference.currentState is GameManager.GameStates.DeterminePatching
+            or GameManager.GameStates.DeterminePostConvoPatching)
         {
             if (_isColliding)
             {

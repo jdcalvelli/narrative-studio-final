@@ -20,8 +20,11 @@ public class GameManager : MonoBehaviour
         InitialCalls,
         DeterminePatching,
         ListenIn,
-        DeterminePostConvo,
-        PostConvo,
+        PreDeterminePostConvoPatching,
+        DeterminePostConvoPatching,
+        ListenPostConvo,
+        DayEnd,
+        GameEnd,
     }
 
     // tracking current state
@@ -74,6 +77,51 @@ public class GameManager : MonoBehaviour
                         narrativeDirectorReference.JumpTo("Day1_Baha_Ducksly");
                         currentState = GameStates.ListenIn;
                     }
+                }
+                break;
+            
+            case GameStates.ListenIn:
+                if (!sayDialogReference.isActiveAndEnabled)
+                {
+                    narrativeDirectorReference.JumpTo("Day1_PrivateConvoChoice");
+                    currentState = GameStates.PreDeterminePostConvoPatching;
+                }
+                break;
+            
+            case GameStates.PreDeterminePostConvoPatching:
+                if (!sayDialogReference.isActiveAndEnabled)
+                {
+                    currentState = GameStates.DeterminePostConvoPatching;
+                }
+                break;
+            
+            case GameStates.DeterminePostConvoPatching:
+                Debug.Log(PatchResult["personPatched"]);
+                Debug.Log(PatchResult["locationPatched"]);
+                if (PatchResult["personPatched"] != null && PatchResult["locationPatched"] != null)
+                {
+                    if (PatchResult["personPatched"] == "baha" && PatchResult["locationPatched"] == "comms")
+                    {
+                        narrativeDirectorReference.JumpTo("Day1_Dover_Baha");
+                        currentState = GameStates.ListenPostConvo;
+                    }
+                    else if (PatchResult["personPatched"] == "jv" && PatchResult["locationPatched"] == "comms")
+                    {
+                        narrativeDirectorReference.JumpTo("Day1_Dover_JV");
+                        currentState = GameStates.ListenPostConvo;
+                    }
+                    if (PatchResult["personPatched"] == "ducksly" && PatchResult["locationPatched"] == "comms")
+                    {
+                        narrativeDirectorReference.JumpTo("Day1_Dover_Ducksly");
+                        currentState = GameStates.ListenPostConvo;
+                    }
+                }
+                break;
+            
+            case GameStates.ListenPostConvo:
+                if (!sayDialogReference.isActiveAndEnabled)
+                {
+                    currentState = GameStates.DayEnd;
                 }
                 break;
         }
