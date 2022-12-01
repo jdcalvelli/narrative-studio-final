@@ -50,9 +50,18 @@ public class PatchCordController : MonoBehaviour
                     gameObject.transform.position.z);
             
                 // pass info to game manager
-                _gameManagerReference.PatchResult = new Tuple<string, string>(
-                    _collidedHole.GetComponent<PatchHoleController>().patchHoleValue,
-                    cordValue);
+                switch (cordValue)
+                {
+                    case "person":
+                        _gameManagerReference.PatchResult["personPatched"] 
+                            = _collidedHole.GetComponent<PatchHoleController>().patchHoleValue;
+                        break;
+                    
+                    case "location":
+                        _gameManagerReference.PatchResult["locationPatched"] 
+                            = _collidedHole.GetComponent<PatchHoleController>().patchHoleValue;
+                        break;
+                }
             }
             else
             {

@@ -1869,7 +1869,7 @@ GameObject:
   - component: {fileID: 449652257}
   - component: {fileID: 449652256}
   m_Layer: 0
-  m_Name: Liutenant Dover
+  m_Name: Lt Dover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
+  nameText: Lt. Dover
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
@@ -2599,7 +2599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5589ca0e58e25c4cb0dd64d4a7512e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ink: {fileID: 4900000, guid: adf3dc6b92bd14ca5a7ac417f2273541, type: 3}
+  ink: {fileID: 4900000, guid: 44785c7c8e2db435a88ef6e8713f1c84, type: 3}
   sayDialog: {fileID: 2039913124}
   menuDialog: {fileID: 1985608195}
   defaultCharacterColor: {r: 0, g: 0, b: 0, a: 1}
@@ -3668,7 +3668,7 @@ GameObject:
   - component: {fileID: 1580991079}
   - component: {fileID: 1580991078}
   m_Layer: 0
-  m_Name: Officer JV
+  m_Name: JV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3686,7 +3686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Officer J.V.
+  nameText: J.V.
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
@@ -3862,7 +3862,7 @@ GameObject:
   - component: {fileID: 1686453806}
   - component: {fileID: 1686453805}
   m_Layer: 0
-  m_Name: Captain Baha
+  m_Name: Cpt Baha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3880,7 +3880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
+  nameText: Cpt. Baha
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits: []

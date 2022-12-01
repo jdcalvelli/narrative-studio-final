@@ -28,11 +28,15 @@ public class GameManager : MonoBehaviour
     public GameStates currentState;
     
     // to hold result of patch
-    public Tuple<string, string> PatchResult = new Tuple<string, string>(null, null);
+    public Dictionary<string, string> PatchResult = new Dictionary<string, string>();
 
     // Start is called before the first frame update
     void Start()
     {
+        //creating patch result dictionary
+        PatchResult.Add("personPatched", null);
+        PatchResult.Add("locationPatched", null);
+        
         currentState = GameStates.GameStart;
     }
 
@@ -55,15 +59,17 @@ public class GameManager : MonoBehaviour
                 break;
             
             case GameStates.DeterminePatching:
-                if (PatchResult.Item1 != null && PatchResult.Item2 != null)
+                
+                Debug.Log(PatchResult["personPatched"]);
+                Debug.Log(PatchResult["locationPatched"]);
+                if (PatchResult["personPatched"] != null && PatchResult["locationPatched"] != null)
                 {
-                    Debug.Log(PatchResult);
-                    if (PatchResult.Item1 == "bridge" && PatchResult.Item2 == "jv")
+                    if (PatchResult["personPatched"] == "jv" && PatchResult["locationPatched"] == "bridge")
                     {
                         narrativeDirectorReference.JumpTo("Day1_Baha_JV");
                         currentState = GameStates.ListenIn;
                     }
-                    else if (PatchResult.Item1 == "bridge" && PatchResult.Item2 == "ducksly")
+                    else if (PatchResult["personPatched"] == "ducksly" && PatchResult["locationPatched"] == "bridge")
                     {
                         narrativeDirectorReference.JumpTo("Day1_Baha_Ducksly");
                         currentState = GameStates.ListenIn;
