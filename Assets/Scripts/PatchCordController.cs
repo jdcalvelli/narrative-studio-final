@@ -9,7 +9,7 @@ public class PatchCordController : MonoBehaviour
     private GameManager _gameManagerReference;
     
     private Camera _mainCam;
-    private Vector3 _initialPosition;
+    public Vector3 _initialPosition;
     
     private bool _isColliding;
     private Collider2D _collidedHole;

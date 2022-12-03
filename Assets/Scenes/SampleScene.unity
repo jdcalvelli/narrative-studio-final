@@ -1612,6 +1612,28 @@ Transform:
   m_Father: {fileID: 438076760}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &265096450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 361523454651220213, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+  m_PrefabInstance: {fileID: 657166697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220f0901598364462b12349a659ee365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &270919102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1283495222718986532, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+  m_PrefabInstance: {fileID: 657166697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220f0901598364462b12349a659ee365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271557971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,9 +2422,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2309798904533745893, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+      propertyPath: patchHoleValue
+      value: Ducksly
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820171065807185503, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+      propertyPath: patchHoleValue
+      value: JV
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738109834767262114, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+      propertyPath: patchHoleValue
+      value: Baha
+      objectReference: {fileID: 0}
+    - target: {fileID: 6244146689929634738, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+      propertyPath: patchHoleValue
+      value: Baha
+      objectReference: {fileID: 0}
     - target: {fileID: 6306774260386000566, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
       propertyPath: m_Name
       value: Console
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686524977149299629, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+      propertyPath: patchHoleValue
+      value: Ducksly
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823799931959119627, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+      propertyPath: patchHoleValue
+      value: JV
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183050401717836099, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
+      propertyPath: patchHoleValue
+      value: Dover
       objectReference: {fileID: 0}
     - target: {fileID: 8822721872681546659, guid: cb9a52dafa3824140a219a1cb5ed47fe, type: 3}
       propertyPath: m_RootOrder
@@ -2959,9 +3009,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2039913124}
     - target: {fileID: 6578076665535617579, guid: 2a3ca852abd254c4b8f9f1f75b2d807b, type: 3}
+      propertyPath: patchCordList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578076665535617579, guid: 2a3ca852abd254c4b8f9f1f75b2d807b, type: 3}
       propertyPath: narrativeDirectorReference
       value: 
       objectReference: {fileID: 809420653}
+    - target: {fileID: 6578076665535617579, guid: 2a3ca852abd254c4b8f9f1f75b2d807b, type: 3}
+      propertyPath: patchCordList.Array.data[0]
+      value: 
+      objectReference: {fileID: 265096450}
+    - target: {fileID: 6578076665535617579, guid: 2a3ca852abd254c4b8f9f1f75b2d807b, type: 3}
+      propertyPath: patchCordList.Array.data[1]
+      value: 
+      objectReference: {fileID: 270919102}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a3ca852abd254c4b8f9f1f75b2d807b, type: 3}
 --- !u!1 &980378459
