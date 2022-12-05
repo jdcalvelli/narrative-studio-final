@@ -1,29 +1,6 @@
 === Day1_Dover_JV ===
 ->Day1_Post_Baha_Ducksly_JV
-FOR TESTING PURPOSES: This choice is rerouting to the Day1_Dover_JV knot to test variables. 
 
-// {day1_scenechoice == false:
-//     ~ current_location = "Engineering"
-// - else:
-//     ~ current_location = "Med Bay"
-// }
-// Current Scene: {day1_scenechoice}, {current_location}
-
-* [KILL THEM] Choice ONE
-* [KISS THEM] Choice TWO
-
-- gather for choices
-
-* [KILL THEM] Choice ONE
--> BEEP
-* [KISS THEM] Choice TWO
--> BOOP
-
-=== BEEP ===
--> BOOP
-
-=== BOOP ===
-->DONE
 
 === Day1_Post_Baha_Ducksly_JV ===
 Lt Dover "Guess I'll see what's up with J.V. #Dover
