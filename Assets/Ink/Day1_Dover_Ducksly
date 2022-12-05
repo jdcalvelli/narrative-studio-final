@@ -1,27 +1,28 @@
 === Day1_Dover_Ducksly ===
-FOR TESTING PURPOSES: This choice is rerouting to the Day1_Dover_Ducksly knot to test variables. 
+->Day1_BD_DB
 
-// {Day1_Dover_Ducksly:
-//     day1_scenechoice == false
-//     ~ current_location = "Engineering"
-// - else:
-//     ~ current_location = "Med Bay"
-// }
-// Current Scene: {day1_scenechoice}, {current_location}
+===Day1_BD_DB ===
+Lt Dover "Alright Dover, prep yourself. Let's see what Ducksly wants. #Dover
 
-* [KILL THEM] Choice ONE
-* [KISS THEM] Choice TWO
+//Ducksly is patched. 
 
-- gather for choices
+Emperor Ducksly "Quackcelsior! #Ducksly
 
-* [KILL THEM] Choice ONE
--> BEEP_1
-* [KISS THEM] Choice TWO
--> BOOP_1
+Lt Dover "He- I mean Quackcelsior! #Dover
 
-=== BEEP_1 ===
--> BOOP_1
+Emperor Ducksly "Thank you for taking time to speak with me Dover. I'llwont take too much of your time. #Ducksly
 
-=== BOOP_1 ===
+Lt Dover "No worries, I've got nothing else going on anyways. #Dover
+
+Emperor Ducksly "I'm sure. Something has recently troubled me and I wanted to run my thoughts past someone. #Ducksly
+
+Emperor Ducksly "And since you're the only here I remotely trust with something like this I figured that someone would be you. #Ducksly
+
+Lt Dover "Hmm. What's up. #Dover
+
+Emperor Ducksly "It's about my recent conversation with the Captain. #Ducksly
+
+Emperor Ducksly "As I'm sure you know I've been conducting...
+
 
 -> DONE
