@@ -3,6 +3,7 @@
 -> DONE
 
 === CHOICE1 === //Connected J.V.
+//Change the day1_sceneChoice bool and alter currentLocation string depending on that value.
 ~ day1_sceneChoice = false
 {day1_sceneChoice == false:
     ~ currentLocation = "Engineering"
@@ -50,6 +51,7 @@ Don't you like me? #Dover
 -> Testing3
 
 === CHOICE2 === //Connected Ducksly
+//Change the day1_sceneChoice bool and alter currentLocation string depending on that value.
 ~ day1_sceneChoice = true
 {day1_sceneChoice == true:
     ~ currentLocation = "MedBay"
