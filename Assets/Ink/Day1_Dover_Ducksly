@@ -1,4 +1,5 @@
 === Day1_Dover_Ducksly ===
+->Day1_BD_DB
 FOR TESTING PURPOSES: This choice is rerouting to the Day1_Dover_Ducksly knot to test variables. 
 
 // {Day1_Dover_Ducksly:
@@ -23,5 +24,30 @@ FOR TESTING PURPOSES: This choice is rerouting to the Day1_Dover_Ducksly knot to
 -> BOOP_1
 
 === BOOP_1 ===
+-> DONE
+//Day1 - Post Baha/Ducksly - Dover/Ducksly
+===Day1_BD_DB ===
+Lt Dover "Alright Dover, prep yourself. Let's see what Ducksly wants. #Dover
+
+//Ducksly is patched. 
+
+Emperor Ducksly "Quackcelsior! #Ducksly
+
+Lt Dover "He- I mean Quackcelsior! #Dover
+
+Emperor Ducksly "Thank you for taking time to speak with me Dover. I'llwont take too much of your time. #Ducksly
+
+Lt Dover "No worries, I've got nothing else going on anyways. #Dover
+
+Emperor Ducksly "I'm sure. Something has recently troubled me and I wanted to run my thoughts past someone. #Ducksly
+
+Emperor Ducksly "And since you're the only here I remotely trust with something like this I figured that someone would be you. #Ducksly
+
+Lt Dover "Hmm. What's up. #Dover
+
+Emperor Ducksly "It's about my recent conversation with the Captain. #Ducksly
+
+Emperor Ducksly "As I'm sure you know I've been conducting...
+
 
 -> DONE
