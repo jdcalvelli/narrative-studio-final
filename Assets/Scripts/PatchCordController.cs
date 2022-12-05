@@ -75,9 +75,23 @@ public class PatchCordController : MonoBehaviour
     // pass to gm
     private void OnTriggerEnter2D(Collider2D col)
     {
-        _isColliding = true;
-        _collidedHole = col;
-        Debug.Log(_isColliding);
+        if (col.CompareTag("Person") && gameObject.tag == "Person")
+        {
+            Debug.Log("this is the person chord going to the person patch.");
+            _isColliding = true;
+            _collidedHole = col;
+            Debug.Log(_isColliding);
+        }
+
+        if (col.CompareTag(("Location")) && gameObject.tag == "Location")
+        {
+            Debug.Log("this is the location chord going to the location patch.");
+            _isColliding = true;
+            _collidedHole = col;
+            Debug.Log(_isColliding);
+        }
+
+
     }
 
     private void OnTriggerExit2D(Collider2D col)
