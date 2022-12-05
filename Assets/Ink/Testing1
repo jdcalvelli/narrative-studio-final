@@ -1,26 +1,14 @@
-=== testing1 ===
+=== Testing1 ===
+//THIS FILE IS FOR TESTING PURPOSES ONLY
 
-FOR TESTING PURPOSES: This choice is rerouting to the Day1_Dover_JV knot to test variables. 
+JV "Heeeeeey Dover, what's up? Can you patch me in to Baha? He's probably on the Bridge. #JV
 
-{day1_scenechoice == false:
-    ~ current_location = "Engineering"
-- else:
-    ~ current_location = "Med Bay"
-}
-Current Scene: {day1_scenechoice}, {current_location}
+Ducksly "Bonjour Dover, might you be so kind as to connect me with Captain Baha? Urgent business. Statistically, he's on the Bridge at this hour. #Ducksly
 
-* [KILL THEM] Choice ONE
-* [KISS THEM] Choice TWO
+"Who would you like to connect to Baha?"
+* [CONNECT J.V.] 
+-> CHOICE1
+* [CONNECT DUCKSLY] 
+-> CHOICE2
 
-- gather for choices
-
-* [KILL THEM] Choice ONE
--> BEEP
-* [KISS THEM] Choice TWO
--> BOOP
-
-=== BEEP ===
--> BOOP
-
-=== BOOP ===
-->DONE
+-> DONE 

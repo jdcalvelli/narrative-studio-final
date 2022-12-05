@@ -1,27 +1,97 @@
-=== testing2 ===
-FOR TESTING PURPOSES: This choice is rerouting to the Day1_Dover_Ducksly knot to test variables. 
-
-// {Day1_Dover_Ducksly:
-//     day1_scenechoice == false
-//     ~ current_location = "Engineering"
-// - else:
-//     ~ current_location = "Med Bay"
-// }
-// Current Scene: {day1_scenechoice}, {current_location}
-
-* [KILL THEM] Choice ONE
-* [KISS THEM] Choice TWO
-
-- gather for choices
-
-* [KILL THEM] Choice ONE
--> BEEP_1
-* [KISS THEM] Choice TWO
--> BOOP_1
-
-=== BEEP_1 ===
--> BOOP_1
-
-=== BOOP_1 ===
-
+=== Testing2 ===
+//THIS FILE IS FOR TESTING PURPOSES ONLY
 -> DONE
+
+=== CHOICE1 === //Connected J.V.
+~ day1_sceneChoice = false
+{day1_sceneChoice == false:
+    ~ currentLocation = "Engineering"
+}
+Current Scene: {day1_sceneChoice}, {currentLocation}
+
+// * [KILL THEM] Choice ONE
+// * [KISS THEM] Choice TWO
+
+// - gather for choices
+
+* [KILL THEM] Choice ONE (relationship go down)
+-> BEEP
+* [KISS THEM] Choice TWO (relationship go up)
+-> BOOP
+
+=== BEEP ===
+Current Baha & JV count: {B_JV_relCount} //PRINT CURRENT RELCOUNT, should be 3
+
+How dare you offend me so? #JV
+~ B_JV_relCount --
+
+Current Baha & JV count: {B_JV_relCount} //PRINT CURRENT RELCOUNT, should be 4
+
+-> RelTest1
+
+=== BOOP ===
+Current Baha & JV count: {B_JV_relCount} //PRINT CURRENT RELCOUNT, should be 3
+
+You make my heart go all a flutter! #JV
+~ B_JV_relCount ++
+
+Current Baha & JV count: {B_JV_relCount} //PRINT CURRENT RELCOUNT, should be 4
+
+-> RelTest1
+
+=== RelTest1 ===
+//TEST LOCKING DIALOGUE BEHIND < OR > FOR BAHA/JV relCount
+
+Don't you like me? #Dover
+
+{B_JV_relCount < 3: No, I hate you.}
+{B_JV_relCount >= 3: Yes, I love you so much.} #JV 
+
+-> Testing3
+
+=== CHOICE2 === //Connected Ducksly
+~ day1_sceneChoice = true
+{day1_sceneChoice == true:
+    ~ currentLocation = "MedBay"
+}
+Current Scene: {day1_sceneChoice}, {currentLocation}
+
+// * [KILL THEM] Choice ONE
+// * [KISS THEM] Choice TWO
+
+// - gather for choices
+
+* [KILL THEM] Choice ONE (relationship go down)
+-> BEEP1
+* [KISS THEM] Choice TWO (relationship go up)
+-> BOOP2
+
+=== BEEP1 ===
+Current Baha & Ducksly count: {B_Duck_relCount} //PRINT CURRENT RELCOUNT, should be 3
+
+How dare you offend me so? #Ducksly
+~ B_Duck_relCount --
+
+Current Baha & Ducksly count: {B_Duck_relCount} //PRINT CURRENT RELCOUNT, should be 4
+
+-> RelTest2
+
+=== BOOP2 ===
+Current Baha & Ducksly count: {B_Duck_relCount} //PRINT CURRENT RELCOUNT, should be 3
+
+You make my heart go all a flutter! #Ducksly
+~ B_Duck_relCount ++
+
+Current Baha & Ducksly count: {B_Duck_relCount} //PRINT CURRENT RELCOUNT, should be 4
+
+-> RelTest2
+
+=== RelTest2 ===
+//TEST LOCKING DIALOGUE BEHIND < OR > FOR BAHA/DUCKSLY relCount
+
+Don't you like me? #Dover
+
+{B_Duck_relCount < 3: No, I hate you.}
+{B_Duck_relCount >= 3: Yes, I love you so much.} #Ducksly
+
+-> Testing3

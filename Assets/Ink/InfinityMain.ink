@@ -36,6 +36,8 @@ INCLUDE Playtesting_1
 INCLUDE Day1_Start
 INCLUDE Testing1
 INCLUDE Testing2
+INCLUDE Testing3
+
 
 
 
@@ -45,19 +47,26 @@ INCLUDE Testing2
 //GLOBAL VARIABLES___________________________
 
 //SCENE VISITATION BOOLS
-VAR day1_scenechoice = ""
+VAR day1_sceneChoice = false
+VAR day2_sceneChoice = false
+VAR day3_sceneChoice = false
+//NOTE: Ink also tracks which knots have been visited, so creating a global bool might be unnecessary. If you need to gate any content behind whether or not a certain scene has been experienced, it's probably easiest to reference the first knot in that scene with the name of the knot in brackets. {Day1_Baha_JV} or {Day1_Baha_Ducksly} before a dialogue choice for instance.
+//NOTE CONT: Regardless, bools are working here and can be referenced in Unity. 
 
-VAR current_location = "" //will change the printed name of the location with temporary variables located in relevant scenes.
+VAR currentLocation = "" //will change the printed name of the location with temporary variables located in relevant scenes.
+VAR currentTime = ""
 
-//CHARACTER RELATIONSHIP (Scale of 1 - 5, 1 being negative and 5 being positive) 
-VAR B_JV_rel = 3
+//CHARACTER RELATIONSHIPS (Scale of 1 - 5, 1 being negative and 5 being positive) 
+VAR B_JV_relCount = 3 //Baha & JV 
+VAR B_Duck_relCount = 3 //Baha & Ducksly
+VAR JV_Duck_relCount = 3 //JV & Ducksly
 
 //___________________________________________
 //uncomment lines here to test knots stored in different files.
     //this is due to our use of -> DONE at the end of each file. 
 //KNOT TESTING
 //DAY 1
--> Day1_Start
+// -> Day1_Start
 // -> Day1_Baha_JV
 // -> Day1_Baha_Ducksly
 // -> Day1_PrivateConvoChoice
@@ -88,3 +97,5 @@ VAR B_JV_rel = 3
 
 // OTHER 
 // -> Playtesting_1
+-> Testing1
+// -> Testing2

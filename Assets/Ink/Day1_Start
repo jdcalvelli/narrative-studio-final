@@ -8,8 +8,6 @@ Ducksly "Bonjour Dover, might you be so kind as to connect me with Captain Baha?
 
 COMMENT THIS CHOICE SET OUT, IT IS ONLY FOR TESTING PURPOSES
 * [CONNECT J.V.]
-~ day1_scenechoice = false
-    
 -> Day1_Dover_JV
 * [CONNECT DUCKSLY]
 -> Day1_Dover_Ducksly

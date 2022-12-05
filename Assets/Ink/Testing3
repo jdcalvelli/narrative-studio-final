@@ -1,0 +1,16 @@
+=== Testing3 ===
+
+// CURRENT TEST: will these changed variables carry over to the following knot? 
+// ANSWER: Yes! Confirmed that changed global variables with carry over to previous knots. 
+NEW SCENE/KNOT
+TEST TO CONFIRM VARIABLES CARRY OVER TO THE NEXT SCENE
+Current Scene: {day1_sceneChoice}, {currentLocation}
+
+Current Relationship Stats: 
+    Baha & JV: {B_JV_relCount}
+    Baha & Ducksly: {B_Duck_relCount}
+    JV & Ducksly: {JV_Duck_relCount}
+
+TEST CHANGING CONTENT DEPENDING ON RELATIONSHIP COUNTS
+
+-> DONE
