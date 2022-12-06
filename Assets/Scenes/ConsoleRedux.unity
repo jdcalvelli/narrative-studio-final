@@ -3870,30 +3870,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 825211416000909491, guid: 5253aff1b15154b5897c43439357853b, type: 3}
-      propertyPath: m_TagString
-      value: Location
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380690034943681938, guid: 5253aff1b15154b5897c43439357853b, type: 3}
-      propertyPath: m_TagString
-      value: Person
-      objectReference: {fileID: 0}
-    - target: {fileID: 2674219602059846693, guid: 5253aff1b15154b5897c43439357853b, type: 3}
-      propertyPath: m_TagString
-      value: Person
-      objectReference: {fileID: 0}
-    - target: {fileID: 2755808802662811023, guid: 5253aff1b15154b5897c43439357853b, type: 3}
-      propertyPath: m_TagString
-      value: Location
-      objectReference: {fileID: 0}
-    - target: {fileID: 3625669728764941670, guid: 5253aff1b15154b5897c43439357853b, type: 3}
-      propertyPath: m_TagString
-      value: Location
-      objectReference: {fileID: 0}
-    - target: {fileID: 4016251475228930887, guid: 5253aff1b15154b5897c43439357853b, type: 3}
-      propertyPath: m_TagString
-      value: Person
-      objectReference: {fileID: 0}
     - target: {fileID: 4315438862547402311, guid: 5253aff1b15154b5897c43439357853b, type: 3}
       propertyPath: m_Name
       value: ConsoleRedux
@@ -3941,14 +3917,6 @@ PrefabInstance:
     - target: {fileID: 6079536914969551269, guid: 5253aff1b15154b5897c43439357853b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6753387074206792128, guid: 5253aff1b15154b5897c43439357853b, type: 3}
-      propertyPath: m_TagString
-      value: Person
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381308807566781185, guid: 5253aff1b15154b5897c43439357853b, type: 3}
-      propertyPath: m_TagString
-      value: Location
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5253aff1b15154b5897c43439357853b, type: 3}
