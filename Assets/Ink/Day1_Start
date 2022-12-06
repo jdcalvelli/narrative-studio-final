@@ -1,15 +1,14 @@
 === Day1_Start ===
-JV "Heeeeeey Dover, what's up? Can you patch me in to Baha? He's probably on the Bridge. #JV
+Officer JV "Heeeeeey Dover, what's up? Can you patch me in to Baha? He's probably on the Bridge. #JV
 
 //If connected, link to Day1_Baha_JV
 //NOTE: #JV is a speech tag to mark who is saying which words during dialogue. Might be helpful if we need need to reference the tag in code. They should not appear in dialogue text in Fungus, but will appear in the Ink editor. 
 
-Ducksly "Bonjour Dover, might you be so kind as to connect me with Captain Baha? Urgent business. Statistically, he's on the Bridge at this hour. #Ducksly
+Emperor Ducksly "Bonjour Dover, might you be so kind as to connect me with Captain Baha? Urgent business. Statistically, he's on the Bridge at this hour. #Ducksly
 
-COMMENT THIS CHOICE SET OUT, IT IS ONLY FOR TESTING PURPOSES
-* [CONNECT J.V.]
--> Day1_Dover_JV
-* [CONNECT DUCKSLY]
--> Day1_Dover_Ducksly
+// * [CONNECT J.V.]
+// -> Day1_Dover_JV
+// * [CONNECT DUCKSLY]
+// -> Day1_Dover_Ducksly
 
 -> DONE //NOTE: DONE and END are effectively the same in that they finish the story. Ideally, we want to call a new knot. 

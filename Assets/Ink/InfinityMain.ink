@@ -66,7 +66,7 @@ VAR JV_Duck_relCount = 3 //JV & Ducksly
     //this is due to our use of -> DONE at the end of each file. 
 //KNOT TESTING
 //DAY 1
-// -> Day1_Start
+-> Day1_Start
 // -> Day1_Baha_JV
 // -> Day1_Baha_Ducksly
 // -> Day1_PrivateConvoChoice
@@ -97,5 +97,18 @@ VAR JV_Duck_relCount = 3 //JV & Ducksly
 
 // OTHER 
 // -> Playtesting_1
--> Testing1
+// -> Testing1
 // -> Testing2
+
+// ----------------------------
+// Naming Conventions and formatting
+// Put this as the beginning of every line of dialogue: Name "
+//     Lt Dover "
+//     Cpt Baha "
+//     Officer JV "
+//     Emperor Ducksly "
+// Tag the end of each line of dialogue with a hashtag name: #Name
+//     #Dover
+//     #JV 
+//     #Ducksly 
+//     #Baha 
