@@ -7,8 +7,8 @@ Officer JV "Heeeeeey Dover, what's up? Can you patch me in to Baha? He's probabl
 Emperor Ducksly "Bonjour Dover, might you be so kind as to connect me with Captain Baha? Urgent business. Statistically, he's on the Bridge at this hour. #Ducksly
 
 // * [CONNECT J.V.]
-// -> Day1_Dover_JV
+// -> Day1_Baha_JV
 // * [CONNECT DUCKSLY]
-// -> Day1_Dover_Ducksly
+// -> Day1_Baha_Ducksly
 
 -> DONE //NOTE: DONE and END are effectively the same in that they finish the story. Ideally, we want to call a new knot. 

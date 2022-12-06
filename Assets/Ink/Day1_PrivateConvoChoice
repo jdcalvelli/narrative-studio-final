@@ -1,4 +1,18 @@
 === Day1_PrivateConvoChoice ===
-CONTENT TBD
+Cpt Baha "Comms Officer Dover, do you have a moment? #Baha
+    // ->Day1_Dover_Baha
+
+Officer JV "Heyyy Dover, me again. You got a sec? #JV
+    // ->Day1_Dover_JV
+    
+Emperor Ducksly "Bonjour Dover. Might we have a tête-à-tête? #Ducksly
+    // ->Day1_Dover_Baha
+
+// * [CONNECT J.V.]
+// -> Day1_Dover_Baha
+// * [CONNECT J.V.]
+// -> Day1_Dover_JV
+// * [CONNECT DUCKSLY]
+// -> Day1_Dover_Ducksly
 
 -> DONE
