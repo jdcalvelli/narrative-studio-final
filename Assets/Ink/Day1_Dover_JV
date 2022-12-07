@@ -1,24 +1,29 @@
 === Day1_Dover_JV ===
-->Day1_Post_Baha_Ducksly_JV
+//WHERE WE LEFT OFF: Consolidating the conversation into one standard convo that branches out and bottlenecks. 
 
-
-=== Day1_Post_Baha_Ducksly_JV ===
 Lt Dover "Guess I'll see what's up with J.V. #Dover
-
 //dover patches into J.V
+//SFX: connection, line picking up
 
 Officer JV "Dove! You got a second? #JV
 
 Lt Dover "Hmm, let me see.. #Dover
 
-//a beat
+Lt Dover "... #Dover
 
 Lt Dover "Yup looks like I can squeeze you in. #Dover
 
 Officer JV "Yeah? You got jokes? #JV
 
-Officer JV "I'll only need a minute. I promise. Just wanted to vent about something. #JV
+Officer JV "I'll only need a minute, I promise. Just wanted to vent about something. #JV
 
+{day1_sceneChoice == true: //true = Baha & Ducksly spoke
+    -> D1_JV_BD
+- else: //false = Baha & JV spoke
+    -> D1_JV_BJV
+}
+
+=== D1_JV_BD === //Day 1: Baha & Ducksly Spoke
 Lt Dover "Oh No! What's wrong? #Dover
 
 Officer JV "You already know. #JV
@@ -58,12 +63,16 @@ Officer JV "I just want us to go back to being our little goon squad. #JV
 
 Lt Dover "Hmm #Dover
 
-*Sometimes people drift apart. Might be a sign to let go.
-->Day1_Post_BahaDucksly_JV_DistanceBAHA
+*Sometimes, people drift apart. Might be a sign to let go.
+-> D1_JV_DistanceBaha
 *You should tell him how you feel.
-->Day1_Post_BahaDucksly_JV_ReconcileBAHA
+-> D1_JV_ReconcileBaha
 
-=== Day1_Post_BahaDucksly_JV_DistanceBAHA ===
+=== D1_JV_BJV === //Day 1: Baha & JV Spoke
+
+-> DONE
+
+=== D1_JV_DistanceBaha ===
 Officer JV "You really think so? #JV 
 
 Lt Dover "We're coming up on the literal end of everything. Why not? #Dover
@@ -77,7 +86,7 @@ Officer JV "That means I won't get to hear his bad writing (chuckles). #JV
 Officer JV "But maybe you're right. Thanks Doverino! #JV 
 
 ->DONE
-=== Day1_Post_BahaDucksly_JV_ReconcileBAHA ===
+=== D1_JV_ReconcileBaha ===
 Officer JV "That potentially creates conflict, so that's a big yikes for me. #JV 
 
 Lt Dover "So? #Dover
