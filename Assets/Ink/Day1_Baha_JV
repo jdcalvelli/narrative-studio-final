@@ -1,7 +1,6 @@
 === Day1_Baha_JV ===
-//TORI SMITH - last worked 11/23
-
 //DOVER connects JV to BAHA the Bridge on the switchboard.
+~ day1_sceneChoice = false
 
 Lt Dover "Nothing much, as per usual. And sure thing. #Dover
 
@@ -19,19 +18,24 @@ Officer JV "Ergo, your favorite. Got a minute to clear some pre-arrival checks? 
 
 Cpt Baha "Copy. Go ahead. #Baha
 
-Officer JV "Copy. Our daily perimeter checks and gear assessments are all squeaky clean... #JV
+//NOTE: I wish "copy" was snarkier
+Officer JV "'Copy'. Our daily perimeter checks and gear assessments are all squeaky clean... #JV
 
 Cpt Baha "I’m sensing a “but”… #Baha
 
 Officer JV "Captain, language! #JV
 
+Cpt Baha "... #Baha
+
 Officer JV "But…the steering gear’s being a bit sticky. #JV
 
 Cpt Baha "“Sticky”, is that the technical term for it? #Baha
 
-Officer JV "Oh absolutely. I need your “official permission” to cycle them through a cleaning and that oughta do the trick. #JV
+Officer JV "Oh, absolutely. I need your “official permission” to cycle them through a cleaning and that oughta do the trick. #JV
 
 Cpt Baha "My “official permission” huh? #Baha
+
+Cpt Baha "... #Baha
 
 Cpt Baha "You’ve already started it haven’t you? #Baha
 
@@ -58,7 +62,7 @@ Cpt Baha "God forbid. #Baha
 //SFX: a clanging sound in the distance on J.V.’s end of the line.
 Cpt Baha "What was that? #Baha
 
-Officer JV "I gotta go. Steering will be back within the hour, everything’s fine! #JV
+Officer JV "...I gotta go. Steering will be back within the hour, EVERYTHING'S FINE! #JV
 
 Cpt Baha "Vespira, hold on old girl. #Baha
 

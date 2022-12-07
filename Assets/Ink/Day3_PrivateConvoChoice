@@ -1,5 +1,18 @@
 === Day3_PrivateConvoChoice ===
+Cpt Baha "Comms Officer Dover, I'd like to speak with you. #Baha
+    // ->Day3_Dover_Baha
 
-Day3_PrivateConvoChoice
+Officer JV "Dover, can I talk to you? #JV
+    // ->Day3_Dover_JV
+    
+Emperor Ducksly "Salutations, Dover. May we confer? #Ducksly
+    // ->Day3_Dover_Baha
+
+// * [CONNECT with Baha]
+// -> Day3_Dover_Baha
+// * [CONNECT with J.V.]
+// -> Day3_Dover_JV
+// * [CONNECT with DUCKSLY]
+// -> Day3_Dover_Ducksly
 
 -> DONE

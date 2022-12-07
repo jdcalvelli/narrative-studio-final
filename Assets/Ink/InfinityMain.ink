@@ -48,8 +48,15 @@ INCLUDE Testing3
 
 //SCENE VISITATION BOOLS
 VAR day1_sceneChoice = false
+    //Baha_JV = false
+    //Baha_Ducksly = true
 VAR day2_sceneChoice = false
+    //JV_Baha = false
+    //JV_Ducksly = true
 VAR day3_sceneChoice = false
+    //Ducksly_Baha = false
+    //Ducksly_JV = true
+    
 //NOTE: Ink also tracks which knots have been visited, so creating a global bool might be unnecessary. If you need to gate any content behind whether or not a certain scene has been experienced, it's probably easiest to reference the first knot in that scene with the name of the knot in brackets. {Day1_Baha_JV} or {Day1_Baha_Ducksly} before a dialogue choice for instance.
 //NOTE CONT: Regardless, bools are working here and can be referenced in Unity. 
 
@@ -66,9 +73,9 @@ VAR JV_Duck_relCount = 3 //JV & Ducksly
     //this is due to our use of -> DONE at the end of each file. 
 //KNOT TESTING
 //DAY 1
--> Day1_Start
+// -> Day1_Start
 // -> Day1_Baha_JV
-// -> Day1_Baha_Ducksly
+-> Day1_Baha_Ducksly
 // -> Day1_PrivateConvoChoice
 // -> Day1_Dover_Baha
 // -> Day1_Dover_JV

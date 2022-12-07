@@ -1,26 +1,26 @@
 === Day1_Baha_Ducksly ===
-//TORI SMITH - last worked 11/23
 //DOVER connects DUCKSLY to BAHA the Bridge on the switchboard.
+~ day1_sceneChoice = true 
 
 Lt Dover "No problem, Duck-arino. #Dover
 
-Emperor Ducksly "<i>quack</i> Please, don’t call me that. #Ducksly
+Emperor Ducksly "QUACK. Please, don’t call me that. #Ducksly
 
 //SFX, line connecting and Baha picking up.
 
-Emperor Ducksly "Quackcelsior Captain! #Ducksly
+Emperor Ducksly "Quackcelsior, Captain! #Ducksly
 
 Cpt Baha "Mhm. What can I do for you Ducksly? #Baha
 
-Emperor Ducksly "Captain, we’ve been over this. When someone greets you with Quackcelsior you’re supposed to- #Ducksly
+Emperor Ducksly "Captain, we’ve been over this. When someone greets you with "Quackcelsior" you’re supposed to- #Ducksly
 
 //Baha interrupts
-Cpt Baha "Ducksly, please get on with it. #Baha
+Cpt Baha "Ducksly, I don't have all day. #Baha
 
 //stuttering
-Emperor Ducksly "Oh. Um. Well. Right.<i>quack<i> #Ducksly
+Emperor Ducksly "Oh. Um. Right. QUACK. #Ducksly
 
-Emperor Ducksly "I was looking over the pre-arrival check-list you sent out and I noticed there was an item for medical check-ups on the crew. #Ducksly
+Emperor Ducksly "I was looking over the pre-arrival checklist you sent out and I noticed there was an item for medical check-ups on the crew. #Ducksly
 
 Cpt Baha "And? #Baha
 
@@ -28,41 +28,43 @@ Emperor Ducksly "Well, it's just that the equipment that I would need is current
 
 Cpt Baha "Used for what? #Baha
 
-Emperor Ducksly "Well, as our science officer, since our mission departure I thought I would be fruitful to conduct a bit of research. #Ducksly
+Emperor Ducksly "Well, as our science officer, and since our mission departure, I thought it would be fruitful to conduct a bit of research... #Ducksly
 
-Cpt Baha "That’s nice and all, but we’re about to arrive. I’m sure you can spare some equipment from your “non-regulated research”. #Baha
+Cpt Baha "That’s nice and all, but eminent arrival takes priority. I’m sure you can spare some equipment from your “non-regulated research”. #Baha
 
 Emperor Ducksly "But, Captain! We’ve been traveling faster than light for the better part of a galactic year on our way to the Edge! How many species get to experience life at such speed? What does that do to a species' physiology? #Ducksly
 
-Cpt Baha "That’s fascinating Ducksly, it truly is. But - #Baha
+Cpt Baha "That’s fascinating, Ducksly, it truly is. But - #Baha
 
-Emperor Ducksly "Exactly, Captain! <i>I</i> could be the first to know what happens to life at this scale. If I were to redistribute the equipment at this juncture, it would - #Ducksly
+Emperor Ducksly "Exactly, Captain! I could be the first to know what happens to life at this scale! If I were to redistribute the equipment at this juncture, it would - #Ducksly
 
 Cpt Baha "Ducksly, please just get the medical checks done. #Baha
 
-Emperor Ducksly "Again, Captain, think of how our bodies all might’ve changed just over these few months. #Ducksly
+Emperor Ducksly "But think of how our bodies might’ve changed just over these few months - #Ducksly
 
-Cpt Baha "Ducksly! That’s not our mission. I’m sorry to say but your research is going to have to be put on pause. #Baha
+Cpt Baha "Yes, but that’s not our mission. I’m sorry to say it, but your research is going to have to be put on the back burner. #Baha
 
-Emperor Ducksly "Captain, please I must ask you to reconsider! This is important to <i>me</i>, just as much as our mission is. #Ducksly
+Emperor Ducksly "Captain, PLEASE. I must ask you to reconsider! This is just as important to me as our mission. #Ducksly
 
-Cpt Baha "How many times do I need to say this: but it’s not just about you. I need those check ups done. Alright? #Baha
+Cpt Baha "It's not about YOU. I need those check ups done. Alright? #Baha
 
-Emperor Ducksly "If J.V asked for some equipment for some smooth-brained project, you wouldn’t hesitate to grant her leniency! #Ducksly
-    //This is the sickest burn, I just wanna call that out. 
+//like it's under his breath but he wants Baha to hear
+Emperor Ducksly "If J.V asked for some equipment for some smooth-brained project, you wouldn’t hesitate to grant her leniency... #Ducksly
+    //"smooth-brained" is the sickest burn, I just wanna call that out. 
     
 //A beat
-Cpt Baha "How about you let Officer Veldspar worry about her portion of the check-list and you worry about yours, Officer Ducksly. Get those checks <i>done</i>. #Baha
+Cpt Baha "How about you let Officer Veldspar worry about her portion of the checklist and you worry about yours, Officer Ducksly. Get those checks DONE. #Baha
 
 //A beat
-Emperor Ducksly "Of course captain. Signing off- #Ducksly
+Emperor Ducksly "...Of course, Captain. Signing off - #Ducksly
 
 Cpt Baha "And Ducksly... #Baha
 
 Emperor Ducksly "Hm? #Ducksly
 
 Cpt Baha "The crew doesn’t just need these check ups. I need them. Ok? #Baha
+//this line still isn't reading for me, the intention isn't quite clear. I'd like to revisit
 
-Emperor Ducksly "Yes Captain. #Ducksly
+Emperor Ducksly "Yes, Captain. #Ducksly
 
 -> DONE
