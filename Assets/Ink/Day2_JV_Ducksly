@@ -14,68 +14,92 @@ Officer JV "Nothing too important, just making sure that the ship doesn't explod
 
 Emperor Ducksly "...Quack! #Ducksly
 
-Officer JV "I'm just kidding Ducksly. Relax! I mean... I am doing that but we're not in any immediate danger or anything. So what's up?
+Officer JV "I'm just kidding Ducksly. Relax! I mean... I am doing that but we're not in any immediate danger or anything. So what's up? #JV
 
-Emperor Ducksly "Well, I need to make a maintenance request.
+Emperor Ducksly "Well, I need to make a maintenance request. #Ducksly
 
-Officer JV "Is it mission critical?
+Officer JV "Is it mission critical? #JV
 
-Emperor Ducksly "It's one of my centrifuges. someone tampered with it, turning into a slapdashed blender. I wonder who c-
+Emperor Ducksly "It's one of my centrifuges. someone tampered with it, turning into a slapdashed blender. I wonder who c- #Ducksly
 
-Officer JV "So it's not mission critical?
+Officer JV "So it's not mission critical? #JV
 
-Emperor Ducksly "All my work is mission critical! 
+Emperor Ducksly "All my work is mission critical! #JV
 
-Officer JV "Sorry Duck, captain's orders; anything not mission critical is put on the bottom of the list of maitenance requests.
+Officer JV "Sorry Duck, captain's orders; anything not mission critical is put on the bottom of the list of maitenance requests. #JV
 
-Emperor Ducksly "But my centrifuge! I need it for- 
+Emperor Ducksly "But my centrifuge! I need it for- #Ducksly
 
-Officer JV "Your checklsit?
+Officer JV "Your checklsit? #JV
 
-Emperor Ducksly "We'll not necessarily...
+Emperor Ducksly "We'll not necessarily... #Ducksly
 
-Officer JV "Then sorry bud. No can do.
+Officer JV "Then sorry bud. No can do. #JV
 
-Emperor Ducksly "...Quack!
+Emperor Ducksly "...Quack! #Ducksly
 
-Emperor Ducksly "I know you did it.
+Emperor Ducksly "I know you did it. #Ducksly
 
-Officer JV "Oh? Did what.
+Officer JV "Oh? Did what. #JV
 
-Emperor Ducksly "I know you tampered with with my centrifuge! Who else could've done it?
+Emperor Ducksly "I know you tampered with with my centrifuge! Who else could've done it? #Ducksly
 
-Officer JV "Proof? Sure it wasn't one of your medical staff. 
+Officer JV "Proof? Sure it wasn't one of your medical staff. #JV
 
-Emperor Ducksly "Oh please!
+Emperor Ducksly "Oh please! #Ducksly
 
-Officer JV "It could have been someone trying to make a move on your station. 
+Officer JV "It could have been someone trying to make a move on your station. #JV
 
-Emperor Ducksly "...
+Emperor Ducksly "... #Ducksly
 
-Officer JV "I'm just messing with you Ducksly yeah I did it!
+Officer JV "I'm just messing with you Ducksly yeah I did it! #JV
 
-Emperor Ducksly "Quack!
+Emperor Ducksly "Quack! #Ducksly
 
-Officer JV "Sorry I just wanted to see if you would believe that.
+Officer JV "Sorry I just wanted to see if you would believe that. #JV
 
-Officer JV "I can fix it, it's really not that hard to fix.
+Officer JV "I can fix it, it's really not that hard to fix. #JV
 ->reprimand_JV
 
 //At this point Dover/ducksly choice comes into play.
+
+===GetToKnow_JV===
+Emperor Ducksly "Tell me something Officer Veldspar: are these pranks of yours why the Captain views you so highly? #Ducksly
+
+Officer JV "What? #JV
+
+Emperor Ducksly "The Captain appears to view you very highly. I never really understood but I'm curious if these pranks of yours are the cause. #Ducksly
+
+Officer JV "...I- Yes that's exaclty why. Baha just loves my whimsical nature. #JV
+
+Emperor Ducksly "And your able to even refer to the Captain by his first name. #Ducksly
+
+Officer JV "I wish it was something as intricate as that Ducksly. The Captain and I just go way back. #JV
+
+Emperor Ducksly "Please... He even allows your little microgames to stay on the ships software. #Ducksly
+
+Officer JV "Wait Ducksly he know's about that? #JV
+
+Emperor Ducksly "Whimisical nature eh? You'll have to shopw me this sometime. Ducskly out. #Ducksly 
+//ducksly disconnects.
+
+->DONE
 ===reprimand_JV=== 
-Emperor Ducksly "Why would you do something like that?
+Emperor Ducksly "Why would you do something like that? #Ducksly
 
-Officer JV "Calm down, like I said it's an easy fix. 
+Officer JV "Calm down, like I said it's an easy fix. #JV
 
-Emperor Ducklsy "You always do this. You know every one of your pranks hinders my own work.
+Emperor Ducklsy "You always do this. You know every one of your pranks hinders my own work. #Ducksly
 
-Emperor Ducksly "You only do this because the Captain views you so highly.
+Emperor Ducksly "You only do this because the Captain views you so highly. #Ducksly
 
-Officer JV "Ducksly chill, it's like 2 lines of code. I can come fix it in just a few.
+Officer JV "Ducksly chill, it's like 2 lines of code. I can come fix it in just a few. #JV
 
-Emperor Ducksly "I'll never understand what the Captain sees in you. I'm smarter, and I don't go around breaking other people's equipment.
+Emperor Ducksly "I'll never understand what the Captain sees in you. I'm smarter, and I don't go around breaking other people's equipment. #Ducksly
 
-Emperor Ducksly "I'll be waiting for you to come fix this.
+Officer JV "What are you on about? #JV
+
+Emperor Ducksly "I'll be waiting for you to come fix this. #Ducksly
 
 //disconnects ducksly
 -> DONE
