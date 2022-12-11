@@ -1,4 +1,109 @@
 === Day2_JV_Baha ===
-Day2_JV_Baha
+//DOVER connects JV to BAHA the Bridge on the switchboard.
+~ day2_sceneChoice = false //JV_Baha = false
 
+Lt Dover "You got it, Captain. Patching you in now. #Dover
+
+Cpt Baha "Thank you, Lieutenant. #Baha
+
+//SFX, line connecting and Baha picking up. 
+
+//JV is singing, doesn't notice the line's connected. 
+Officer JV "I don't wanna wait...for our liiiiives to be over... #JV
+
+Cpt Baha "J.V.? #Baha
+
+Officer JV "I want to know right now what will it beeeeeheheheeee...#JV 
+
+Cpt Baha "J.V..... #Baha
+
+Officer JV "I DON'T WANNA WAIT - #JV 
+
+Cpt Baha "J.V! #Baha
+
+Officer JV "Ah! Captain, you startled me! #JV 
+
+Cpt Baha "Sorry to have disturbed your karaoke session. #Baha
+
+Officer JV "I would consider it more of a recording sesh, I'm a shoe in for a Space Grammy. #JV 
+
+Cpt Baha "You'll have my vote. #Baha 
+
+//regaining composure
+Officer JV "Ha...how can I help you today, Captain? #JV 
+
+Cpt Baha "I wanted to follow up on our conversation yesterday. My writing? #Baha
+
+Officer JV "Your 'ART'. #JV 
+
+Cpt Baha "Whatever you want to call it, I prepared a sample. #Baha
+
+Officer JV "Oooooh, yes please. Hold on, let me dust off my bongos. #JV 
+
+Cpt Baha "It's not a poetry reading, it's...romance. #Baha 
+
+Officer JV "Shut the airlock door, you're kidding. #JV 
+
+Cpt Baha "I do not joke about my art. #Baha
+
+Officer JV "So you admit that it's your 'ART'? #JV 
+
+Cpt Baha "Do you want to hear it or not? #Baha 
+
+Officer JV "Ok, I'm sorry, I'm listening. #JV 
+
+//clears his throat
+Cpt Baha "She looked out the paned window, fogged with her longing sighs. The moor stretched out into the morning mist; she hadn't slept a wink. He was out there. Felton was out there. And then, he WAS there. Felton, materializing from the mist, his shirt billowing in the damp air.  #Baha 
+    //NOTE: this should probably be split into multiple lines 
+
+//silence
+Officer JV "... #JV 
+
+Cpt Baha "J.V.? Are you there? #Baha
+
+Officer JV "Yeah, I'm here. #JV
+
+Cpt Baha "Well, what did you think? #Baha
+
+{B_JV_relCount >= 3: //Baha & JV's relationship was improved
+    -> JV_B_PositiveReview
+- else: //B_JV_relCount < 3:Baha and JV's relationship has worsened
+    -> JV_B_NegativeReview
+}
+
+=== JV_B_PositiveReview ===
+//Revisit and finish
+Officer JV "That was really great. #JV
+
+Cpt Baha "You don't mean that... #Baha 
+
+Officer JV "I totally do! Look, I may not be the most literary creature in the world, but that sounded really pretty to me. #JV 
+
+Officer JV "Maybe a little silly at times - #JV 
+
+Cpt Baha "'Silly'? I knew it... #Baha
+
+Officer JV "But there's nothing wrong with 'silly'! I say lean into that even more! If you're gonna do genre like this, really go for it, ya know? #JV 
+
+-> D2_JV_Baha_End
+
+=== JV_B_NegativeReview ===
+//I wanna revisit this section. I think it's in a weird plave of being too on the nose and not clear enough, it's just muddy. 
+Officer JV "Maybeeeee I'm actualy not the best person to give you reviews on this sort of thing. #JV
+
+Cpt Baha "You didn't like it? #Baha
+
+Officer JV "No, no, I didn't say that - #JV 
+
+Cpt Baha "But you have nothing to say about it. Nothing positive anyways. #Baha
+
+Officer JV "Please, don't be mad at me. #JV 
+
+Cpt Baha "I'm not mad at you. I just wish you'd be honest with me. #Baha
+
+-> D2_JV_Baha_End
+
+=== D2_JV_Baha_End ===
+
+//SFX: The line disconnects
 -> DONE
