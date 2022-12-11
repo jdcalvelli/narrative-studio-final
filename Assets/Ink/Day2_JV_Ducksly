@@ -1,4 +1,81 @@
 === Day2_JV_Ducksly ===
-CONTENT TBD
+Lt Dover "Yeah sure thing. One sec. #Dover
 
+Emperor Ducksly "Of course, not like time is of the essence. #Ducksly
+
+//ducksly is patched to JV
+//SFX, line connecting and JV picking up.
+
+Officer JV "What's up duck-breath? I'm kinda busy. #JV
+
+Emperor Ducksly "Is that so? Pray tell Officer Veldspar what could you be busy with? #Ducksly
+
+Officer JV "Nothing too important, just making sure that the ship doesn't explode so we don't get jettisoned from the Vespira. Like I said nothing too important. #JV
+
+Emperor Ducksly "...Quack! #Ducksly
+
+Officer JV "I'm just kidding Ducksly. Relax! I mean... I am doing that but we're not in any immediate danger or anything. So what's up?
+
+Emperor Ducksly "Well, I need to make a maintenance request.
+
+Officer JV "Is it mission critical?
+
+Emperor Ducksly "It's one of my centrifuges. someone tampered with it, turning into a slapdashed blender. I wonder who c-
+
+Officer JV "So it's not mission critical?
+
+Emperor Ducksly "All my work is mission critical! 
+
+Officer JV "Sorry Duck, captain's orders; anything not mission critical is put on the bottom of the list of maitenance requests.
+
+Emperor Ducksly "But my centrifuge! I need it for- 
+
+Officer JV "Your checklsit?
+
+Emperor Ducksly "We'll not necessarily...
+
+Officer JV "Then sorry bud. No can do.
+
+Emperor Ducksly "...Quack!
+
+Emperor Ducksly "I know you did it.
+
+Officer JV "Oh? Did what.
+
+Emperor Ducksly "I know you tampered with with my centrifuge! Who else could've done it?
+
+Officer JV "Proof? Sure it wasn't one of your medical staff. 
+
+Emperor Ducksly "Oh please!
+
+Officer JV "It could have been someone trying to make a move on your station. 
+
+Emperor Ducksly "...
+
+Officer JV "I'm just messing with you Ducksly yeah I did it!
+
+Emperor Ducksly "Quack!
+
+Officer JV "Sorry I just wanted to see if you would believe that.
+
+Officer JV "I can fix it, it's really not that hard to fix.
+->reprimand_JV
+
+//At this point Dover/ducksly choice comes into play.
+===reprimand_JV=== 
+Emperor Ducksly "Why would you do something like that?
+
+Officer JV "Calm down, like I said it's an easy fix. 
+
+Emperor Ducklsy "You always do this. You know every one of your pranks hinders my own work.
+
+Emperor Ducksly "You only do this because the Captain views you so highly.
+
+Officer JV "Ducksly chill, it's like 2 lines of code. I can come fix it in just a few.
+
+Emperor Ducksly "I'll never understand what the Captain sees in you. I'm smarter, and I don't go around breaking other people's equipment.
+
+Emperor Ducksly "I'll be waiting for you to come fix this.
+
+//disconnects ducksly
 -> DONE
