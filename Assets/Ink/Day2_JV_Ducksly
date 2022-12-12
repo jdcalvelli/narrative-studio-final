@@ -37,7 +37,7 @@ Emperor Ducksly "But my centrifuge! I need it for- #Ducksly
 
 Officer JV "Your checklsit? #JV
 
-Emperor Ducksly "We'll not necessarily... #Ducksly
+Emperor Ducksly "Well not necessarily... #Ducksly
 
 Officer JV "Then sorry bud. No can do. #JV
 
@@ -64,9 +64,12 @@ Emperor Ducksly "Quack! #Ducksly
 Officer JV "Sorry I just wanted to see if you would believe that. #JV
 
 Officer JV "I can fix it, it's really not that hard to fix. #JV
-{JV_Duck_relCount >= 3}->GetToKnow_JV
-{JV_Duck_relCount < 3}->Reprimand_JV
 
+{JV_Duck_relCount >= 3: 
+    ->GetToKnow_JV
+- else: 
+    ->Reprimand_JV
+    }
 
 //At this point Dover/ducksly choice comes into play.
 

@@ -65,10 +65,61 @@ Emperor Ducksly Yes and I simply won't stand for it! I won't stand for it at all
 
 Lt Dover "Jeez you make it sound like she destroyed the centrifuge. #Dover
 
-Emperor Ducksly "
+Emperor Ducksly "She might as well have! She's set my research back AT LEAST a day or two. #Ducksly 
 
+*GASP! How will you recover from this?
+*That monster!
+
+-Emperor Ducksly "Exactly! I went to the Captain and he said he would have a stern talking to with her. Thank the Holy Bread Crumbs. #Ducksly
+
+Lt Dover "Yeah tampering with ship equipment is a big no no with the Captain. #Dover
+
+Emperor Ducksly "But you know something my non-avian friend? I don't think it's enough. I demand retribution. #Ducksly
+
+Emperor Ducksly "I'm going to give her a taste of her own medicine? #Ducksly
+
+*Oh I didn't know she was sick!
+->Dover_BadJoke
+*You're going to prank her?
 ->Day2_DD_Continue1
+
+===Dover_BadJoke===
+->Day2_DD_Continue1
+Emperor Ducksly "... #Ducksly
+
+Lt Dover "I'm sorry. You just- You just set it up for me. I couldn't pass it down! #Dover
+
+Emperor Ducksly "I don't have time for your shenanigans! I'm trying to scheme my revenge prank! #Ducksly
+->Day2_DD_Continue1
+
 ===Day2_DD_Continue1===
-Lt Dover "Ok what did you have in mind? 
+Lt Dover "Ok what did you have in mind? #Dover
+
+Emperor Ducksly "The first is quite tame by prank standards: it simply would be taping a 'I"m stupid'sign to her back. #Ducksly
+
+Lt Dover "Wow that is quite tame I was worried there for sec. #Dover
+
+Emperor Ducksly "The other, and I must say this one is delightlfully dubious. (Chuckles) #Ducksly
+
+Lt Dover "Stop gassing yourself up and just tell me. #Dover
+
+Emperor Ducksly "Are you ready? I'm going to jettison her tools out of the airlock. #Ducksly
+
+Lt Dover "... #Dover
+
+Emperor Ducksly "... #Ducksly
+
+Lt Dover "Oh my god your serious? #Dover
+
+Emperor Ducksly " I am completely serious. Which do you think I should do? #Ducksly
+
+*Start of simple: The 'I'm stupid' sign will show her.
+~JV_Duck_relCount ++
+*The tools, jettison them.
+~JV_Duck_relCount --
+
+-Emperor Ducksly "Perfect! Thank you Dover. Your help has proved most fruitful. I'll be sure to keep you updated. #Ducksly
+
+Lt Dover "Uh yeah happy to help. #Dover
 
 -> DONE
