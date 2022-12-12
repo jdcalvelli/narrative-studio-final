@@ -55,10 +55,10 @@ Lt Dover "In a non-condescending tone? #Dover
 
 Emperor Ducskly "Lieutenant, I assure you I conveyed my displeasure to the Captain as succinctly and respectfully as possible! #Ducksly
 
-* Have you ever considered that maybe you guys are on the same team?
+* Have you ever considered that maybe you guys are on the same team? #Dover
     ~ B_Duck_relCount -- //lower the Baha & Ducksly relationship by 1
     -> D1_D_ImproveDBH
-* If the Captain doesn't know, He can't be upset can he?
+* If the Captain doesn't know, He can't be upset can he? #Dover
     ~ B_Duck_relCount ++ //lower the Baha & Ducksly relationship by 1
     -> D1_D_WorsenDBH
 
@@ -75,17 +75,17 @@ Lt Dover "And the Captain wants you to conduct health check ups before we reach 
 
 Emperor Ducksly "Hmmmmmm...Quack! #Ducksly
 
-Lt Dover "Smartest Duck in the galaxy. Come on, Ducksly. I set up the dots, now you just need to connect them. #Dover
+Lt Dover "Smartest Duck in the galaxy...
 
-Emperor Ducksly "I'm really not following. #Ducksly
+* Come on, Ducksly. I set up the dots, now you just need to connect them. #Dover //give him one last chance 
+    Emperor Ducksly "I'm really not following. #Ducksly 
+* You guys literally want the same thing! #Dover //cut to the chase
 
-Lt Dover "You guys literally want the same thing! #Dover
-
-Emperor Ducksly "Ah, eure-quack! Lieutenant, I see what you are summarizing! #Ducksly
+- Emperor Ducksly "Oh! Eure-quack! Lieutenant, I see now what you are summarizing! #Ducksly
 
 Lt Dover "Finally. #Dover
 
-Emperor Ducksly "Thank you, I'll be sure to explain to the Captain how our agendas align. #Ducksly
+Emperor Ducksly "Thank you, I'll be sure to explain to the Captain how our agendas truly align. #Ducksly
 
 Lt Dover "That's not what I - # Dover
 Lt Dover "Oh, whatever." #Dover
@@ -95,22 +95,27 @@ Lt Dover "Oh, whatever." #Dover
 === D1_D_WorsenDBH ===
 Emperor Ducksly "Are you suggesting that I subvert the Captain's orders? #Ducksly
 
-Lt Dover "I would say subverting. You would still be following his orders, just not tellig him the other bits. #Dover
+Lt Dover "I wouldn't say 'subverting'. You'd still be following his orders, just not telling him...the other bits. #Dover
 
-Emperor Ducksly "Hmm...This would result in a win-win scenario for myself and the Captain. #Ducksly
-Lt Dover "Exactly. Everyone wins. If I were you I just wouldn't let thte Captain know. #Dover
+Emperor Ducksly "Hmm...This could result in a mutually victorious scenario... #Ducksly
 
-Emperor Ducksly "But isn't this grounds for treason? #Ducksly
+Lt Dover "Exactly. Everyone wins.
+Lt Dover "But..if I were you, I wouldn't tell the Captain. #Dover
+
+Emperor Ducksly "But, could this be construed as treason? #Ducksly
 
 Lt Dover "You're complying with the Captain. #Dover
 
-Emperor Ducksly "Yes but- #Ducksly
+Emperor Ducksly "Yes, but- #Ducksly
 
-Lt Dover "You are COMPLYING with the Captain. #Dover
+Lt Dover "You are 'COMPLYING' with the Captain. #Dover
 
-Emperor Ducksly "You're right. I won't question it further. #Ducksly
+Emperor Ducksly "QUACK. You're right. I won't question your un-feathered wisdom further. #Ducksly
 
 Lt Dover "It will be our little secret. #Dover
+
+Emperor Ducksly "(whispering) Quackcelsior! #Ducksly
+
 -> DONE
 
 === D1_D_BJV === //Day 1: Baha and JV spoke
