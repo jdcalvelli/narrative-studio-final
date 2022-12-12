@@ -1,4 +1,10 @@
 === Day1_Dover_Baha ===
+//TESTING PURPOSES, COMMENT OUT WHEN DONE IN THIS FILE
+    ~ day1_sceneChoice = true 
+        //Baha_Ducksly = true
+    // ~ day1_sceneChoice = false 
+        //Baha_JV = false
+
 //Day 1: DOVER connects for a private conversation with BAHA.
 
 Lt Dover "Guess I'll see how the Captain is doing. #Dover
@@ -8,107 +14,149 @@ Lt Dover "Guess I'll see how the Captain is doing. #Dover
 
 Cpt Baha "Dover. Thanks for picking up. I hope I'm not taking you away from your responsibilities. #Baha
 
-Lt Dover "No need to apologize Captain! Not much going on over here. #Dover
+Lt Dover "No need to apologize Captain! Not much going on over here right now. #Dover
 
-Cpt Baha "I'm sure. #Baha.
-
-//Baha looks unsure
+Cpt Baha "Sure.... #Baha.
 
 //A beat
 Lt Dover "Everything ok Cap? #Dover
 
-Cpt Baha "Of course...You know how it is. Everyone's getting their Pre-arrival checks in. #Baha
+Cpt Baha "You know how it is. Everyone's getting their pre-arrival checks in on schedule. #Baha
 
-Lt Dover "Oh for sure, I can hear people running around. #Dover
+Lt Dover "Oh for sure, I can hear people running around, the switchboard's been on fire. #Dover
 
-Lt Dover "Of course, because you can hear everything through the coms. #Baha
+Cpt Baha "Are the lines secure? #Baha
 
-*Oh No I can just hear them outside my door... #Dover
+* Of course, Captain. #Dover
+* As secure as it can be, Captain. #Dover 
 
-*That's right. I hear everything from my lair! #Dover
+- Cpt Baha "Whatever is said stays between between you, me, and the Vespira, eh?
 
-//a moment of silence
+Cpt Baha "I know this is your first voyage with this crew, I hope they've been treating you well?
 
--Cpt Baha "I'm sure you already know I talked to Ducksly not to long ago. #Baha
+//WHO SPOKE IN THE PRIMARY CONVO? 
+{day1_sceneChoice == true: //true = Baha & Ducksly spoke
+    -> D1_B_BD
+- else: //false = Baha & JV spoke
+    -> D1_B_BJV
+}
 
-Lt Dover "Yeah! How'd that go? they mentioned urgent business. #Dover
+=== D1_B_BD === //Day 1: Baha & Ducksly Spoke
+* Friendly faces all around, Sir. #Dover
+    Cpt Baha "Glad to hear it. I imagine it can feel pretty cooped up in there, all on your own. #Baha
+* Officer Ducksly has certainly been persistent. #Dover
+
+- Cpt Baha "I actually just got off the comms with Ducksly not too long ago. #Baha
+
+Lt Dover "Yeah, they mentioned urgent business? #Dover
 
 Lt Dover "Hard to tell if something is acutally serious with that one sometimes. #Dover
 
-Cpt Baha "It was about his checklist. #Baha
+//Cpt Baha "It was about their checklist. #Baha
 
-Cpt Baha "Apparently he's got too many experiments going on to actually start on his checklist. #Baha
+Cpt Baha "Apparently, they've got too many experiments going on to actually start on their checklist. #Baha
 
-Lt Dover "Oh yeah they've been studying our bodies or something right? #Dover
+Lt Dover "Studying our bodies' physio-whatever right? #Dover
 
 Cpt Baha "You knew about them? #Baha
 
-Lt Dover "... #Dover
+* Stay Silent #Dover
+* ...No? #Dover
 
-Cpt Baha "Either way... I shouldn't have to ask my science officer to do his job. #Baha
+- Cpt Baha "Either way... I shouldn't have to ask my science officer to do their job. #Baha
 
-*Wait. Don't their experiments kinda count as health check ups? #Dover
-->Wait
+* Don't their experiments kinda count as health check ups? #Dover //defend Ducksly
+    <- DefendDucksly_Response
+* This is your ship, Captain. Your word is law. #Dover //back up Baha
+    <- BackUpBaha_Response
+    
+- -> OtherProblem
 
-*Well, this is your ship Captain. You word is law. #Dover
-->Well
+///////////////////////////////////////////////////////////////////////
+//BAHA & DUCKSLY THREADS
 
-=== Wait ===
+=== DefendDucksly_Response === //THREAD
 Cpt Baha "How do you mean? #Baha
 
-Lt Dover "Well, like I said, they've been studying the conditions of our bodies. #Dover
+Lt Dover "Well, that means if something was wrong with one of our bodies they would've already notified you? #Dover
 
-Cpt Baha "Mhmm. #Baha
+//Begrudginly
+Cpt Baha "Hmmm... #Baha
+-> DONE
 
-Lt Dover "And that means if something was wrong with one of our bodies they would've already notified you. #Dover
+=== BackUpBaha_Response === //THREAD 
+Cpt Baha "You're right. You know I don't like to be the bad guy,but we need to maintain order. #Baha
 
-Cpt Baha "Right. #Baha
+Lt Dover "Exactly! Show 'em what for! #Dover
+-> DONE
+///////////////////////////////////////////////////////////////////////
 
-Lt Dover "So doesn't that imply that you're checking up on the patients health condition as well? #Dover
-
-Cpt Baha "Oh. #Baha
-
-Lt Dover "Did you guys not realize that? That you were both on the same page? #Dover
-
-Cpt Baha "I guess you're right. But then there's the other problem. #Baha
-
-Lt Dover "Other Problem? #Dover
-->OtherProblem
-
-=== Well ===
-Cpt Baha "You're right. You know I don't like to be the bad guy. But we need to maintain order. #Baha
-
-Lt Dover "Exactly! Show them what for! #Dover
-
-Cpt Baha "Then there's this other problem. #Baha
-
-Lt Dover "Other Problem? #Dover
-->OtherProblem
-
-->DONE
 === OtherProblem ===
-Cpt Baha "Regardless of what I said before, Ducksly has displayed zero care for the ship or anyone on this crew. #Baha
+Cpt Baha "Then there's the other problem. #Baha
 
-Lt Dover " Oh what! They're nice to me? # Dover
+Lt Dover "'Other' problem? #Dover
+
+Cpt Baha "Regardless of the experiments, Ducksly has displayed zero care for the ship, nevermind anyone on this crew. #Baha
+
+Lt Dover "They've been nice to me? # Dover
 
 Cpt Baha "Hmm. I just don't know what to do with him. #Baha
 
-Cpt Baha "I've served with a lot of hard heads over my career, but Ducksly... #Baha
+Cpt Baha "I've served with a lot of hard heads over the course of my career, but Ducksly... #Baha
 
-Cpt Baha "And he also has this weird rivalry with Officer Veldspar? #Baha
+//Cpt Baha "And he also has this weird rivalry with Officer Veldspar? #Baha
 
-*Maybe you should take interest in his Work? Might open him up a bit mroe? #Dover
-->Consider
+* Maybe you should take interest in his work? Might open him up a bit more? #Dover
+    ~ B_Duck_relCount ++ //raise Baha & Ducksly relCount by 1
+* Inviting our crew to happy hours might be worth something. #Dover
+    ~ B_Duck_relCount -- //lower Baha & Ducksly relCount by 1
 
-*Inviting to our crew happy hours might be worth something. #Dover
-->Consider
+- Cpt Baha "Definitely something to consider. Thank you, Dover. #Baha
 
-=== Consider ===
-Cpt Baha "Something to defintitely consider. Thank you Dover. #Baha
+Lt Dover "Happy to help, Captain. #Dover
 
-Lt Dover "Happy to help captain. #Dover
-
-Cpt Baha "Well then, back to work. #Baha
-
-//baha Signs off. 
+//BAHA Signs off. 
 -> DONE
+
+///////////////////////////////////////////////////////////////////////
+=== D1_B_BJV === //Day 1: Baha & JV Spoke
+* Friendly faces all around, Sir. #Dover
+    Cpt Baha "Glad to hear it. I imagine it can feel pretty cooped up in there, all on your own. #Baha
+* J.V. has been especially welcoming. #Dover
+
+- Cpt Baha "Yes, J.V.’s always been chipper, that one. Known her a long time myself. #Baha 
+
+Cpt Baha "Lt. Dover, do you have any hobbies? #Dover
+
+* I was big into reality TV shows back on Earth. #Dover
+    Cpt Baha "I always found those a little crass...people can be so cruel to one another. #Baha 
+* I've been known to read a novel or two. #Dover 
+
+- Cpt Baha "You know, I’m a writer myself. #Baha
+
+Lt Dover "Oh, I bet with a career as long as yours, you have some adventures to write about. #Dover
+
+Cpt Baha "Oh no, I’m no Jules Verne. I’m more of an Brontë-man. #Baha
+
+Lt Dover "Sir, I would never have guessed. #Dover
+Lt Dover "Can I read anything? #Dover
+
+Cpt Baha "Oh no, I’ve never shared my work with anyone. Except J.V. of course. #Baha 
+
+* If J.V. says your writing is good, I’m sure it is.
+    ~ B_JV_relCount ++ //raise Baha & JV relationship by 1
+    Cpt Baha "Perhaps you’re right. I should open up a bit, connect with the crew, as it were. #Baha
+* Do you think J.V. is the best critic?
+    ~ B_JV_relCount -- //lower Baha & JV relationship by 1
+    Cpt Baha "She wouldn’t lie to me, would she? We’ve known each other so long… #Baha
+    
+- Lt Dover "Only one way to find out, Sir. #Dover
+
+Cpt Baha "I’ll see about sending you an excerpt. Thank you for the chat, Lt. Dover.
+
+Lt Dover "Anytime, Sir. 
+
+
+-> DONE
+
+

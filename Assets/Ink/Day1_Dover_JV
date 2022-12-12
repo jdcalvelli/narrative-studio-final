@@ -4,9 +4,9 @@
 //WHERE WE LEFT OFF: Consolidating the conversation into one standard convo that branches out and bottlenecks. 
 
 //TESTING PURPOSES, COMMENT OUT WHEN DONE IN THIS FILE
-    // ~ day1_sceneChoice = true 
+    ~ day1_sceneChoice = true 
         //Baha_Ducksly = true
-    ~ day1_sceneChoice = false 
+    // ~ day1_sceneChoice = false 
         //Baha_JV = false
 
 Lt Dover "Guess I'll see what's up with J.V. #Dover
@@ -46,19 +46,11 @@ Officer JV "Baha. He didn't answer me! #JV
 - Officer JV "All I'm saying is that the Captain should always be on call for his crew. #JV
 
 * There will be other chances to call him Baha Blast. #Dover
-    <- Gig_Response
+    Officer JV "(Groans) You pass up the gig of a lifetime so you can stay on the ship of your favorite captain, the least he could do is answer. #JV 
 * He just didn't answer this one time. It's hardly the end of the world. #Dover
-    <- DidntAnswer_Response
+    Officer JV "It's not just this "one time" though. #JV 
 
 - -> D1_DJV_Continue1
-
-=== Gig_Response === //A THREAD
-Officer JV "(Groans) You pass up the gig of a lifetime so you can stay on the ship of your favorite captain, the least he could do is answer. #JV 
-    -> DONE
-
-=== DidntAnswer_Response === //A THREAD
-Officer JV "It's not just this "one time" though. #JV 
-    -> DONE
 
 === D1_JV_BJV === //Day 1: Baha & JV Spoke
 Officer JV "I feel like he still doesn't take me seriously. #JV 
@@ -68,19 +60,11 @@ Lt Dover "What do you mean? You're Head of Engineering, I don't think it gets mu
 Officer JV "It's not my position on the crew, it's me and my friend. #JV
 
 * You've known each other a long time. #Dover
-    <- LongTime_Response
+    Officer JV "Since my first grunt rotation. 'Plucked me from obscurity'. #JV
 * Doesn't that muddy things? #Dover
-    <- Muddy_Response
-
+    Officer JV "It hasn't before. 10 years we've known each other. I don't know what's changed. #JV
+    
 - -> D1_DJV_Continue1
-
-=== LongTime_Response ===
-Officer JV "Since my first grunt rotation. 'Plucked me from obscurity'. #JV
--> DONE
-
-=== Muddy_Response ===
-Officer JV "It hasn't before. 10 years we've known each other. I don't know what's changed. #JV
--> DONE
 
 === D1_DJV_Continue1 ===
 Officer JV "Ever since we left on this mission, Baha's been such a hardass. #JV 
