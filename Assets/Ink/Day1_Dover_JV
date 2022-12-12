@@ -3,6 +3,12 @@
 
 //WHERE WE LEFT OFF: Consolidating the conversation into one standard convo that branches out and bottlenecks. 
 
+//TESTING PURPOSES, COMMENT OUT WHEN DONE IN THIS FILE
+    // ~ day1_sceneChoice = true 
+        //Baha_Ducksly = true
+    ~ day1_sceneChoice = false 
+        //Baha_JV = false
+
 Lt Dover "Guess I'll see what's up with J.V. #Dover
 //dover patches into J.V
 //SFX: connection, line picking up
@@ -19,6 +25,12 @@ Officer JV "Yeah? You got jokes? #JV
 
 Officer JV "I'll only need a minute, I promise. Just wanted to vent about something. #JV
 
+Lt Dover "Oh No! What's wrong? #Dover
+
+Officer JV "You already know. #JV
+
+Lt Dover "Do I? #Dover
+
 {day1_sceneChoice == true: //true = Baha & Ducksly spoke
     -> D1_JV_BD
 - else: //false = Baha & JV spoke
@@ -26,80 +38,101 @@ Officer JV "I'll only need a minute, I promise. Just wanted to vent about someth
 }
 
 === D1_JV_BD === //Day 1: Baha & Ducksly Spoke
-Lt Dover "Oh No! What's wrong? #Dover
-
-Officer JV "You already know. #JV
-
-Lt Dover "Do I? #Dover
-
 Officer JV "Baha. He didn't answer me! #JV
 
-*Oh no! How could he! #Dover
-*Captain's probably just a busy guy. #Dover
+* Oh no! How could he! #Dover
+* Captain's probably just a busy guy. #Dover
 
--Officer JV "All I'm saying is that the Captain should always be on call for his crew. #JV
+- Officer JV "All I'm saying is that the Captain should always be on call for his crew. #JV
 
-Lt Dover "There will be other chances to call him Baha Blast. #Dover
+* There will be other chances to call him Baha Blast. #Dover
+    <- Gig_Response
+* He just didn't answer this one time. It's hardly the end of the world. #Dover
+    <- DidntAnswer_Response
 
-Officer JV "(Groans)You pass up the gig of a lifetime so you can stay on the ship of your favorite captain, the least he could do is answer. #JV 
+- -> D1_DJV_Continue1
 
-Lt Dover "Hey now he just didn't answer this one time, it's hardly the end of the world. #Dover
+=== Gig_Response === //A THREAD
+Officer JV "(Groans) You pass up the gig of a lifetime so you can stay on the ship of your favorite captain, the least he could do is answer. #JV 
+    -> DONE
 
-Officer JV "It's not just this one time though #JV 
+=== DidntAnswer_Response === //A THREAD
+Officer JV "It's not just this "one time" though. #JV 
+    -> DONE
 
-Lt Dover "Oh? #Dover
+=== D1_JV_BJV === //Day 1: Baha & JV Spoke
+Officer JV "I feel like he still doesn't take me seriously. #JV 
 
-Officer JV "Ever since we left on this mission he's been such a hardass. #JV 
+Lt Dover "What do you mean? You're Head of Engineering, I don't think it gets much more serious than that. #Dover
 
-Lt Dover "To be honest I wouldn't want to be in the Captain's shoes. #Dover
+Officer JV "It's not my position on the crew, it's me and my friend. #JV
 
-Officer JV "(chuckling)Yeah you'd look like a clown in them. #JV
+* You've known each other a long time. #Dover
+    <- LongTime_Response
+* Doesn't that muddy things? #Dover
+    <- Muddy_Response
 
-Officer JV "But that's not all. We used ot be really close but now it's like he hardly wants to talk. #JV 
+- -> D1_DJV_Continue1
 
-Lt Dover "I'm sure you guys find time to chat. #Dover
+=== LongTime_Response ===
+Officer JV "Since my first grunt rotation. 'Plucked me from obscurity'. #JV
+-> DONE
+
+=== Muddy_Response ===
+Officer JV "It hasn't before. 10 years we've known each other. I don't know what's changed. #JV
+-> DONE
+
+=== D1_DJV_Continue1 ===
+Officer JV "Ever since we left on this mission, Baha's been such a hardass. #JV 
+
+Lt Dover "To be honest, I wouldn't want to be in the Captain's shoes. #Dover
+
+Officer JV "(Chuckling) Yeah, you'd look like a clown in them. #JV
+
+Officer JV "I don't know...We used to be really close, but now it's like he hardly wants to talk. Not about the real stuff. #JV 
+
+Lt Dover "I'm sure you guys will find time to chat. #Dover
 
 Officer JV "We do! And when we do it's great! But just getting him to chat is such a struggle now. #JV 
 
-Officer JV "I just want us to go back to being our little goon squad. #JV 
+Officer JV "I just want us to go back to being our little squad. #JV 
 
-Lt Dover "Hmm #Dover
+Lt Dover "Hmm... #Dover
 
-*Sometimes, people drift apart. Might be a sign to let go.
+*Sometimes, people drift apart. Might be a sign to let go, move on.
 -> D1_JV_DistanceBaha
 *You should tell him how you feel.
 -> D1_JV_ReconcileBaha
 
-=== D1_JV_BJV === //Day 1: Baha & JV Spoke
-
--> DONE
-
 === D1_JV_DistanceBaha ===
 Officer JV "You really think so? #JV 
 
-Lt Dover "We're coming up on the literal end of everything. Why not? #Dover
+Lt Dover "We're coming up on the Edge, the literal end of everything. Why not? #Dover
 
 Officer JV "I guess I would just feel bad. #JV 
 
-Lt Dover "Don't! It happens. Not that you have to be mean. But you don't have to keep trying if he's not. #Dover
+Lt Dover "Don't! It happens. You don't have to be mean, but you don't have to keep trying if he's not. #Dover
 
-Officer JV "That means I won't get to hear his bad writing (chuckles). #JV 
+Officer JV "I'd miss out on his writing (chuckles). #JV 
 
-Officer JV "But maybe you're right. Thanks Doverino! #JV 
+Officer JV "But maybe you're right. Thanks, Doverino! #JV 
+
+~ B_JV_relCount -- //reduce B_JV_relCount by 1
 
 ->DONE
+
 === D1_JV_ReconcileBaha ===
-Officer JV "That potentially creates conflict, so that's a big yikes for me. #JV 
+Officer JV "Share my feelings with Captain Stoicism? That's a big yikes for me. #JV 
 
 Lt Dover "So? #Dover
 
 Officer JV "Did you not just hear me say- #JV
 
-Lt Dover "I know what you said but we're about to reach the end of everything. Now's the perfect time to break bread. #Dover
+Lt Dover "I know what you said, but we're coming up on the Edge, the literal end of everything. Now's the perfect time to put things right. #Dover
 
 Officer JV "Hmm... #JV
 
-Lt Dover "How about this: What if when we reach the edge, and all that's there is a blank void inhabited by an incompressible space squid monster. #Dover
+Lt Dover "How about this: What if when we reach the Edge, and all that's there is a blank void inhabited by an incompressible space squid monster. #Dover
 
 Lt Dover "You wanna die on bad terms with the Captain in that scenario? #Dover
 
@@ -107,7 +140,10 @@ Officer JV "You think there's a giant space squid monster? #JV
 
 Lt Dover "What? No, it was... That's not the point J.V. #Dover
 
-Officer JV "No you're right. If there is a space squid monster, Baha and I will challenge it head on together. #JV 
+Officer JV "No, you're right. If there is a space squid monster, Baha and I will challenge it head on together. #JV 
 
 Officer JV "Thanks Doves, I appreciate it!
+
+~ B_JV_relCount ++ //reduce B_JV_relCount by 1
+
 -> DONE
