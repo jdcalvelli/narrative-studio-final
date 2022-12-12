@@ -1,91 +1,98 @@
 === Day1_Dover_Ducksly ===
+//TESTING PURPOSES, COMMENT OUT WHEN DONE IN THIS FILE
+     ~ day1_sceneChoice = true 
+        //Baha_Ducksly = true
+    // ~ day1_sceneChoice = false 
+        //Baha_JV = false
+
 //Day 1: DOVER connects for a private conversation with DUCKSLY.
 
 Lt Dover "Alright Dover, prep yourself. Let's see what Ducksly wants. #Dover
 
-//Ducksly is patched. 
+//Ducksly is patched in.
+//SFX, line connecting.
 
 Emperor Ducksly "Quackcelsior! #Ducksly
 
 Lt Dover "He- I mean Quackcelsior! #Dover
 
-Emperor Ducksly "Thank you for taking time to speak with me Dover. I wont take too much of your time. #Ducksly
+Emperor Ducksly "Thank you for taking time to speak with me, Dover. I wont take too much of your time. #Ducksly
 
-Lt Dover "No worries, I've got nothing else going on anyways. #Dover
+Lt Dover "No worries, it's not like I've got anything else going on. #Dover
 
-Emperor Ducksly "I'm sure. Something has recently troubled me and I wanted to run my thoughts past someone. #Ducksly
+Emperor Ducksly "I'm sure. Something has troubled me recently  and I wanted to run my thoughts past a kind ear. #Ducksly
 
-Emperor Ducksly "And since you're the only here I remotely trust with something like this I figured that someone would be you. #Ducksly
+Emperor Ducksly "Since you're the only humanoid here I remotely trust with something like this, I figured that kind ear might as well be you. #Ducksly
 
-Lt Dover "Hmm. What's up. #Dover
+Lt Dover "Thanks...what's up. #Dover
 
+{day1_sceneChoice == true: //true = Baha & Ducksly spoke
+    -> D1_D_BD
+- else: //false = Baha & JV spoke
+    -> D1_D_BJV
+}
+
+=== D1_D_BD === //Day 1: Baha and JV spoke
 Emperor Ducksly "It's about my recent conversation with the Captain. #Ducksly
 
 Emperor Ducksly "As I'm sure you know I've been conducting physiological experiments on the crew. #Ducksly
 
-Lt Dover "Yessir. #Ducksly
+Lt Dover "Right... #Ducksly
 
-Emperor Ducksly "Well after my conversation with the captain I've been instructed to abandon my projects and focus entirely on our arrival checkups. #Ducksly
+Emperor Ducksly "Well, after my conversation with the Captain I've been instructed to abandon my projects and focus entirely on our arrival checkups. #Ducksly
 
-*Oh no! Not your experiments! #Dover
-*I think that makes sense. #Dover
+* Not your experiments!!! #Dover
+    Emperor Ducksly "QUACK! #Ducksly
+* I think that makes sense. #Dover
 
--Emperor Ducksly "I could not disagree more with the Captain's request. I need him to understand the importantance of my experiments. #Ducksly
+- Emperor Ducksly "I could not disagree more with the Captain's request. I need him to understand the importantance of my experiments. #Ducksly
 
-Lt Dover "Well did you try to explain it to him? #Dover
+Lt Dover "Did you try to explain it to him? #Dover
 
-Emperor Ducksly "Lieutenant Dover of course I- #Ducksly
+Emperor Ducksly "Lieutenant Dover, of course I- #Ducksly
 
-Lt Dover "That wasn't in a condescending tone? #Dover
+Lt Dover "In a non-condescending tone? #Dover
 
-Emperor Ducksly "Quack! Of course not! I would never-#Ducksly
+Emperor Ducskly "Lieutenant, I assure you I conveyed my displeasure to the Captain as succinctly and respectfully as possible! #Ducksly
 
-Lt Dover "Ducksly...You really smart and all, but sometimes your social skills are not all there. #Dover
+* Have you ever considered that maybe you guys are on the same team?
+    ~ B_Duck_relCount -- //lower the Baha & Ducksly relationship by 1
+    -> D1_D_ImproveDBH
+* If the Captain doesn't know, He can't be upset can he?
+    ~ B_Duck_relCount ++ //lower the Baha & Ducksly relationship by 1
+    -> D1_D_WorsenDBH
 
-Emperor Ducskly "Lieutenant I assure you I conveyed my displeasure to the Captain as suscinctinly and as respectfully as possible! #Ducksly
-
-Lt Dover "I'm sure... #Ducksly
-
-*Ever thought that maybe you guys are on the same page?
-->Same_Page
-*If Captain doesn't know, He can't be upset can he?
-->Screw_It
-
-===Same_Page ===
+=== D1_D_ImproveDBH ===
 Emperor Ducskly "How do you mean? #Ducksly
 
-Lt Dover "Well your experiments are cnetered around monitoring our bodies over the course of the ship. #Dover
+Lt Dover "Your experiments are centered around monitoring our bodies over the course of the ship - #Dover
 
-Emperor Ducksly "Actually it's studying the effects of prolonged faster than light travel on a biological entity's phsyio- #Ducksly
+Emperor Ducksly "Actually, it's studying the effects of prolonged exposure to faster than light travel on a biological entity's phsyio- #Ducksly
 
-Lt Dover "Potato, potato Ducksly. #Dover
+Lt Dover "Potayto, potahto, Ducksly. #Dover
 
-Lt Dover "And the Captain want's you to conduct health check ups before we reach our destination. #Dover 
+Lt Dover "And the Captain wants you to conduct health check ups before we reach our destination. #Dover 
 
-Emperor Ducksly "Lieutenant if you're just going to repeat the obvious- #Ducksly
+Emperor Ducksly "Hmmmmmm...Quack! #Ducksly
 
-Lt Dover "Come on, You don't see where I'm going with this? #Dover
-
-Emperor Ducksly "hmm...Quack! #Ducksly
-
-Lt Dover "Smartest Duck in the galaxy. Come on Ducksly I set up the dots now you just need to connect them. #Dover
+Lt Dover "Smartest Duck in the galaxy. Come on, Ducksly. I set up the dots, now you just need to connect them. #Dover
 
 Emperor Ducksly "I'm really not following. #Ducksly
 
-Lt Dover "You guys are literally wanting the same thing! #Dover
+Lt Dover "You guys literally want the same thing! #Dover
 
-Lt Dover "You want to continue your experiments of studying the crew's bodies. #Dover
-
-Lt Dover "The Captain wants you do health checks, ON OUR BODDIES. #Dover 
-
-Emperor Ducksly "Ah, Quackcelsior! Lieutenant I see what you're summizing! #Ducksly
+Emperor Ducksly "Ah, eure-quack! Lieutenant, I see what you are summarizing! #Ducksly
 
 Lt Dover "Finally. #Dover
 
 Emperor Ducksly "Thank you, I'll be sure to explain to the Captain how our agendas align. #Ducksly
-->Considering_JV
 
-=== Screw_It ===
+Lt Dover "That's not what I - # Dover
+Lt Dover "Oh, whatever." #Dover
+
+-> DONE
+
+=== D1_D_WorsenDBH ===
 Emperor Ducksly "Are you suggesting that I subvert the Captain's orders? #Ducksly
 
 Lt Dover "I would say subverting. You would still be following his orders, just not tellig him the other bits. #Dover
@@ -104,9 +111,9 @@ Lt Dover "You are COMPLYING with the Captain. #Dover
 Emperor Ducksly "You're right. I won't question it further. #Ducksly
 
 Lt Dover "It will be our little secret. #Dover
-->Considering_JV
+-> DONE
 
-=== Considering_JV ===
+=== D1_D_BJV === //Day 1: Baha and JV spoke
 Emperor Ducksly "If it's alright, might I run something else by you? #Ducksly
 
 Lt Dover "Sure what's up? #Dover

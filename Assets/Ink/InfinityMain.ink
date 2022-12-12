@@ -78,8 +78,8 @@ VAR JV_Duck_relCount = 3 //JV & Ducksly
 // -> Day1_Baha_Ducksly
 // -> Day1_PrivateConvoChoice
 // -> Day1_Dover_Baha
--> Day1_Dover_JV
-// -> Day1_Dover_Ducksly
+// -> Day1_Dover_JV
+-> Day1_Dover_Ducksly
 
 //DAY 2
 // -> Day2_Start
