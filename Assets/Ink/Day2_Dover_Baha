@@ -1,4 +1,22 @@
 === Day2_Dover_Baha ===
-Day2_Dover_Baha
+//Day 2: Dover connects for a private conversation with Baha
+
+Lt Dover "Wonder what the Captain needs. #Dover
+
+//Dover patches themselves to Captain Baha
+
+//TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
+
+{day2_sceneChoice == true: //false = JV & Ducksly spoke
+    -> D2_B_JVD
+- else: //false = JV & Baha spoke
+    -> D2_B_JVB
+}
+
+=== D2_B_JVB=== //Day 2, JV spoke to Baha
+
+-> DONE
+
+=== D2_B_JVD === //Day 2, JV spoke to Ducksly
 
 -> DONE

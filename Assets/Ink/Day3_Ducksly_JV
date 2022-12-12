@@ -1,4 +1,7 @@
 === Day3_Ducksly_JV ===
-Day3_Ducksly_JV
+//DOVER connects JV to DUCKSLY in the Med Bay on the switchboard.
+~ day3_sceneChoice = true
+    //Ducksly_Baha = false
+    //Ducksly_JV = true
 
 -> DONE

@@ -1,6 +1,8 @@
 === Day2_JV_Baha ===
-//DOVER connects JV to BAHA the Bridge on the switchboard.
-~ day2_sceneChoice = false //JV_Baha = false
+//DOVER connects BAHA to JV in Engineering on the switchboard.
+~ day2_sceneChoice = false
+    //JV_Baha = false
+    //JV_Ducksly = true
 
 Lt Dover "You got it, Captain. Patching you in now. #Dover
 

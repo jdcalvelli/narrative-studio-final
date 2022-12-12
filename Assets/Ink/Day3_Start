@@ -1,4 +1,10 @@
 === Day3_Start ===
-Day3_Start
+//DAY 3, PRIMARY CONVERSATION REQUEST
+
+Cpt Baha "Hello lieutenant, would you mind connecting me with Officer, er Emperor, whatever he's going by these days, Ducksly in the Med Bay? #Baha
+    //-> Day3_Ducksly_Baha
+
+Officer JV "Dover! T-minus 'a few precious hours' until the Edge! Exciting stuff! Could you try and contain your enthusiasm though and patch me in to Ducksly in the Med Bay? #JV
+    //-> Day3_Ducksly_JV
 
 -> DONE

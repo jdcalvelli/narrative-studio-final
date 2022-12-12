@@ -1,4 +1,18 @@
 === Day2_Dover_Ducksly ===
-CONTENT TBD
+//Day 2: Dover connects for a private conversation with Ducksly
+
+//TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
+
+{day2_sceneChoice == true: //false = JV & Ducksly spoke
+    -> D2_D_JVD
+- else: //false = JV & Baha spoke
+    -> D2_D_JVB
+}
+
+=== D2_D_JVB=== //Day 2, JV spoke to Baha
+
+-> DONE
+
+=== D2_D_JVD === //Day 2, JV spoke to Ducksly
 
 -> DONE

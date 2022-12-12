@@ -1,4 +1,9 @@
 === Day2_JV_Ducksly ===
+//DOVER connects DUCKSLY to JV in Engineering on the switchboard.
+~ day2_sceneChoice = true 
+    //JV_Baha = false
+    //JV_Ducksly = true
+
 Lt Dover "Yeah sure thing. One sec. #Dover
 
 Emperor Ducksly "Of course, not like time is of the essence. #Ducksly
