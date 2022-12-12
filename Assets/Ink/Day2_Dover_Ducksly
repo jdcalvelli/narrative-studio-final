@@ -3,6 +3,18 @@
 
 //TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
 
+Lt Dover "Let's see what ye Royal Highness wants now. #Dover
+
+//SFX Ducksly being connected. 
+
+Emperor Ducksly "Quackcelsior Lieutenant Dover, I hope you're doing well. #Ducksly
+
+Lt Dover "Oh, Yeah I'm alright. Thank you for asking Ducksly! #Dover
+
+Emperor Ducksly "I'm sure you've heard about Officer J.V.'s recent prank on my centrifuges. #Ducksly
+
+Lt Dover "She did what? #Dover
+
 {day2_sceneChoice == true: //false = JV & Ducksly spoke
     -> D2_D_JVD
 - else: //false = JV & Baha spoke
@@ -10,21 +22,32 @@
 }
 
 === D2_D_JVB=== //Day 2, JV spoke to Baha
+Emperor Ducksly "A devilish ploy to hinder my work!
 
--> D2_D_JVD
+Lt Dover "Did you see her do that? Or is this just conjecture?
+
+Emperor Ducksly "Of course not! She's crafty. 
+
+Emperor Ducksly "No doubt she made sure to commit her prank while I was away from my station.
+
+Lt Dover "That must be a really strong feeling if you didn't see her.
+
+{JV_Duck_relCount >= 3: 
+    ->Day2_Positive_JVD
+- else: 
+    ->Day2_Negative_JVD
+    }
 
 === D2_D_JVD === //Day 2, JV spoke to Ducksly
-Lt Dover "Let's see what ye Royal Highness wants now. #Dover
+Emperor Ducksly "I can't believe that she would stoop so low as to monkey around with my equipment.
 
-//SFX Ducksly being connected. 
+Lt Dover "Did you see her do that? Or is this just conjecture?
 
-Emperor Ducksly "Quackcelsior Dover, I hope you're doing well. #Ducksly
+Emperor Ducksly "Of course not! But she admitted to it when you patched me through to her earlier.
 
-Lt Dover "Oh, Yeah I'm alright. Thank you for asking Ducksly! #Dover
+Lt Dover "Oh that'll do it. 
 
-Emperor Ducksly "I'm sure you've heard about J.V.'s recent prank on my centrifuges. #Ducksly
-
-Lt Dover "She did what? #Dover
+Emperor Ducksly "You should've seen the look on her face. She looked so pleased with herself. 
 
 {JV_Duck_relCount >= 3: 
     ->Day2_Positive_JVD
@@ -35,23 +58,23 @@ Lt Dover "She did what? #Dover
 ===Day2_Positive_JVD ===
 Emperor Ducksly "Now While I was initialy upset, I mean how could I not when they directly impede my research? Quack! #Ducksly
  
-Emperor Ducksly "After speaking with her I now see an opportunity has risen. #Ducksly
+Emperor Ducksly "But now I see an opportunity has risen. #Ducksly
 
-Lt Dover "What did she even do to your centrifuges? #Dover
+Lt Dover "What did she even do to your- #Dover
 
-Emperor Ducksly "I've deduced that the cause of the Captain's high outlook of JV is because, and I'm quoting her here "he just loves my whimsical nature". #Ducksly
+Emperor Ducksly "I've deduced that the cause of the Captain's high outlook of Officer JV is because of her adept skills at pranking!  #Ducksly
 
-*Um, are you sure she's not just messing with you?
+*Um, are you sure about that?
 *I can't even begin to imagine how many ways this could go wrong. 
 
 -Emperor Ducksly "Nonesense! I've already devised a foolproof plan.  #Ducksly
 
-Emperor Ducksly "I'll play a prank on her that will outshine all of her pranks! #Ducksly
+Emperor Ducksly "I'll play a prank on her that will outshine all of her pranks prior! #Ducksly
 
 Emperor Ducksly "And the Captain will have no choice but to put me in his good graces. #Ducksly
 
 *Ducksly, that's seriously not going to work out how you think it is. #Dover
-*Have you ever even played a prank on someone before?
+*Have you ever even played a prank on someone before? #Dover
 
 -Emperor Ducksly "Quack! Oh ye of little faith! #Ducksly
 
