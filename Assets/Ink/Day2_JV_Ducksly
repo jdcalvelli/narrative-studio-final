@@ -64,11 +64,16 @@ Emperor Ducksly "Quack! #Ducksly
 Officer JV "Sorry I just wanted to see if you would believe that. #JV
 
 Officer JV "I can fix it, it's really not that hard to fix. #JV
-->reprimand_JV
+{JV_Duck_relCount >= 3}->GetToKnow_JV
+{JV_Duck_relCount < 3}->Reprimand_JV
+
 
 //At this point Dover/ducksly choice comes into play.
 
+->DONE
 ===GetToKnow_JV===
+
+
 Emperor Ducksly "Tell me something Officer Veldspar: are these pranks of yours why the Captain views you so highly? #Ducksly
 
 Officer JV "What? #JV
@@ -85,11 +90,14 @@ Emperor Ducksly "Please... He even allows your little microgames to stay on the 
 
 Officer JV "Wait Ducksly he know's about that? #JV
 
-Emperor Ducksly "Whimisical nature eh? You'll have to shopw me this sometime. Ducskly out. #Ducksly 
+Emperor Ducksly "Whimisical nature eh? You'll have to show me this sometime. Ducskly out. #Ducksly 
 //ducksly disconnects.
 
 ->DONE
-===reprimand_JV=== 
+===Reprimand_JV=== 
+
+~ JV_Duck_relCount --
+//-1 JV_D
 Emperor Ducksly "Why would you do something like that? #Ducksly
 
 Officer JV "Calm down, like I said it's an easy fix. #JV

@@ -51,8 +51,7 @@ Lt Dover "I'm sure... #Ducksly
 *If Captain doesn't know, He can't be upset can he?
 ->Screw_It
 
-=== Same_Page ===
-
+===Same_Page ===
 Emperor Ducskly "How do you mean? #Ducksly
 
 Lt Dover "Well your experiments are cnetered around monitoring our bodies over the course of the ship. #Dover
@@ -137,10 +136,13 @@ Lt Dover "I doubt that. They migh be close but when the Captain wants something 
 Emperor Ducksly "I'm just having a hard time understanding what the Captain sees in her. #Ducksly 
 
 //VARIABLe here determines, JV-ducksly relationship for next day
-*Maybe you should try getting to really know J.V? 
+* Maybe you should try getting to really know J.V?
+~ JV_Duck_relCount ++ //improves jv_duck Relationship
 *Reprimand her to the Captain.
+~ JV_Duck_relCount -- //hinders jv_duck relationship
+    //JV_Ducksly --
 
--Emperor Ducksly "Perhaps you're right. #Ducksly
+-Emperor Ducksly "Perhaps you're right.  #Ducksly
 
 Lt Dover "I mean what else do you have to lose. #Dover 
 

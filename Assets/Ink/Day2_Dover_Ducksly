@@ -11,8 +11,64 @@
 
 === D2_D_JVB=== //Day 2, JV spoke to Baha
 
--> DONE
+-> D2_D_JVD
 
 === D2_D_JVD === //Day 2, JV spoke to Ducksly
+Lt Dover "Let's see what ye Royal Highness wants now. #Dover
+
+//SFX Ducksly being connected. 
+
+Emperor Ducksly "Quackcelsior Dover, I hope you're doing well. #Ducksly
+
+Lt Dover "Oh, Yeah I'm alright. Thank you for asking Ducksly! #Dover
+
+Emperor Ducksly "I'm sure you've heard about J.V.'s recent prank on my centrifuges. #Ducksly
+
+Lt Dover "She did what? #Dover
+
+{JV_Duck_relCount >= 3: 
+    ->Day2_Positive_JVD
+- else: 
+    ->Day2_Negative_JVD
+    }
+
+===Day2_Positive_JVD ===
+Emperor Ducksly "Now While I was initialy upset, I mean how could I not when they directly impede my research? Quack! #Ducksly
+ 
+Emperor Ducksly "After speaking with her I now see an opportunity has risen. #Ducksly
+
+Lt Dover "What did she even do to your centrifuges? #Dover
+
+Emperor Ducksly "I've deduced that the cause of the Captain's high outlook of JV is because, and I'm quoting her here "he just loves my whimsical nature". #Ducksly
+
+*Um, are you sure she's not just messing with you?
+*I can't even begin to imagine how many ways this could go wrong. 
+
+-Emperor Ducksly "Nonesense! I've already devised a foolproof plan.  #Ducksly
+
+Emperor Ducksly "I'll play a prank on her that will outshine all of her pranks! #Ducksly
+
+Emperor Ducksly "And the Captain will have no choice but to put me in his good graces. #Ducksly
+
+*Ducksly, that's seriously not going to work out how you think it is. #Dover
+*Have you ever even played a prank on someone before?
+
+-Emperor Ducksly "Quack! Oh ye of little faith! #Ducksly
+
+Emperor Ducksly "Now, I've got a couple of ideas that I've been ruminating on. #Ducksly
+
+->Day2_DD_Continue1
+
+=== Day2_Negative_JVD===
+
+Emperor Ducksly Yes and I simply won't stand for it! I won't stand for it at all! #Ducksly
+
+Lt Dover "Jeez you make it sound like she destroyed the centrifuge. #Dover
+
+Emperor Ducksly "
+
+->Day2_DD_Continue1
+===Day2_DD_Continue1===
+Lt Dover "Ok what did you have in mind? 
 
 -> DONE
