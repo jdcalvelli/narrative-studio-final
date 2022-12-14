@@ -108,6 +108,7 @@ Cpt Baha "I've served with a lot of hard heads over the course of my career, but
 
 * Maybe you should take interest in his work? Might open him up a bit more? #Dover
     ~ B_Duck_relCount ++ //raise Baha & Ducksly relCount by 1
+//show him who's boss
 * Inviting our crew to happy hours might be worth something. #Dover
     ~ B_Duck_relCount -- //lower Baha & Ducksly relCount by 1
 
