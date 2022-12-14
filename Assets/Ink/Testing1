@@ -11,94 +11,94 @@
 // * [CONNECT DUCKSLY] 
 // -> CHOICE2
 
-~ B_JV_relCount = 3 //Baha & JV 
-~ B_Duck_relCount = 3 //Baha & Ducksly
-~ JV_Duck_relCount = 3 //JV & Ducksly
+// ~ B_JV_relCount = 3 //Baha & JV 
+// ~ B_Duck_relCount = 3 //Baha & Ducksly
+// ~ JV_Duck_relCount = 3 //JV & Ducksly
 
 
 
-~ totalRelCount = B_JV_relCount + B_Duck_relCount + JV_Duck_relCount
+// ~ totalRelCount = B_JV_relCount + B_Duck_relCount + JV_Duck_relCount
 
-//REMINDER: WHY DID I DO IT THIS WAY? If I check the counts of 3 variables at once (ex. A > 3 && B > 3 && C > 3) and change one of those values, I get a Javascript error. 
-VAR B_JV_finalRel = "" //BAHA & JV final relationship count
-{B_JV_relCount < 3:
-    ~ B_JV_finalRel = "bad"
-- else:
-    ~ B_JV_finalRel = "good"
-}
+// //REMINDER: WHY DID I DO IT THIS WAY? If I check the counts of 3 variables at once (ex. A > 3 && B > 3 && C > 3) and change one of those values, I get a Javascript error. 
+// VAR B_JV_finalRel = "" //BAHA & JV final relationship count
+// {B_JV_relCount < 3:
+//     ~ B_JV_finalRel = "bad"
+// - else:
+//     ~ B_JV_finalRel = "good"
+// }
 
-VAR B_Duck_finalRel = ""
-{B_Duck_relCount < 3:
-    ~ B_Duck_finalRel = "bad"
-- else:
-    ~ B_Duck_finalRel = "good"
-}
+// VAR B_Duck_finalRel = ""
+// {B_Duck_relCount < 3:
+//     ~ B_Duck_finalRel = "bad"
+// - else:
+//     ~ B_Duck_finalRel = "good"
+// }
 
-VAR JV_Duck_finalRel = ""
-{JV_Duck_relCount < 3:
-    ~ JV_Duck_finalRel = "bad"
-- else:
-    ~ JV_Duck_finalRel = "good"
-}
+// VAR JV_Duck_finalRel = ""
+// {JV_Duck_relCount < 3:
+//     ~ JV_Duck_finalRel = "bad"
+// - else:
+//     ~ JV_Duck_finalRel = "good"
+// }
 
-VAR finalTotalRelCount = ""
-{B_JV_relCount < 3 && B_Duck_relCount < 3 && JV_Duck_relCount < 3:
-    ~ finalTotalRelCount = "bad"
-- else:
-    ~ finalTotalRelCount = "meh"
-}
+// VAR finalTotalRelCount = ""
+// {B_JV_relCount < 3 && B_Duck_relCount < 3 && JV_Duck_relCount < 3:
+//     ~ finalTotalRelCount = "bad"
+// - else:
+//     ~ finalTotalRelCount = "meh"
+// }
 
-current B_JV rel: {B_JV_finalRel}
-current B_Duck rel: {B_Duck_finalRel}
-current JV_Duck rel: {JV_Duck_finalRel}
-current final total rel count: {finalTotalRelCount}
+// current B_JV rel: {B_JV_finalRel}
+// current B_Duck rel: {B_Duck_finalRel}
+// current JV_Duck rel: {JV_Duck_finalRel}
+// current final total rel count: {finalTotalRelCount}
 
 
 
-//CHECK RELATIONSHIP COUNTS AND GO TO APPROPRIATE ENDING
-{
-//all rels have improved, go to BEST ENDING
-- B_JV_relCount >= 3 && B_Duck_relCount >= 3 && JV_Duck_relCount >= 3:
-    -> TESTEND1
-//All rels have been worsened, go to WORST ENDING 
-- finalTotalRelCount == "bad": //all relationships have gone below 3
-    -> TESTEND3
-//at least one relationship is KINDA MID
-//BAHA & JV rel is "bad"
-- B_JV_finalRel == "bad":
-    -> TESTEND2
-//BAHA & DUCK rel is "bad"
-- B_Duck_finalRel == "bad":
-    -> TESTEND2
-//JV & DUCK rel is "bad"
-- JV_Duck_finalRel == "bad":
-    -> TESTEND2
-}
+// //CHECK RELATIONSHIP COUNTS AND GO TO APPROPRIATE ENDING
+// {
+// //all rels have improved, go to BEST ENDING
+// - B_JV_relCount >= 3 && B_Duck_relCount >= 3 && JV_Duck_relCount >= 3:
+//     -> TESTEND1
+// //All rels have been worsened, go to WORST ENDING 
+// - finalTotalRelCount == "bad": //all relationships have gone below 3
+//     -> TESTEND3
+// //at least one relationship is KINDA MID
+// //BAHA & JV rel is "bad"
+// - B_JV_finalRel == "bad":
+//     -> TESTEND2
+// //BAHA & DUCK rel is "bad"
+// - B_Duck_finalRel == "bad":
+//     -> TESTEND2
+// //JV & DUCK rel is "bad"
+// - JV_Duck_finalRel == "bad":
+//     -> TESTEND2
+// }
 
-=== TESTEND1 ===
-This is ending no. 1! The BEST ending! 
+// === TESTEND1 ===
+// This is ending no. 1! The BEST ending! 
 
-Current B/JV relCount: {B_JV_relCount}
-Current B/Duck relCount: {B_Duck_relCount}
-Current JV/Duck relCount: {JV_Duck_relCount}
-Total Relationship Count: {totalRelCount}
+// Current B/JV relCount: {B_JV_relCount}
+// Current B/Duck relCount: {B_Duck_relCount}
+// Current JV/Duck relCount: {JV_Duck_relCount}
+// Total Relationship Count: {totalRelCount}
 
--> DONE
-=== TESTEND2 ===
-This is ending no. 2! The MEH ending! 
+// -> DONE
+// === TESTEND2 ===
+// This is ending no. 2! The MEH ending! 
 
-Current B/JV relCount: {B_JV_relCount}
-Current B/Duck relCount: {B_Duck_relCount}
-Current JV/Duck relCount: {JV_Duck_relCount}
-Total Relationship Count: {totalRelCount}
+// Current B/JV relCount: {B_JV_relCount}
+// Current B/Duck relCount: {B_Duck_relCount}
+// Current JV/Duck relCount: {JV_Duck_relCount}
+// Total Relationship Count: {totalRelCount}
 
--> DONE
-=== TESTEND3 ===
-This is ending no. 3! The WORST ending!
+// -> DONE
+// === TESTEND3 ===
+// This is ending no. 3! The WORST ending!
 
-Current B/JV relCount: {B_JV_relCount}
-Current B/Duck relCount: {B_Duck_relCount}
-Current JV/Duck relCount: {JV_Duck_relCount}
-Total Relationship Count: {totalRelCount}
+// Current B/JV relCount: {B_JV_relCount}
+// Current B/Duck relCount: {B_Duck_relCount}
+// Current JV/Duck relCount: {JV_Duck_relCount}
+// Total Relationship Count: {totalRelCount}
 
 -> DONE 

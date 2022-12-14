@@ -1,9 +1,88 @@
 === Finale_1 ===
-//Ending depending on the relationship counts.
-    // Variabes relisted as a reminder:
-        // VAR B_JV_relCount = 3 //Baha & JV 
-        // VAR B_Duck_relCount = 3 //Baha & Ducksly
-        // VAR JV_Duck_relCount = 3 //JV & Ducksly
-CONTENT TBD
+//TESTING: COMMENT OUT WHEN DONE
+// ~ B_JV_relCount = 3 //Baha & JV 
+// ~ B_Duck_relCount = 3 //Baha & Ducksly
+// ~ JV_Duck_relCount = 3 //JV & Ducksly
+
+//UPDATE totalRelCount for whatever we might need that number for, maybe a "final score"?
+~ totalRelCount = B_JV_relCount + B_Duck_relCount + JV_Duck_relCount
+
+//NOTE: WHY DID TORI STRUCTURE THIS IN THIS WAY? If I check the counts of 3 variables at once (ex. A > 3 && B > 3 && C > 3) and change one of those values, I get a Javascript error in Ink itself.  
+
+//SET FINAL RELATIONSHIP COUNT VARIABLES AND VALUES
+//BAHA & JV final relationship count
+VAR B_JV_finalRel = "" 
+{B_JV_relCount < 3:
+    ~ B_JV_finalRel = "bad"
+- else:
+    ~ B_JV_finalRel = "good"
+}
+
+//BAHA & DUCK final relationship count
+VAR B_Duck_finalRel = "" 
+{B_Duck_relCount < 3:
+    ~ B_Duck_finalRel = "bad"
+- else:
+    ~ B_Duck_finalRel = "good"
+}
+
+//JV & DUCK final relationship count
+VAR JV_Duck_finalRel = "" 
+{JV_Duck_relCount < 3:
+    ~ JV_Duck_finalRel = "bad"
+- else:
+    ~ JV_Duck_finalRel = "good"
+}
+
+current B_JV rel: {B_JV_finalRel}
+current B_Duck rel: {B_Duck_finalRel}
+current JV_Duck rel: {JV_Duck_finalRel}
+
+//CHECK RELATIONSHIP COUNTS AND GO TO APPROPRIATE ENDING
+{//all rels have improved, go to BEST ENDING
+- B_JV_relCount >= 3 && B_Duck_relCount >= 3 && JV_Duck_relCount >= 3:
+    -> BESTENDING
+//All rels have been worsened, go to WORST ENDING 
+- B_JV_relCount < 3 && B_Duck_relCount < 3 && JV_Duck_relCount < 3:
+    -> WORSTENDING
+//at least one relationship is KINDA MID
+//BAHA & JV rel is "bad"
+- B_JV_finalRel == "bad":
+    -> MIDENDING
+//BAHA & DUCK rel is "bad"
+- B_Duck_finalRel == "bad":
+    -> MIDENDING
+//JV & DUCK rel is "bad"
+- JV_Duck_finalRel == "bad":
+    -> MIDENDING
+}
+
+=== BESTENDING ===
+This is ending no. 1! The BEST ending! 
+
+Current B/JV relCount: {B_JV_relCount}
+Current B/Duck relCount: {B_Duck_relCount}
+Current JV/Duck relCount: {JV_Duck_relCount}
+Total Relationship Count: {totalRelCount}
+
+-> DONE
+
+=== MIDENDING ===
+This is ending no. 2! The MEH ending! 
+
+Current B/JV relCount: {B_JV_relCount}
+Current B/Duck relCount: {B_Duck_relCount}
+Current JV/Duck relCount: {JV_Duck_relCount}
+Total Relationship Count: {totalRelCount}
+
+-> DONE
+
+=== WORSTENDING ===
+This is ending no. 3! The WORST ending!
+
+Current B/JV relCount: {B_JV_relCount}
+Current B/Duck relCount: {B_Duck_relCount}
+Current JV/Duck relCount: {JV_Duck_relCount}
+Total Relationship Count: {totalRelCount}
 
 -> DONE
