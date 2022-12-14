@@ -3,6 +3,14 @@
 
 Lt Dover "Wonder what the Captain needs. #Dover
 
+Cpt Baha "Lieutenant Dover, everything alright in the comm's room? #Baha
+
+Lt Dover "Well you know...just patching people when need be. Homebase still doesn't pick up but that's to be expected. #Dover
+
+Cpt Baha "Hmm good to hear.
+
+Lt Dover "Is...Is that all you wanted to say to me Sir?
+
 //Dover patches themselves to Captain Baha
 
 //TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
@@ -15,8 +23,59 @@ Lt Dover "Wonder what the Captain needs. #Dover
 
 === D2_B_JVB=== //Day 2, JV spoke to Baha
 
--> DONE
+Cpt Baha "No well, I just spoke with J.V and I'm not sure what I'm feeling right now.
+
+Lt Dover "How do you mean?
+
+Cpt Baha "Well I decided I would share some of my writing with her. It's been something that I've been trying to open myself to doing more. 
+
+Lt Dover "Well go on spill the details! How did it feel?
+
+Cpt Baha "I'm not sure... that's why I'm here talking to you. 
+
+Lt Dover "Ah...
+
+Lt Dover "Sorry. Got caught up in the excitement?
+
+Cpt Baha "I fail to see the excitement.
+
+Lt Dover "That takes a lot of guts!
+
+Cpt Baha "Is that so?
+
+Cpt Baha "Either way, I'm beginning to understand that my taste in prose is a very specific taste.
+
+*That's one way of putting it.
+*I could've told you that.
+
+-Cpt Baha "
+
+-> Day2_DB_Continue1
 
 === D2_B_JVD === //Day 2, JV spoke to Ducksly
+Cpt Baha "No well...See I've decided I would try to share my writing more. I was going to go to J.V...but-
+
+Lt Dover "She didn't answer?
+
+Cpt Baha "Hmm.
+
+Lt Dover "Well I"m sure you'll be able to catch her some other time.
+
+Cpt Baha "Perhaps your right. 
+
+Lt Dover "But that's really exciting 
+
+->DONE
+=== Day2_DB_Continue1===
+Cpt Baha "Tell me something Lieutenant, does J.V and I's relationship appear normal?
+
+*Where's this coming from?
+*I mean you guys are kinda close. 
+
+-You know when I first met her, we did not get along. 
+
+Cpt Baha "Lieutenant Dover am I approachable?
+
+Lt Dover "Um.. in what way sir?
 
 -> DONE
