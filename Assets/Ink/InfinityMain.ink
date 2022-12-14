@@ -1,5 +1,6 @@
 //DAY 1 FILES
 //Starts with Day1_Start in InfinityMain.ink
+INCLUDE Prologue_1
 INCLUDE Day1_Baha_JV
 INCLUDE Day1_Baha_Ducksly
     //POST-LISTENING, PRIVATE CONVOS
@@ -42,6 +43,7 @@ INCLUDE Testing3
 
 
 
+
 //THEY SENT US TO INFINITY MAIN
 
 //GLOBAL VARIABLES___________________________
@@ -75,7 +77,8 @@ VAR totalRelCount = "" //all relCounts added together
     //this is due to our use of -> DONE at the end of each file. 
 //KNOT TESTING
 //DAY 1
-// -> Day1_Start
+// -> Prologue_1
+-> Day1_Start
 // -> Day1_Baha_JV
 // -> Day1_Baha_Ducksly
 // -> Day1_PrivateConvoChoice
@@ -102,7 +105,7 @@ VAR totalRelCount = "" //all relCounts added together
 // -> Day3_Dover_Ducksly
 
 // FINALE
--> Finale_1
+// -> Finale_1
 
 // OTHER 
 // -> Playtesting_1
