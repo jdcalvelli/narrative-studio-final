@@ -1,3 +1,6 @@
+//WE SENT THEM TO INFINITY
+//BY JD Calvelli, Camron Gonzalez, Tori Smith, & Chenyan Yu
+
 //DAY 1 FILES
 //Starts with Day1_Start in InfinityMain.ink
 INCLUDE Prologue_1

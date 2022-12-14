@@ -1,11 +1,9 @@
 === Day1_Start ===
 Officer JV "Heeeeeey Dover, what's up? Can you patch me in to Baha? He's probably on the Bridge. #JV
-// -> Day1_Baha_JV
 
 //NOTE: #JV is a speech tag to mark who is saying which words during dialogue. Might be helpful if we need need to reference the tag in code. They should not appear in dialogue text in Fungus, but will appear in the Ink editor. 
 
 Emperor Ducksly "Bonjour Dover, might you be so kind as to connect me with Captain Baha? Urgent business. Statistically, he's on the Bridge at this hour. #Ducksly
-// -> Day1_Baha_Ducksly
 
 // * [CONNECT J.V.]
 // -> Day1_Baha_JV
