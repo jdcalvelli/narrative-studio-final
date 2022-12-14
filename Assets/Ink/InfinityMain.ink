@@ -67,6 +67,8 @@ VAR currentTime = ""
 VAR B_JV_relCount = 3 //Baha & JV 
 VAR B_Duck_relCount = 3 //Baha & Ducksly
 VAR JV_Duck_relCount = 3 //JV & Ducksly
+VAR totalRelCount = "" //all relCounts added together
+    //use ~ totalRelCount = B_JV_relCount + B_Duck_relCount + JV_Duck_relCount in the appropriate file to update
 
 //___________________________________________
 //uncomment lines here to test knots stored in different files.
@@ -77,7 +79,7 @@ VAR JV_Duck_relCount = 3 //JV & Ducksly
 // -> Day1_Baha_JV
 // -> Day1_Baha_Ducksly
 // -> Day1_PrivateConvoChoice
--> Day1_Dover_Baha
+// -> Day1_Dover_Baha
 // -> Day1_Dover_JV
 // -> Day1_Dover_Ducksly
 
@@ -104,7 +106,7 @@ VAR JV_Duck_relCount = 3 //JV & Ducksly
 
 // OTHER 
 // -> Playtesting_1
-// -> Testing1
+-> Testing1
 // -> Testing2
 
 // ----------------------------
