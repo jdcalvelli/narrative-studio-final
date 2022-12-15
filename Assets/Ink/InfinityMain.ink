@@ -81,7 +81,7 @@ VAR totalRelCount = "" //all relCounts added together
 //KNOT TESTING
 //DAY 1
 // -> Prologue_1
--> Day1_Start
+// -> Day1_Start
 // -> Day1_Baha_JV
 // -> Day1_Baha_Ducksly
 // -> Day1_PrivateConvoChoice
@@ -95,7 +95,7 @@ VAR totalRelCount = "" //all relCounts added together
 // -> Day2_JV_Ducksly
 // -> Day2_PrivateConvoChoice
 // -> Day2_Dover_Baha
-// -> Day2_Dover_JV
+-> Day2_Dover_JV
 // -> Day2_Day_Ducksly
 
 //DAY 3

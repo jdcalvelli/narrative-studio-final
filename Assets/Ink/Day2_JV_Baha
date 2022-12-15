@@ -55,7 +55,11 @@ Cpt Baha "Do you want to hear it or not? #Baha
 Officer JV "Ok, I'm sorry, I'm listening. #JV 
 
 //clears his throat
-Cpt Baha "She looked out the paned window, fogged with her longing sighs. The moor stretched out into the morning mist; she hadn't slept a wink. He was out there. Felton was out there. And then, he WAS there. Felton, materializing from the mist, his shirt billowing in the damp air.  #Baha 
+Cpt Baha "She looked out the paned window, fogged with her longing sighs. #Baha
+Cpt Baha "The moor stretched out into the morning mist; she hadn't slept a wink. #Baha
+Cpt Baha "He was out there. Felton was out there. #Baha
+Cpt Baha "And then, he WAS there. #Baha
+Cpt Baha "Felton, materializing from the mist, his shirt billowing in the damp air.  #Baha 
     //NOTE: this should probably be split into multiple lines 
 
 //silence
@@ -74,24 +78,26 @@ Cpt Baha "Well, what did you think? #Baha
 }
 
 === JV_B_PositiveReview ===
-//Revisit and finish
 Officer JV "That was really great. #JV
 
 Cpt Baha "You don't mean that... #Baha 
 
 Officer JV "I totally do! Look, I may not be the most literary creature in the world, but that sounded really pretty to me. #JV 
-
 Officer JV "Maybe a little silly at times - #JV 
 
 Cpt Baha "'Silly'? I knew it... #Baha
 
 Officer JV "But there's nothing wrong with 'silly'! I say lean into that even more! If you're gonna do genre like this, really go for it, ya know? #JV 
 
+Cpt Baha "I should go. #Baha
+
+Officer JV "Baha... #JV
+Officer JV "Thanks for sharing. #JV 
+
 -> D2_JV_Baha_End
 
 === JV_B_NegativeReview ===
-//I wanna revisit this section. I think it's in a weird plave of being too on the nose and not clear enough, it's just muddy. 
-Officer JV "Maybeeeee I'm actualy not the best person to give you reviews on this sort of thing. #JV
+Officer JV "Maybeeeee I'm not actually the best person to give you critical reviews on this sort of thing... #JV
 
 Cpt Baha "You didn't like it? #Baha
 
@@ -99,9 +105,13 @@ Officer JV "No, no, I didn't say that - #JV
 
 Cpt Baha "But you have nothing to say about it. Nothing positive anyways. #Baha
 
-Officer JV "Please, don't be mad at me. #JV 
+Officer JV "Ok, don't get mad at me. #JV 
 
-Cpt Baha "I'm not mad at you. I just wish you'd be honest with me. #Baha
+Cpt Baha "I'm not mad at you. I just wish you'd be honest. Out of everyone on this ship, I thought I could count on that from you. #Baha
+Cpt Baha "I should go. #Baha
+
+Officer JV "Baha... #JV
+Officer JV "...nevermind. #JV //thought about making her apologize here, but i don't think it's really warranted for her to apologize for his insecurity, ya know?
 
 -> D2_JV_Baha_End
 

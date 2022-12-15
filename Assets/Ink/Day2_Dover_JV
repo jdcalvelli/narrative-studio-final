@@ -1,7 +1,23 @@
 === Day2_Dover_JV ===
 //Day 2: Dover connects for a private conversation with JV.
 
-//TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
+//FOR TESTING PURPOSES, COMMMENT OUT WHEN DONE
+// ~ day1_sceneChoice = true 
+// ~ day2_sceneChoice = true 
+
+Lt Dover "Let's see what J.V. is up to. #Dover
+//dover patches into J.V
+//SFX: connection, line picking up
+
+Lt Dover "Hey, J.V. Yeah, I got a min. Just a min. though. #Dover
+
+Officer JV "Oh, again with the jokes I see. #JV
+
+Lt Dover "Not in the mood for jokes? #Dover
+
+Officer JV "Not really, not right now. #JV 
+
+Lt Dover "What's going on? #Dover
 
 {day2_sceneChoice == true: //false = JV & Ducksly spoke
     -> D2_JV_JVD
@@ -10,11 +26,24 @@
 }
 
 === D2_JV_JVB=== //Day 2, JV spoke to Baha
+Officer JV "Baha read me some of his writing. #JV
 
+Lt Dover "No way. #Dover
+
+Officer JV "Way. #JV 
+
+Lt Dover "How was it? 
+* Was it sappy? #Dover
+    Officer JV "Yeah, it was actually! Surprising, I know, but he's always had this soft, gooey, "I'd rather die than causally show a different side of myself" center. #JV
+* Was it testosterone, action-packed? #Dover
+    Officer JV "You'd think that wouldn't you? No, it was much softer. #JV 
+
+- Lt Dover " #Dover
 // -> Day3_Start
 -> DONE
 
 === D2_JV_JVD === //Day 2, JV spoke to Ducksly
+Officer JV "I think Ducksly is really mad at me. #JV 
 
 // -> Day3_Start
 -> DONE
