@@ -4,9 +4,19 @@ using System.Collections.Generic;
 using Fungus;
 using InkFungus;
 using UnityEngine;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
+    //reference to fader
+    [SerializeField] private SpriteRenderer fader;
+    //reference to start screen
+    [SerializeField] private GameObject startScreen;
+    //reference to prologue screen
+    [SerializeField] private GameObject prologueScreen;
+    //reference to main screen
+    [SerializeField] private GameObject gameplayScreen;
+
     //reference to narrative director
     [SerializeField] private NarrativeDirector narrativeDirectorReference;
     
@@ -22,6 +32,7 @@ public class GameManager : MonoBehaviour
     public enum GameStates
     {
         GameStart,
+        PrologueStart,
         DayStart,
         InitialCalls,
         DeterminePatching,
@@ -55,7 +66,11 @@ public class GameManager : MonoBehaviour
         {
             case GameStates.GameStart:
                 //if we want to do things in the game beginning
-                currentState = GameStates.DayStart;
+                //waiting on button press on start screen
+                break;
+            
+            case GameStates.PrologueStart:
+                Debug.Log("were in the prologue state");
                 break;
             
             case GameStates.DayStart:
@@ -161,5 +176,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void StartPrologue()
+    {
+        Sequence fadeStart = DOTween.Sequence();
+        
+        //fade down start screen
+        //bring fader box up to full color
+        fadeStart.Append(fader.DOFade(1f, 2f).SetEase(Ease.InCubic));
+        
+        //turn off the start screen
+        fadeStart.AppendCallback(() => startScreen.SetActive(false));
+        
+        //then turn on the main screen
+        fadeStart.AppendCallback(() => prologueScreen.SetActive(true));
+        
+        //then fade up main screen
+        //bringing fader box down to no alpha
+        fadeStart.Append(fader.DOFade(0f, 2f));
+        
+        //then switch state to day start
+        fadeStart.AppendCallback(() => currentState = GameStates.PrologueStart);
+        Debug.Log(currentState);
+    }
 
 }
