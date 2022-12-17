@@ -48,7 +48,13 @@ Cpt Baha "Either way, I'm beginning to understand that my taste in prose is a ve
 *That's one way of putting it.
 *I could've told you that.
 
--Cpt Baha "
+-Cpt Baha "I guess, now that I think about it, it felt nice to be able open up like that.
+
+Lt Dover "That makes sense, they say one's writing is a window into their sole!
+
+Cpt Baha "I've not heard this quote, who said it?
+
+Lt Dover "Oh... um...You know the name is slipping my mind right now. 
 
 -> Day2_DB_Continue1
 
@@ -63,21 +69,66 @@ Lt Dover "Well I"m sure you'll be able to catch her some other time.
 
 Cpt Baha "Perhaps your right. 
 
-Lt Dover "But that's really exciting 
+Lt Dover "But that's really exciting.
+
+Cpt Baha "I can't help but think she's growing distant from me.
+
+Lt Dover "What? Why do you say that?
+
+Cpt Baha "I don't know maybe I'm just over thinking.
+
+Cpt Baha "It shouldn't but this is very...mentally taxing for me.
+
+Lt. Dover "I get it man, you're doing something you're not used to.
+
+Lt. Dover "Just gotta try again and not let this whole thing get you down.
 
 ->DONE
 
 === Day2_DB_Continue1===
-Cpt Baha "Tell me something Lieutenant, does J.V and I's relationship appear normal?
+Cpt Baha "Hmm...Tell me something Lieutenant, I'm approachable correct?
 
-*Where's this coming from?
-*I mean you guys are kinda close. 
+*I mean you don't give off creepy vibes.
+*You're absolutely terrifying...
 
--You know when I first met her, we did not get along. 
+-Cpt Baha "I mean in a social manner. Over the course of our journey I've noticed most of the crew steers clear of me.
 
-Cpt Baha "Lieutenant Dover am I approachable?
+Lt Dover "We're talking right now in a 'Social Manner'.
 
-Lt Dover "Um.. in what way sir?
+Cpt Baha "Yes but I have to talk to you regularly.
+
+Lt Dover "Oh Ok...Ouch?
+
+Cpt Baha "I figured people seeing myself and J.V speaking would make me seem more approachable. 
+
+Cpt Baha "Not that that's the only reason I speak to her.
+
+Lt Dover "Look I think you making the inititative to share your writing is admirable!
+
+Cpt. Baha "Thank you Lieutenant.
+
+Lt Dover "But...
+
+Cpt Baha "But?
+
+//Positive relation w/ JV
+*Maybe you should share your writing with everyone!
+~ B_JV_relCount ++
+//Negative relation w/ Jv
+*You should stop relying on J.V to make you seem friendly.
+~ B_Duck_relCount --
+
+-Cpt Baha "You really think so?
+
+Lt Dover "Yeah! You got this Captain!
+
+Cpt Baha "Thank you Lieutenant. 
+
+Lt Dover "Calling people by their rank isn't going to make you seem more friendly.
+
+Cpt Baha "I'm still your Captain. 
+
+//Baha signs off.
 
 // -> Day3_Start
 -> DONE
