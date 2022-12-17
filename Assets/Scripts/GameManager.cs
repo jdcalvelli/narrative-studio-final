@@ -20,7 +20,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject prologueScreen;
     //reference to main screen
     [SerializeField] private GameObject gameplayScreen;
-
+    //reference to finale screen
+    [SerializeField] private GameObject finaleScreen;
+    
+    
     //reference to narrative director
     [SerializeField] private NarrativeDirector narrativeDirectorReference;
     
@@ -151,8 +154,9 @@ public class GameManager : MonoBehaviour
             case GameStates.DayEnd:
                 if (_dayCounter >= _lastDay)
                 {
+                    TransitionScenes(gameplayScreen, finaleScreen, GameStates.GameEnd);
                     //stop the game
-                    currentState = GameStates.GameEnd;
+                    //currentState = GameStates.GameEnd;
                     Debug.Log("game stopped " + _dayCounter);
                 }
                 else
@@ -206,6 +210,15 @@ public class GameManager : MonoBehaviour
         //then switch state to day start
         fadeStart.AppendCallback(() => currentState = newState);
         Debug.Log(currentState);
+    }
+
+    public void FadeToBlack(GameObject transitionFrom)
+    {
+        Sequence endingFade = DOTween.Sequence();
+    
+        endingFade.Append(fader.DOFade(1f, 2f).SetEase(Ease.InCubic));
+        endingFade.AppendCallback(() => transitionFrom.SetActive(false));
+
     }
 
 }
