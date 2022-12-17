@@ -5,4 +5,121 @@
     //Ducksly_JV = true
 
 // ->Day3_PrivateConvoChoice
+
+Emperor Ducksly "Oh, Captain! What can I help you with today? #Ducklsy
+
+Cpt Baha "Ducksly, I wanted to check in and see how your checklist is going? You're the only person left that I'm missing one from.
+
+Emperor Ducksly "Oh about that. I actually wanted to talk to you about it!
+
+Cpt Baha "Ducksly I really just want to get to the point. We'll be arriving soon and I really want to make sure on the crew is ok.
+
+Cpt Baha "You have put your experiments on pause while you do your checklist right?
+
+{B_Duck_relCount >= 3: //Baha & JV's relationship was improved
+    <- B_Duck_SamePage
+- else: //B_JV_relCount < 3:Baha and JV's relationship has worsened
+    <- B_Duck_Trouble
+}
+
+Emperor Ducksly "I will say Captain, my experiments have shed light on something... troubling.
+
+Cpt Baha "What do you mean?
+
+Emperor Ducksly "I...Are you aware to the condition of your health Captain?
+
+Cpt Baha "How did you-
+
+Emperor Ducksly "I retrieved biological samples from each crewmate as part of my experiments.
+
+Cpt Baha "Ducksly do I want to know what that means?
+
+Emperor Ducksly "It was quite easy to get actually. Some I got when they came to the medbay for checks. Others I simply went to waste disposal and-
+
+Cpt Baha "Thank you Ducksly, that's enough. 
+
+Emperor Ducksly "Quack...Have you known Captain.
+
+Cpt Baha "I have...Part of the reason I accepted this job.
+
+Emperor Ducksly "I'm sorry Captain. I'm sure I don't need to tell you how much time you have left. 
+
+Cpt Baha "Won't really matter soon will it?
+
+Emperor Ducksly "I suppose not. 
+
+Emperor Ducksly "Captain...Could I ask a question?
+
+Cpt Baha "Sure, what is it Ducksly?
+
+Emperor Ducksly "Does Officer Veldspar know? Is this why you two are so close?
+
+Cpt Baha "I don't know how many times I have to tell you this Ducksly. J.V and I have known each other for quite some time before we took this mission. 
+
+Emperor Ducksly "Does she know?
+
+Cpt Baha "She doesn't. I'd like to keep it that way. Can I trust you Ducksly?
+
+Emperor Ducksly "Quack! Quackcelsior, Captain you honor me! Of course!
+
+Cpt Baha "Ducksly I'm serious.
+
+Emperor Ducksly "My bill is sealed Captain!
+
+Cpt Baha "And get me your checklist dammit. Baha out. 
+
+//baha disconnects. 
+
+->DONE
+===B_Duck_SamePage===
+Emperor Ducksly "It's come to my attention that our goals were much closer alligned that we anticipated. 
+
+Cpt Baha "Ducksly...
+
+Emperor Ducksly "Wait Captain, please let me explain. 
+
+Cpt Baha "Hmm.
+
+Emperor Ducksly "I promise you Sir, everything will make sesne. 
+
+Cpt Baha "Ducksly, I'm begging you, please spit it out.
+
+Emperor Ducksly "The checklist you assigned to me was to make sure everyone was psychologically and physically sound.
+
+Cpt Baha "OK?
+
+Emperor Ducksly "Well my experiments are centered around just that!
+
+Emperor Ducksly "I looked over the checklist and I looked over my research notes and they were practically reporting the same thing. 
+
+Cpt Baha "Ducksly... are you going to have the checklist done soon or not?
+
+Emperor Ducksly "Yes sir, I can't transcibe everything into the checklist in a few hours.
+
+Cpt Baha "please do.
+
+->DONE
+===B_Duck_Trouble
+Emperor Ducksly "I found that my experiments provided better data so I'd like to provide my research findings instead. 
+
+Cpt Baha "Ducksly...Where is your checklist?
+
+Emperor Ducksly "Oh I'm sorry Captian something must've happened with the patch. I said I-
+
+Cpt Baha "I heard what you said Ducksly. I gave you an order. You ignored it.
+
+Emperor Ducklsy "No no no Captain like I said the expri-
+
+Cpt Baha "I don't care that your experiments provide more data!
+
+Emperor Ducksly "But isn't that the whole point
+
+Cpt Baha "Ducksly let me put this as succinctly as possible: When your captain gives you orders, you follow them. 
+
+Cpt Baha "Do you understand me Ducksly?
+
+Emperor Ducksly "... 
+
+Emperor Ducksly "Yes Captain.
+
 -> DONE
