@@ -34,9 +34,9 @@ VAR JV_Duck_finalRel = ""
     ~ JV_Duck_finalRel = "good"
 }
 
-current B_JV rel: {B_JV_finalRel}
-current B_Duck rel: {B_Duck_finalRel}
-current JV_Duck rel: {JV_Duck_finalRel}
+// current B_JV rel: {B_JV_finalRel}
+// current B_Duck rel: {B_Duck_finalRel}
+// current JV_Duck rel: {JV_Duck_finalRel}
 
 //CHECK RELATIONSHIP COUNTS AND GO TO APPROPRIATE ENDING
 {//all rels have improved, go to BEST ENDING
@@ -58,31 +58,73 @@ current JV_Duck rel: {JV_Duck_finalRel}
 }
 
 === BESTENDING ===
-This is ending no. 1! The BEST ending! 
+The day has arrived. No more preparation, no more waiting. 
 
-Current B/JV relCount: {B_JV_relCount}
-Current B/Duck relCount: {B_Duck_relCount}
-Current JV/Duck relCount: {JV_Duck_relCount}
-Total Relationship Count: {totalRelCount}
+The crew gather on the Bridge to greet the Edge. 
+
+Captain Holsten Baha. 
+
+Officer July Veldspar. 
+
+Ser Emperor Ducksly. 
+
+Lieutenant Dover. 
+
+Hands clapped on shoulders, grasped in one another. Together. Human, flawed, but trying. You've made it. 
+
+Welcome to the Edge. 
+
+// Current B/JV relCount: {B_JV_relCount}
+// Current B/Duck relCount: {B_Duck_relCount}
+// Current JV/Duck relCount: {JV_Duck_relCount}
+// Total Relationship Count: {totalRelCount}
 
 -> DONE
 
 === MIDENDING ===
-This is ending no. 2! The MEH ending! 
+The day has arrived. No more preparation, no more waiting. 
 
-Current B/JV relCount: {B_JV_relCount}
-Current B/Duck relCount: {B_Duck_relCount}
-Current JV/Duck relCount: {JV_Duck_relCount}
-Total Relationship Count: {totalRelCount}
+The crew gather on the Bridge to greet the Edge. 
+
+Captain Holsten Baha. 
+
+Officer July Veldspar. 
+
+Ser Emperor Ducksly. 
+
+Lieutenant Dover. 
+
+They all stand together, yet still apart, somehow. Some friends, some less than. You've made it, though. 
+
+Welcome to the Edge. 
+
+// Current B/JV relCount: {B_JV_relCount}
+// Current B/Duck relCount: {B_Duck_relCount}
+// Current JV/Duck relCount: {JV_Duck_relCount}
+// Total Relationship Count: {totalRelCount}
 
 -> DONE
 
 === WORSTENDING ===
-This is ending no. 3! The WORST ending!
+The day has arrived. No more preparation, no more waiting. 
 
-Current B/JV relCount: {B_JV_relCount}
-Current B/Duck relCount: {B_Duck_relCount}
-Current JV/Duck relCount: {JV_Duck_relCount}
-Total Relationship Count: {totalRelCount}
+The crew gather on the Bridge to greet the Edge. 
+
+Captain Holsten Baha. 
+
+Officer July Veldspar. 
+
+Ser Emperor Ducksly. 
+
+Lieutenant Dover. 
+
+Everyone stands apart, a pall over what should be a momentous event. You've made it, but how they all wish things could be different. 
+
+Welcome to the Edge.
+
+// Current B/JV relCount: {B_JV_relCount}
+// Current B/Duck relCount: {B_Duck_relCount}
+// Current JV/Duck relCount: {JV_Duck_relCount}
+// Total Relationship Count: {totalRelCount}
 
 -> DONE
