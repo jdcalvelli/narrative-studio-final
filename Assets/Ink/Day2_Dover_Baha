@@ -116,7 +116,7 @@ Cpt Baha "But?
 ~ B_JV_relCount ++
 //Negative relation w/ Jv
 *You should stop relying on J.V to make you seem friendly.
-~ B_Duck_relCount --
+~ B_JV_relCount --
 
 -Cpt Baha "You really think so?
 

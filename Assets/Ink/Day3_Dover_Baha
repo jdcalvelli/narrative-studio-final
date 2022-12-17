@@ -3,6 +3,12 @@
 
 //TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
 
+Lt Dover "Yo Captain! We've almost reached the Edge! Are you excited?
+
+Cpt Baha "Yes the air around the ship is certainly jubilant to say the least. 
+
+Lt Dover "So what's up Captain?
+
 {day3_sceneChoice == true: //false = Ducksly & JV spoke
     -> D3_B_DJV
 - else: //false = Ducklsy & Baha spoke
@@ -16,5 +22,56 @@
 
 === D3_B_DB === //Day 2, JV spoke to Ducksly
 
+Cpt Baha " I just spoke with Ducksly again...because they still didn't get his checklist in.
+
+Lt Dover "Oop. I hope everything was sorted out.
+
+Cpt Baha "More or less.
+
+Lt Dover "I'm sensing there's more to this?
+
+Cpt Baha "I told themm something, and I think they were more excited than they should be.
+
+*Oh what was it?
+*You mind sharing? No pressure.
+
+-Cpt Baha "It doesn't really matter. I guess it was weird having such an intiment moment with them.
+
+Lt Dover "Huh, You and Ducksly? Never would've seen that coming.
+
+Cpt Baha "I think the thing that surprised me was just how understanding of the whole situation they were, despite their reaction. 
+
+Lt Dover "I've heard a lot of things about Ducksly, empathetic is not one of them.
+
+Cpt Baha "part of me thinks though that they'll find some way to rub this in J.V's face.
+
+*What's JV have to do with this?
+*He would do something like that.
+
+-Cpt Baha "Ducksly has always had this weird one-sided competition with J.V over gaining the most favor from me.
+
+Cpt Baha "Tell me something Lieutenant Dover: If you were in my position, what would you do with Ducksly?
+
+Lt Dover "Me? Why do you care what I think?
+
+Cpt Baha "If I didn't care what you think I wouldn't come to you and talk to you like this.
+Lt Dover "Hmm.
+
+*Ducksly looks like they just needs a friend.
+~ B_Duck_relCount ++
+*I think they only care about personal glory. Best to ignore them.
+~ B_Duck_relCount --
+
+-Cpt Baha "You really think that?
+
+Lt Dover "I do. 
+
+Lt Dover "Ducksly is definitely a special character. With their quirks for sure.
+
+Cpt Baha "Thank you Dover. I've truly appreciated our time togehter. 
+
+Lt Dover "Aw shucks Captain! You're gonna make me blush!
+
+//baha sings off. 
 // -> Finale_1
 -> DONE
