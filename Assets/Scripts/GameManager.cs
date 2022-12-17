@@ -5,6 +5,7 @@ using Fungus;
 using InkFungus;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SpriteRenderer fader;
     //reference to start screen
     [SerializeField] private GameObject startScreen;
+    //reference to start button
+    [SerializeField] private Button startButton;
+    
     //reference to prologue screen
     [SerializeField] private GameObject prologueScreen;
     //reference to main screen
@@ -58,6 +62,11 @@ public class GameManager : MonoBehaviour
         PatchResult.Add("locationPatched", null);
         
         currentState = GameStates.GameStart;
+        
+        startButton.onClick.AddListener(() => TransitionScenes(
+            startScreen, 
+            prologueScreen, 
+            GameStates.PrologueStart));
     }
 
     private void Update()
@@ -176,26 +185,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartPrologue()
+    public void TransitionScenes(GameObject transitionFrom, GameObject transitionTo, GameStates newState)
     {
         Sequence fadeStart = DOTween.Sequence();
-        
+
         //fade down start screen
         //bring fader box up to full color
         fadeStart.Append(fader.DOFade(1f, 2f).SetEase(Ease.InCubic));
-        
+
         //turn off the start screen
-        fadeStart.AppendCallback(() => startScreen.SetActive(false));
-        
+        fadeStart.AppendCallback(() => transitionFrom.SetActive(false));
+
         //then turn on the main screen
-        fadeStart.AppendCallback(() => prologueScreen.SetActive(true));
-        
+        fadeStart.AppendCallback(() => transitionTo.SetActive(true));
+
         //then fade up main screen
         //bringing fader box down to no alpha
         fadeStart.Append(fader.DOFade(0f, 2f));
-        
+
         //then switch state to day start
-        fadeStart.AppendCallback(() => currentState = GameStates.PrologueStart);
+        fadeStart.AppendCallback(() => currentState = newState);
         Debug.Log(currentState);
     }
 

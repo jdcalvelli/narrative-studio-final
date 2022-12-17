@@ -1108,7 +1108,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 101
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3883,12 +3883,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1315091581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6578076665535617578, guid: 2a3ca852abd254c4b8f9f1f75b2d807b, type: 3}
+  m_PrefabInstance: {fileID: 175769865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1315091582 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6578076665535617579, guid: 2a3ca852abd254c4b8f9f1f75b2d807b, type: 3}
   m_PrefabInstance: {fileID: 175769865}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1315091581}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fcdd1253a6a543f8b74d1793a736729, type: 3}
@@ -4537,7 +4542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5041050605190186319, guid: 62295889bfe014be4b6828ec4dfe1f11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5041050605190186319, guid: 62295889bfe014be4b6828ec4dfe1f11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4546,22 +4551,22 @@ PrefabInstance:
     - target: {fileID: 5041050605190186319, guid: 62295889bfe014be4b6828ec4dfe1f11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1315091582}
+      objectReference: {fileID: 1315091581}
     - target: {fileID: 5041050605190186319, guid: 62295889bfe014be4b6828ec4dfe1f11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5041050605190186319, guid: 62295889bfe014be4b6828ec4dfe1f11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartPrologue
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5041050605190186319, guid: 62295889bfe014be4b6828ec4dfe1f11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5041050605190186319, guid: 62295889bfe014be4b6828ec4dfe1f11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6065637159663687841, guid: 62295889bfe014be4b6828ec4dfe1f11, type: 3}
       propertyPath: m_Name
@@ -5837,6 +5842,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 345958199, guid: cb44bdda251f748db9aa6b30c3b4111c, type: 3}
+      propertyPath: gameplayScene
+      value: 
+      objectReference: {fileID: 1781803656}
+    - target: {fileID: 345958199, guid: cb44bdda251f748db9aa6b30c3b4111c, type: 3}
+      propertyPath: gameManagerRef
+      value: 
+      objectReference: {fileID: 1315091582}
     - target: {fileID: 1928479598272398712, guid: cb44bdda251f748db9aa6b30c3b4111c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5884,10 +5897,6 @@ PrefabInstance:
     - target: {fileID: 4772749488276187522, guid: cb44bdda251f748db9aa6b30c3b4111c, type: 3}
       propertyPath: m_Name
       value: PrologueScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772749488276187522, guid: cb44bdda251f748db9aa6b30c3b4111c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7033983686774747583, guid: cb44bdda251f748db9aa6b30c3b4111c, type: 3}
       propertyPath: m_Camera
