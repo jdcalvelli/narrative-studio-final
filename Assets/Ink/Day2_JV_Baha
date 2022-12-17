@@ -71,6 +71,7 @@ Officer JV "Yeah, I'm here. #JV
 
 Cpt Baha "Well, what did you think? #Baha
 
+VAR jvReview = ""
 {B_JV_relCount >= 3: //Baha & JV's relationship was improved
     -> JV_B_PositiveReview
 - else: //B_JV_relCount < 3:Baha and JV's relationship has worsened
@@ -78,6 +79,7 @@ Cpt Baha "Well, what did you think? #Baha
 }
 
 === JV_B_PositiveReview ===
+~ jvReview = "pos"
 Officer JV "That was really great. #JV
 
 Cpt Baha "You don't mean that... #Baha 
@@ -97,6 +99,7 @@ Officer JV "Thanks for sharing. #JV
 -> D2_JV_Baha_End
 
 === JV_B_NegativeReview ===
+~ jvReview = "neg"
 Officer JV "Maybeeeee I'm not actually the best person to give you critical reviews on this sort of thing... #JV
 
 Cpt Baha "You didn't like it? #Baha

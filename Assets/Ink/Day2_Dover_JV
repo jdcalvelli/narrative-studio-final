@@ -33,17 +33,105 @@ Lt Dover "No way. #Dover
 Officer JV "Way. #JV 
 
 Lt Dover "How was it? 
+
 * Was it sappy? #Dover
-    Officer JV "Yeah, it was actually! Surprising, I know, but he's always had this soft, gooey, "I'd rather die than causally show a different side of myself" center. #JV
+    Officer JV "Yeah, it was actually! #JV
+    Officer JV "Surprising, I know, but he's always had this soft, gooey, "I'd rather die than causally show a different side of myself" center. #JV
 * Was it testosterone, action-packed? #Dover
     Officer JV "You'd think that wouldn't you? No, it was much softer. #JV 
 
-- Lt Dover " #Dover
-// -> Day3_Start
--> DONE
+- Lt Dover "Was it any good, though? #Dover
 
+{jvReview == "pos": //jv gave a positive review to Baha
+    -> D2_posReview
+- else: //jv gave a negative review to Baha
+    -> D2_negReview
+}
+
+=== D2_posReview === 
+CONTENT WILL GO HERE
+
+-> D2_Dover_JV_End
+
+=== D2_negReview === 
+CONTENT WILL GO HERE
+-> D2_Dover_JV_End
+
+//////////////////////////////////////////////////////////////////////
 === D2_JV_JVD === //Day 2, JV spoke to Ducksly
 Officer JV "I think Ducksly is really mad at me. #JV 
 
+Lt Dover "What makes you say that? #JV
+
+Officer JV "I may have played an itty bitty teeny weeny prank... #JV
+
+Lt Dover "There is nothing ever "itty bitty" or "teeny weeny" about your pranks. #Dover
+
+VAR prankChoice = ""
+* Remember the time you microwaved Ducksly's beak oil? #Dover
+    ~ prankChoice = "beakoil"
+    Officer JV "Hehe, that got messy. But I did make him more, so even stevens? #JV
+* Remember the time you jettisoned Ducksly's feather mousse out the airlock? #Dover
+    ~ prankChoice = "feathermousse"
+    Officer JV "Ha! And he was a fluffy, downy little duckling. Adorable. #JV
+
+- Lt Dover "I still don't think Ducksly appreciated that one either. #Dover 
+
+* Maybe you should lighten up with the pranks? #Dover //improve the JV Ducksly relationship 
+    -> D2_JV_ImproveDuckslyRel
+* He's a jerk, kinda deserves it if you ask me. Keep the pranks coming. #Dover //worsens the JV Ducksly relationship
+    -> D2_JV_WorsenDuckslyRel
+
+=== D2_JV_ImproveDuckslyRel ===
+~ JV_Duck_relCount ++ //increase JV Ducksly relationship by 1
+
+Officer JV "Maybe you're right. #JV
+
+Officer JV "Growing up, that's just how we communicated with eachother - being a little mean means I like you. #JV
+Officer JV "I guess I misunderstood the dynamic of our relationship. #JV
+
+Lt Dover "There's still time to set things right. 1 more day until the Edge! #JV 
+
+Officer JV "Thanks, Dover. I think I owe Ducksly an apology... #JV
+{prankChoice == "beakoil": Officer JV "...and some new beak oil...} #JV
+{prankChoice == "feathermousse": Officer JV "...and some new feather mousse...} #JV
+Officer JV "...and a repaired centrifuge... #JV
+Officer JV "Busy day ahead, then. Bye, Dover! #JV
+
+Lt Dover "Bye, J.V. #Dover 
+
+-> D2_Dover_JV_End
+
+=== D2_JV_WorsenDuckslyRel ===
+~ JV_Duck_relCount -- //decrease JV Ducksly relationship by 1
+
+Officer JV "Doverrrrr, that's devious. #JV
+
+Lt Dover "Ducksly has been nothing but rude to you. I think you've been too nice, actually. Ramp it up. #JV
+
+Officer JV "Ya know what? You're right. #JV
+Officer JV "What do you think I should do? #JV
+
+//TO DO: I WANNA SWITCH THIS PRANK OUT ACTUALLY, what's the best option?
+* Feed him freeze-dried dino nuggets. #Dover
+    ~ prankChoice = "dinonuggets"
+    Officer JV "That's...dark. #JV
+* Steal his pants. #Dover 
+    ~ prankChoice = "donaldduck"
+    Officer JV "Donald Ducking, classic. #JV
+//OPTIONS: Put feather-Nair in his shampoo, feed him dino nuggets
+
+- Officer JV "Thanks, Dover. I'll see what I can get done before we reach the Edge. 
+Officer JV "In the meantime, I've got a centrifuge to fix... #JV
+{prankChoice == "dinonuggets": Officer JV "...and some nuggets to rehydrate...} #JV
+{prankChoice == "donaldduck": Officer JV "...and some duck pants to steal...} #JV
+Officer JV "Mwahaha. #JV
+Officer JV "Bye, Dover! #JV
+
+Lt Dover "Bye, J.V." #Dover 
+
+-> D2_Dover_JV_End
+
+=== D2_Dover_JV_End ===
 // -> Day3_Start
 -> DONE
