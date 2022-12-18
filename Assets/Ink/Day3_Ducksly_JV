@@ -3,6 +3,53 @@
 ~ day3_sceneChoice = true
     //Ducksly_Baha = false
     //Ducksly_JV = true
+~ prankChoice = "donaldduck" 
+Officer JV "Yo Ducksly you got a sec?
+
+Emperor Ducksly "What could I possibly do for Officer Veldspar?
+
+Officer JV "My tools have turned up missing. I've been asking around the crew if anyone's seen them. 
+
+Emperor Ducksly "What business would I have with your tools. Go ask someone else! He he.
+
+Officer JV "Hmm... I- Are you sure about that it? Some have told me they so you waddling around with them laughing by yourself.
+
+Emperor Ducksly "Ha Ha! I must confess it WAS me! I've pulled an ellaborate prank on you. You, Officer Veldspar, just got Duckslied!
+
+Officer JV "Aha, yeah that's great, that's great. You know I layed a neat lil' prank on you too. 
+
+Emperor Ducksly "Quack! Is that so?! I doubt it compares to mine in dubiousness!
+
+{JV_Duck_relCount >= 3: //Baha & JV's relationship was improved
+    <- JVD_GoodPranked
+- else: //B_JV_relCount < 3:Baha and JV's relationship has worsened
+    <- JVD_BadPranked
+}
+
+
+->DONE
+===JVD_GoodPranked===
+Officer JV "
+
+{prankChoice == "beakoil": dklaj;sdklfjas}
+{prankChoice == "feathermousse": lkasdjf;lksdjf;lak}
+
+->DONE
+===JVD_BadPranked===
+
+
+Officer JV "Trust me, it's a doozy he he...
+
+Emperor Ducksly "Wait, tell me what you've done!
+
+Officer JV "Not until you tell me where you put my tools.
+
+Emperor Ducksly "I refuse to provide any information about your tools until you tell me what you've done.
+
+Emperor Ducksly "Quack! Like it or not Officer Veldspar I am not the one who needs their tools. 
+
+{prankChoice == "dinonuggets": dklaj;sdklfjas}
+{prankChoice == "donaldduck": lkasdjf;lksdjf;lak}
 
 // ->Day3_PrivateConvoChoice
 -> DONE
