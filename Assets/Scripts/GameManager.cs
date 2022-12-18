@@ -126,8 +126,6 @@ public class GameManager : MonoBehaviour
                 break;
             
             case GameStates.ListenIn:
-                PatchResult["personPatched"] = null;
-                PatchResult["locationPatched"] = null;
                 if (!sayDialogReference.isActiveAndEnabled)
                 {
                     if (_secondConvoController == false)
@@ -139,6 +137,8 @@ public class GameManager : MonoBehaviour
                 break;
             
             case GameStates.PreDeterminePostConvoPatching:
+                PatchResult["personPatched"] = null;
+                PatchResult["locationPatched"] = null;
                 if (!sayDialogReference.isActiveAndEnabled)
                 {
                     
@@ -163,9 +163,6 @@ public class GameManager : MonoBehaviour
                 break;
             
             case GameStates.ListenPostConvo:
-                PatchResult["personPatched"] = null;
-                PatchResult["locationPatched"] = null;
-                
                 if (!sayDialogReference.isActiveAndEnabled)
                 {
                     currentState = GameStates.DayEnd;
@@ -173,6 +170,8 @@ public class GameManager : MonoBehaviour
                 break;
             
             case GameStates.DayEnd:
+                PatchResult["personPatched"] = null;
+                PatchResult["locationPatched"] = null;
                 if (_dayCounter >= _lastDay)
                 {
                     if (_endFadeController == false)
@@ -251,6 +250,8 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator WaitBeforeSecondConvo(int timeToWait)
     {
+        PatchResult["personPatched"] = null;
+        PatchResult["locationPatched"] = null;
         yield return new WaitForSeconds(timeToWait);
         narrativeDirectorReference.JumpTo($"Day{_dayCounter}_PrivateConvoChoice");
         currentState = GameStates.PreDeterminePostConvoPatching;

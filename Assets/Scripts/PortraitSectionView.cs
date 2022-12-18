@@ -37,8 +37,23 @@ public class PortraitSectionView : MonoBehaviour
         }
         else
         {
-            portrait1.sprite = _portraits[gameManagerRef.PatchResult["locationPatched"]];
-            portrait2.sprite = _portraits[gameManagerRef.PatchResult["personPatched"]];
+            if (gameManagerRef.PatchResult["locationPatched"] == null)
+            {
+                portrait1.sprite = null;
+            }
+            else
+            {
+                portrait1.sprite = _portraits[gameManagerRef.PatchResult["locationPatched"]];
+            }
+
+            if (gameManagerRef.PatchResult["personPatched"] == null)
+            {
+                portrait2.sprite = null;
+            }
+            else
+            {
+                portrait2.sprite = _portraits[gameManagerRef.PatchResult["personPatched"]];
+            }
         }
     }
 }
