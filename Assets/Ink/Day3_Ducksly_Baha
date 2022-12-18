@@ -4,17 +4,20 @@
     //Ducksly_Baha = false
     //Ducksly_JV = true
 
+//COMMENT THIS OUT WHEN DONE 
+~ B_Duck_relCount = 3
+
 // ->Day3_PrivateConvoChoice
 
-Emperor Ducksly "Oh, Captain! What can I help you with today? #Ducklsy
+Emperor Ducksly "Oh, Quackcelsior Captain! What can I help you with today? #Ducklsy
 
-Cpt Baha "Ducksly, I wanted to check in and see how your checklist is going? You're the only person left that I'm missing one from.
+Cpt Baha "Ducksly, I wanted to check in and see how your checklist is going? You're the only person left that I'm missing confirmation from. #Baha 
 
-Emperor Ducksly "Oh about that. I actually wanted to talk to you about it!
+Emperor Ducksly "Oh, about that. I actually wanted to talk to you - #Ducksly
 
-Cpt Baha "Ducksly I really just want to get to the point. We'll be arriving soon and I really want to make sure on the crew is ok.
+Cpt Baha "Ducksly, I really just want to get to the point. We'll be arriving soon and want to make sure on the crew is ok. #Baha 
 
-Cpt Baha "You have put your experiments on pause while you do your checklist right?
+Cpt Baha "You DID put your experiments on pause to finish your checklist, right? #Baha
 
 {B_Duck_relCount >= 3: //Baha & JV's relationship was improved
     <- B_Duck_SamePage
@@ -22,49 +25,49 @@ Cpt Baha "You have put your experiments on pause while you do your checklist rig
     <- B_Duck_Trouble
 }
 
-Emperor Ducksly "I will say Captain, my experiments have shed light on something... troubling.
+Emperor Ducksly "I will say, Captain, my experiments have shed light on something... troubling. #Ducksly
 
 Cpt Baha "What do you mean?
 
-Emperor Ducksly "I...Are you aware to the condition of your health Captain?
+Emperor Ducksly "I...Are you aware to the condition of your health Captain? #Ducksly
 
 Cpt Baha "How did you-
 
-Emperor Ducksly "I retrieved biological samples from each crewmate as part of my experiments.
+Emperor Ducksly "I retrieved biological samples from each crewmate as part of my experiments. #Ducksly
 
 Cpt Baha "Ducksly do I want to know what that means?
 
-Emperor Ducksly "It was quite easy to get actually. Some I got when they came to the medbay for checks. Others I simply went to waste disposal and-
+Emperor Ducksly "It was quite easy to get actually. Some I got when they came to the medbay for checks. Others I simply went to waste disposal and- #Ducksly
 
 Cpt Baha "Thank you Ducksly, that's enough. 
 
-Emperor Ducksly "Quack...Have you known Captain.
+Emperor Ducksly "Quack...Have you known Captain. #Ducksly
 
 Cpt Baha "I have...Part of the reason I accepted this job.
 
-Emperor Ducksly "I'm sorry Captain. I'm sure I don't need to tell you how much time you have left. 
+Emperor Ducksly "I'm sorry Captain. I'm sure I don't need to tell you how much time you have left. #Ducksly
 
 Cpt Baha "Won't really matter soon will it?
 
-Emperor Ducksly "I suppose not. 
+Emperor Ducksly "I suppose not. #Ducksly
 
-Emperor Ducksly "Captain...Could I ask a question?
+Emperor Ducksly "Captain...Could I ask a question? #Ducksly
 
 Cpt Baha "Sure, what is it Ducksly?
 
-Emperor Ducksly "Does Officer Veldspar know? Is this why you two are so close?
+Emperor Ducksly "Does Officer Veldspar know? Is this why you two are so close? #Ducksly
 
 Cpt Baha "I don't know how many times I have to tell you this Ducksly. J.V and I have known each other for quite some time before we took this mission. 
 
-Emperor Ducksly "Does she know?
+Emperor Ducksly "Does she know? #Ducksly
 
 Cpt Baha "She doesn't. I'd like to keep it that way. Can I trust you Ducksly?
 
-Emperor Ducksly "Quack! Quackcelsior, Captain you honor me! Of course!
+Emperor Ducksly "Quack! Quackcelsior, Captain you honor me! Of course! #Ducksly
 
 Cpt Baha "Ducksly I'm serious.
 
-Emperor Ducksly "My bill is sealed Captain!
+Emperor Ducksly "My bill is sealed Captain! #Ducksly
 
 Cpt Baha "And get me your checklist dammit. Baha out. 
 
@@ -72,54 +75,49 @@ Cpt Baha "And get me your checklist dammit. Baha out.
 
 ->DONE
 ===B_Duck_SamePage===
-Emperor Ducksly "It's come to my attention that our goals were much closer alligned that we anticipated. 
+Emperor Ducksly "It's come to my attention that our goals were much more closely aligned that we anticipated. #Ducksly
 
-Cpt Baha "Ducksly...
+Cpt Baha "Ducksly... #Baha
 
-Emperor Ducksly "Wait Captain, please let me explain. 
+Emperor Ducksly "Wait Captain, please let me explain. #Ducksly
+Emperor Ducksly "I promise you Sir, everything will make sense. #Ducksly
 
-Cpt Baha "Hmm.
+Cpt Baha "Spit it out, then. #Baha
 
-Emperor Ducksly "I promise you Sir, everything will make sesne. 
+Emperor Ducksly "The checklist you assigned me was to make sure everyone was psychologically and physically sound.#Ducksly
 
-Cpt Baha "Ducksly, I'm begging you, please spit it out.
+Cpt Baha "OK? #Baha
 
-Emperor Ducksly "The checklist you assigned to me was to make sure everyone was psychologically and physically sound.
+Emperor Ducksly "Well my experiments are centered around just that! #Ducksly
+Emperor Ducksly "I compared my notes and they were practically reporting the same thing. #Ducksly
+Emperor Ducksly "I can transcibe everything into the checklist in a few hours. #Ducksly
 
-Cpt Baha "OK?
-
-Emperor Ducksly "Well my experiments are centered around just that!
-
-Emperor Ducksly "I looked over the checklist and I looked over my research notes and they were practically reporting the same thing. 
-
-Cpt Baha "Ducksly... are you going to have the checklist done soon or not?
-
-Emperor Ducksly "Yes sir, I can't transcibe everything into the checklist in a few hours.
-
-Cpt Baha "please do.
+Cpt Baha "Please do. #Baha
+Cpt Baha "And well done. #Baha
 
 ->DONE
 ===B_Duck_Trouble
-Emperor Ducksly "I found that my experiments provided better data so I'd like to provide my research findings instead. 
+Emperor Ducksly "I found that my experiments provided better data, so I will be providing my research findings instead. #Ducksly
 
-Cpt Baha "Ducksly...Where is your checklist?
+Cpt Baha "Ducksly...WHERE is your checklist? #Baha
 
-Emperor Ducksly "Oh I'm sorry Captian something must've happened with the patch. I said I-
+Emperor Ducksly "Oh, applogies, Captian. Something must've happened with the patch. I shall repeat myself - #Ducksly
 
-Cpt Baha "I heard what you said Ducksly. I gave you an order. You ignored it.
+Cpt Baha "I heard what you said, Ducksly. #Baha 
+Cpt Baha "I gave you an order. You ignored it. #Baha
 
-Emperor Ducklsy "No no no Captain like I said the expri-
+Emperor Ducklsy "No no no Captain like I said the expri- #Ducksly
 
-Cpt Baha "I don't care that your experiments provide more data!
+Cpt Baha "I don't care that your experiments provide more data! #Baha
 
-Emperor Ducksly "But isn't that the whole point
+Emperor Ducksly "But isn't that the whole point #Ducksly
 
-Cpt Baha "Ducksly let me put this as succinctly as possible: When your captain gives you orders, you follow them. 
+Cpt Baha "Ducksly let me put this as succinctly as possible: When your captain gives you orders, you follow them. #Baha
 
-Cpt Baha "Do you understand me Ducksly?
+Cpt Baha "Do you understand me Ducksly? #Baha
 
-Emperor Ducksly "... 
+Emperor Ducksly "... #Ducksly
 
-Emperor Ducksly "Yes Captain.
+Emperor Ducksly "Yes Captain. #Ducksly
 
 -> DONE

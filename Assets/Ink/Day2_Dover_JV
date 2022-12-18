@@ -142,12 +142,12 @@ Officer JV "I may have played an itty bitty teeny weeny prank... #JV
 
 Lt Dover "There is nothing ever "itty bitty" or "teeny weeny" about your pranks. #Dover
 
-VAR prankChoice = ""
+VAR pastPrankChoice = ""
 * Remember the time you microwaved Ducksly's beak oil? #Dover
-    ~ prankChoice = "beakoil"
+    ~ pastPrankChoice = "beakoil"
     Officer JV "Hehe, that got messy. But I did make him more, so even stevens? #JV
 * Remember the time you jettisoned Ducksly's feather mousse out the airlock? #Dover
-    ~ prankChoice = "feathermousse"
+    ~ pastPrankChoice = "feathermousse"
     Officer JV "Ha! And he was a fluffy, downy little duckling. Adorable. #JV
 
 - Lt Dover "I still don't think Ducksly appreciated that one either. #Dover 
@@ -168,8 +168,8 @@ Officer JV "I guess I misunderstood the dynamic of our relationship. #JV
 Lt Dover "There's still time to set things right. 1 more day until the Edge! #JV 
 
 Officer JV "Thanks, Dover. I think I owe Ducksly an apology... #JV
-{prankChoice == "beakoil": Officer JV "...and some new beak oil...} #JV
-{prankChoice == "feathermousse": Officer JV "...and some new feather mousse...} #JV
+{pastPrankChoice == "beakoil": Officer JV "...and some new beak oil...} #JV
+{pastPrankChoice == "feathermousse": Officer JV "...and some new feather mousse...} #JV
 Officer JV "...and a repaired centrifuge... #JV
 Officer JV "Busy day ahead, then. Bye, Dover! #JV
 
@@ -188,6 +188,8 @@ Officer JV "Ya know what? You're right. #JV
 Officer JV "What do you think I should do? #JV
 
 //TO DO: I WANNA SWITCH THIS PRANK OUT ACTUALLY, what's the best option?
+
+VAR prankChoice = ""
 * Feed him freeze-dried dino nuggets. #Dover
     ~ prankChoice = "dinonuggets"
     Officer JV "That's...dark. #JV

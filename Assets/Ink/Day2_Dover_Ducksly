@@ -9,7 +9,7 @@ Lt Dover "Let's see what ye Royal Highness wants now. #Dover
 
 Emperor Ducksly "Quackcelsior Lieutenant Dover, I hope you're doing well. #Ducksly
 
-Lt Dover "Oh, Yeah I'm alright. Thank you for asking Ducksly! #Dover
+Lt Dover "Oh, yeah, I'm alright. Thank you for asking, Ducksly! #Dover
 
 Emperor Ducksly "I'm sure you've heard about Officer J.V.'s recent prank on my centrifuges. #Ducksly
 
@@ -45,7 +45,7 @@ Lt Dover "Did you see her do that? Or is this just conjecture?
 
 Emperor Ducksly "Of course not! But she admitted to it when you patched me through to her earlier.
 
-Lt Dover "Oh that'll do it. 
+Lt Dover "Oh, that'll do it. 
 
 Emperor Ducksly "You should've seen the look on her face. She looked so pleased with herself. 
 
@@ -56,9 +56,9 @@ Emperor Ducksly "You should've seen the look on her face. She looked so pleased 
     }
 
 ===Day2_Positive_JVD ===
-Emperor Ducksly "Now While I was initialy upset, I mean how could I not when they directly impede my research? Quack! #Ducksly
+Emperor Ducksly "Now while I was initialy upset, I mean how could I not when she directly impedes my research? Quack! #Ducksly
  
-Emperor Ducksly "But now I see an opportunity has risen. #Ducksly
+Emperor Ducksly "But now I see an opportunity has arisen. #Ducksly
 
 Lt Dover "What did she even do to your- #Dover
 
@@ -67,7 +67,7 @@ Emperor Ducksly "I've deduced that the cause of the Captain's high outlook of Of
 *Um, are you sure about that?
 *I can't even begin to imagine how many ways this could go wrong. 
 
--Emperor Ducksly "Nonesense! I've already devised a foolproof plan.  #Ducksly
+-Emperor Ducksly "Nonsense! I've already devised a foolproof plan.  #Ducksly
 
 Emperor Ducksly "I'll play a prank on her that will outshine all of her pranks prior! #Ducksly
 
@@ -76,7 +76,7 @@ Emperor Ducksly "And the Captain will have no choice but to put me in his good g
 *Ducksly, that's seriously not going to work out how you think it is. #Dover
 *Have you ever even played a prank on someone before? #Dover
 
--Emperor Ducksly "Quack! Oh ye of little faith! #Ducksly
+-Emperor Ducksly "QUACK! Oh ye of little faith! #Ducksly
 
 Emperor Ducksly "Now, I've got a couple of ideas that I've been ruminating on. #Ducksly
 
@@ -116,13 +116,15 @@ Emperor Ducksly "I don't have time for your shenanigans! I'm trying to scheme my
 ->Day2_DD_Continue1
 
 ===Day2_DD_Continue1===
-Lt Dover "Ok what did you have in mind? #Dover
+Lt Dover "Ok, what did you have in mind? #Dover
 
-Emperor Ducksly "The first is quite tame by prank standards: it simply would be taping a 'I"m stupid'sign to her back. #Ducksly
+Emperor Ducksly "The first is quite tame by prank standards. It simply would be 'hiding' her tools. #Ducksly
+//taping an 'I"m Stupid' sign to her back.
 
-Lt Dover "Wow that is quite tame I was worried there for sec. #Dover
+Lt Dover "Wow, that is quite tame. I was worried there for a sec. #Dover
 
-Emperor Ducksly "The other, and I must say this one is delightlfully dubious. (Chuckles) #Ducksly
+Emperor Ducksly "The other, and I must say this one is delightfully devious. (Chuckles) #Ducksly
+    //dubious
 
 Lt Dover "Stop gassing yourself up and just tell me. #Dover
 
@@ -132,18 +134,18 @@ Lt Dover "... #Dover
 
 Emperor Ducksly "... #Ducksly
 
-Lt Dover "Oh my god your serious? #Dover
+Lt Dover "Oh my god, you're serious? #Dover
 
-Emperor Ducksly " I am completely serious. Which do you think I should do? #Ducksly
+Emperor Ducksly "I am completely serious. Which do you think I should do? #Ducksly
 
-*Start of simple: The 'I'm stupid' sign will show her.
+*Start off simple. Hiding her tools will show her.
 ~JV_Duck_relCount ++
 *The tools, jettison them.
 ~JV_Duck_relCount --
 
--Emperor Ducksly "Perfect! Thank you Dover. Your help has proved most fruitful. I'll be sure to keep you updated. #Ducksly
+-Emperor Ducksly "Perfect! Thank you, Dover. Your help has proved most fruitful. I'll be sure to keep you updated. #Ducksly
 
-Lt Dover "Uh yeah happy to help. #Dover
+Lt Dover "Uh, yeah...happy to help. #Dover
 
 // -> Day3_Start
 -> DONE

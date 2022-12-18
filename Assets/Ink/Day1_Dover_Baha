@@ -30,7 +30,7 @@ Cpt Baha "Are the lines secure? #Baha
 * Of course, Captain. #Dover
 * As secure as it can be, Captain. #Dover 
 
-- Cpt Baha "Whatever is said stays between between you, me, and the Vespira, eh?
+- Cpt Baha "Whatever is said stays between you, me, and the Vespira, eh?
 
 Cpt Baha "I know this is your first voyage with this crew, I hope they've been treating you well?
 
@@ -100,13 +100,13 @@ Cpt Baha "Regardless of the experiments, Ducksly has displayed zero care for the
 
 Lt Dover "They've been nice to me? # Dover
 
-Cpt Baha "Hmm. I just don't know what to do with him. #Baha
+Cpt Baha "Hmm. I just don't know what to do with them. #Baha
 
 Cpt Baha "I've served with a lot of hard heads over the course of my career, but Ducksly... #Baha
 
 //Cpt Baha "And he also has this weird rivalry with Officer Veldspar? #Baha
 
-* Maybe you should take interest in his work? Might open him up a bit more? #Dover
+* Maybe you should take interest in their work? Might open them up a bit more? #Dover
     ~ B_Duck_relCount ++ //raise Baha & Ducksly relCount by 1
 //show him who's boss
 * Inviting our crew to happy hours might be worth something. #Dover
