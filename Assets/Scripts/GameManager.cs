@@ -35,11 +35,17 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<PatchCordController> patchCordList;
 
+    //very bad for further sub control
+    private bool _fadeController = false;
+    private bool _secondConvoController = false;
+    private bool _endFadeController = false;
+    
     // enum for state management
     public enum GameStates
     {
         GameStart,
         PrologueStart,
+        FadeDayStart,
         DayStart,
         InitialCalls,
         DeterminePatching,
@@ -82,7 +88,19 @@ public class GameManager : MonoBehaviour
                 break;
             
             case GameStates.PrologueStart:
-                Debug.Log("were in the prologue state");
+                //Debug.Log("were in the prologue state");
+                break;
+            
+            case GameStates.FadeDayStart:
+                if (_fadeController == false)
+                {
+                    Sequence fadeDayStart = DOTween.Sequence();
+                    fadeDayStart.Append(fader.DOFade(1f, 2f));
+                    fadeDayStart.AppendInterval(3f);
+                    fadeDayStart.Append(fader.DOFade(0f, 2f));
+                    fadeDayStart.AppendCallback(() => currentState = GameStates.DayStart);
+                    _fadeController = true;
+                }
                 break;
             
             case GameStates.DayStart:
@@ -112,8 +130,11 @@ public class GameManager : MonoBehaviour
                 PatchResult["locationPatched"] = null;
                 if (!sayDialogReference.isActiveAndEnabled)
                 {
-                    narrativeDirectorReference.JumpTo($"Day{_dayCounter}_PrivateConvoChoice");
-                    currentState = GameStates.PreDeterminePostConvoPatching;
+                    if (_secondConvoController == false)
+                    {
+                        StartCoroutine(WaitBeforeSecondConvo(4));
+                        _secondConvoController = true;
+                    }
                 }
                 break;
             
@@ -154,7 +175,11 @@ public class GameManager : MonoBehaviour
             case GameStates.DayEnd:
                 if (_dayCounter >= _lastDay)
                 {
-                    TransitionScenes(gameplayScreen, finaleScreen, GameStates.GameEnd);
+                    if (_endFadeController == false)
+                    {
+                        TransitionScenes(gameplayScreen, finaleScreen, GameStates.GameEnd);
+                        _endFadeController = true;
+                    }
                     //stop the game
                     //currentState = GameStates.GameEnd;
                     Debug.Log("game stopped " + _dayCounter);
@@ -173,7 +198,9 @@ public class GameManager : MonoBehaviour
                     PatchResult["personPatched"] = null;
                     PatchResult["locationPatched"] = null;
 
-                    currentState = GameStates.InitialCalls;
+                    _fadeController = false;
+                    _secondConvoController = false;
+                    currentState = GameStates.FadeDayStart;
                 }
 
                 break;
@@ -221,4 +248,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+
+    private IEnumerator WaitBeforeSecondConvo(int timeToWait)
+    {
+        yield return new WaitForSeconds(timeToWait);
+        narrativeDirectorReference.JumpTo($"Day{_dayCounter}_PrivateConvoChoice");
+        currentState = GameStates.PreDeterminePostConvoPatching;
+    }
 }
