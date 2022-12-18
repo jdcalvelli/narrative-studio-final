@@ -9,9 +9,9 @@ Lt Dover "Let's see what J.V. is up to. #Dover
 //dover patches into J.V
 //SFX: connection, line picking up
 
-Lt Dover "Hey, J.V. Yeah, I got a min. Just a min. though. #Dover
+Lt Dover "Hey, J.V. Yeah, I got a minute. Just a minute, though. #Dover
 
-Officer JV "Oh, again with the jokes I see. #JV
+Officer JV "Oh, again with the jokes, I see. #JV
 
 Lt Dover "Not in the mood for jokes? #Dover
 
@@ -42,20 +42,95 @@ Lt Dover "How was it?
 
 - Lt Dover "Was it any good, though? #Dover
 
+//COMMENT THIS VARIABLE OUT WHEN DONE
+~ jvReview = "pos"
 {jvReview == "pos": //jv gave a positive review to Baha
-    -> D2_posReview
+    <- D2_posReview
 - else: //jv gave a negative review to Baha
-    -> D2_negReview
+    <- D2_negReview
 }
 
-=== D2_posReview === 
-CONTENT WILL GO HERE
+Officer JV "I don't know, I'm glad he opened up but then he immediately shut down again. #JV 
+Officer JV "It's very frustrating and I don't like being yanked away from my work if he's gonna be like that. #JV
+
+Lt Dover "Did you talk to him about this yet? #Dover 
+
+Officer JV "No... #JV
+
+//COMMENT THIS OUT WHEN DONE. 
+// ~ d1JVBahaChoice = "reconcile"
+~ d1JVBahaChoice = "distance"
+
+Lt Dover "JV, come on. #Dover
+
+{d1JVBahaChoice == "distance": Lt Dover "We talked about this. You were supposed to distance yourself.} #Dover
+{d1JVBahaChoice == "reconcile": Lt Dover "We talked about this. You were supposed to set things right.} #Dover
+
+Officer JV "I know, I know. #JV
+Officer JV "But feelings are hard. #JV
+
+* His feelings aren't your fault. Ignore him. #Dover 
+    -> D2_JV_DistanceBaha
+* Maybe you "both" should open up? Like, "actually" this time? #Dover
+    -> D2_JV_ReconcileBaha
+
+=== D2_JV_DistanceBaha ===
+~ B_JV_relCount -- //Lower Baha & JV rel by 1
+
+Officer JV "You're totally right. #JV
+Officer JV "I'M right. #JV
+
+Lt Dover "Sometimes you just need confirmation from an impartial third party. #Dover 
+
+Officer JV "Dover, next time he tries to call me, send him straight to switchboard voicemail. #JV
+Officer JV "Unless it's like, an actual emergency. #JV
+
+Lt Dover "You got it, J.V. #Dover 
+
+Officer JV "By Dover, J.V. out. #JV
+
+//the line disconnects
 
 -> D2_Dover_JV_End
+
+=== D2_JV_ReconcileBaha ===
+~ B_JV_relCount ++ //raise Baha & JV rel by 1
+
+Officer JV "Lead by example? The emotionally inept leading the emotionally inept. #JV
+
+Lt Dover "I wouldn't say either of you are emotionally inept. #Dover
+Lt Dover "I mean, look at us! We're talking, aren't we? #Dover
+
+Officer JV "I guess. Just don't ask me to make meaningful eye contact. #JV
+
+Officer JV "Ok, I'll "actually" take your advice this time. #JV
+Officer JV "'The Edge awaits', 'seize the day', all that nonsense. #JV
+Officer JV "Bye Dover. #JV
+
+Lt Dover "Bye, J.V. #Dover 
+
+-> D2_Dover_JV_End
+
+/// JV & BAHA relevant THREADS ////////////////////////
+=== D2_posReview === 
+Officer JV "I'll tell you what I told Baha: I'm no literary critic, but those words sounded pretty to me. #JV
+
+Lt Dover "That's good then, right? #Dover
+
+Officer JV "Yeah, I guess so. #JV
+
+Lt Dover "You don't seem so thrilled? #Dover 
+
+-> DONE
 
 === D2_negReview === 
-CONTENT WILL GO HERE
--> D2_Dover_JV_End
+Officer JV "I don't know...bad? #JV
+
+Lt Dover "Oh no.. #Dover
+
+Officer JV "Oh yes. I don't think he took it well either. #JV
+
+-> DONE
 
 //////////////////////////////////////////////////////////////////////
 === D2_JV_JVD === //Day 2, JV spoke to Ducksly

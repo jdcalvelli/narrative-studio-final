@@ -88,7 +88,10 @@ Lt Dover "Hmm... #Dover
 *You should tell him how you feel.
 -> D1_JV_ReconcileBaha
 
+VAR d1JVBahaChoice = ""
+
 === D1_JV_DistanceBaha ===
+~ d1JVBahaChoice = "distance"
 Officer JV "You really think so? #JV 
 
 Lt Dover "We're coming up on the Edge, the literal end of everything. Why not? #Dover
@@ -106,6 +109,7 @@ Officer JV "But maybe you're right. Thanks, Doverino! #JV
 ->DONE
 
 === D1_JV_ReconcileBaha ===
+~ d1JVBahaChoice = "reconcile"
 Officer JV "Share my feelings with Captain Stoicism? That's a big yikes for me. #JV 
 
 Lt Dover "So? #Dover
