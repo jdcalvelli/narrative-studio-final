@@ -4,20 +4,19 @@
     //Ducksly_Baha = false
     //Ducksly_JV = true
 
-//COMMENT THIS OUT WHEN DONE 
-~ B_Duck_relCount = 3
-
 // ->Day3_PrivateConvoChoice
 
 Emperor Ducksly "Oh, Quackcelsior Captain! What can I help you with today? #Ducklsy
 
-Cpt Baha "Ducksly, I wanted to check in and see how your checklist is going? You're the only person left that I'm missing confirmation from. #Baha 
+Cpt Baha "Ducksly, I wanted to check in and see how your checklist is going? You're the only crewmember left that I'm missing confirmation from. #Baha 
 
 Emperor Ducksly "Oh, about that. I actually wanted to talk to you - #Ducksly
 
-Cpt Baha "Ducksly, I really just want to get to the point. We'll be arriving soon and want to make sure on the crew is ok. #Baha 
-
+Cpt Baha "Ducksly, I really just want to get to the point. We'll be arriving soon and I want to make sure on the crew is ok. #Baha 
 Cpt Baha "You DID put your experiments on pause to finish your checklist, right? #Baha
+
+//COMMENT THIS OUT WHEN DONE 
+// ~ B_Duck_relCount = 3 //alter for testing purposes
 
 {B_Duck_relCount >= 3: //Baha & JV's relationship was improved
     <- B_Duck_SamePage
@@ -25,55 +24,58 @@ Cpt Baha "You DID put your experiments on pause to finish your checklist, right?
     <- B_Duck_Trouble
 }
 
-Emperor Ducksly "I will say, Captain, my experiments have shed light on something... troubling. #Ducksly
+Emperor Ducksly "I would say one more thing, Captain. #Ducksly
+Emperor Ducksly "My experiments have shed light on something... troubling. #Ducksly
 
-Cpt Baha "What do you mean?
+Cpt Baha "What do you mean? #Baha
 
-Emperor Ducksly "I...Are you aware to the condition of your health Captain? #Ducksly
+Emperor Ducksly "I...Are you aware to the condition of your health, Captain? #Ducksly
 
-Cpt Baha "How did you-
+Cpt Baha "What did you - #Baha
 
 Emperor Ducksly "I retrieved biological samples from each crewmate as part of my experiments. #Ducksly
 
-Cpt Baha "Ducksly do I want to know what that means?
+Cpt Baha "Do I... #Baha
+    //want to know what that means? #Baha
+// Emperor Ducksly "It was quite easy to get actually. Some I got when they came to the medbay for checks. Others I simply went to waste disposal and- #Ducksly
+Cpt Baha "Thank you, Ducksly. That's enough. #Baha
 
-Emperor Ducksly "It was quite easy to get actually. Some I got when they came to the medbay for checks. Others I simply went to waste disposal and- #Ducksly
+Emperor Ducksly "QUACK...did you know, Captain? #Ducksly
 
-Cpt Baha "Thank you Ducksly, that's enough. 
+Cpt Baha "It's...part of the reason I accepted this job. #Baha
 
-Emperor Ducksly "Quack...Have you known Captain. #Ducksly
+Emperor Ducksly "I'm sorry, Captain. #Baha
+Emperor Ducksly "I'm sure I don't need to tell you how much time you have left. #Ducksly
 
-Cpt Baha "I have...Part of the reason I accepted this job.
-
-Emperor Ducksly "I'm sorry Captain. I'm sure I don't need to tell you how much time you have left. #Ducksly
-
-Cpt Baha "Won't really matter soon will it?
+Cpt Baha "Won't really matter soon, will it? #Baha
 
 Emperor Ducksly "I suppose not. #Ducksly
+Emperor Ducksly "Captain...Could I ask a final question? #Ducksly
 
-Emperor Ducksly "Captain...Could I ask a question? #Ducksly
-
-Cpt Baha "Sure, what is it Ducksly?
+Cpt Baha "Sure, what is it Ducksly? #Baha
 
 Emperor Ducksly "Does Officer Veldspar know? Is this why you two are so close? #Ducksly
 
-Cpt Baha "I don't know how many times I have to tell you this Ducksly. J.V and I have known each other for quite some time before we took this mission. 
+Cpt Baha "I don't know how many times I have to tell you this, Ducksly. J.V and I have known each other for quite some time before we took this mission. #Baha
 
-Emperor Ducksly "Does she know? #Ducksly
+Emperor Ducksly "But, does she know? #Ducksly
 
-Cpt Baha "She doesn't. I'd like to keep it that way. Can I trust you Ducksly?
+Cpt Baha "She doesn't. I'd like to keep it that way. Can I trust you, Ducksly? #Baha
 
-Emperor Ducksly "Quack! Quackcelsior, Captain you honor me! Of course! #Ducksly
+Emperor Ducksly "QUACK! Captain, you honor me! Of course! #Ducksly
 
-Cpt Baha "Ducksly I'm serious.
+Cpt Baha "Ducksly I'm serious. #Baha
 
-Emperor Ducksly "My bill is sealed Captain! #Ducksly
+Emperor Ducksly "My bill is sealed, Captain! Quackcelsior! #Ducksly
 
-Cpt Baha "And get me your checklist dammit. Baha out. 
+Cpt Baha "Get me your checklist, dammit. Baha out. #Baha
+
+Emperor Ducksly "At long last... #Ducksly 
 
 //baha disconnects. 
 
-->DONE
+-> D3_Ducksly_Baha_END
+
 ===B_Duck_SamePage===
 Emperor Ducksly "It's come to my attention that our goals were much more closely aligned that we anticipated. #Ducksly
 
@@ -96,8 +98,8 @@ Cpt Baha "Please do. #Baha
 Cpt Baha "And well done. #Baha
 
 ->DONE
-===B_Duck_Trouble
-Emperor Ducksly "I found that my experiments provided better data, so I will be providing my research findings instead. #Ducksly
+=== B_Duck_Trouble ===
+Emperor Ducksly "I found that my experiments provided better data, so I will be providing those research findings instead. #Ducksly
 
 Cpt Baha "Ducksly...WHERE is your checklist? #Baha
 
@@ -106,18 +108,23 @@ Emperor Ducksly "Oh, applogies, Captian. Something must've happened with the pat
 Cpt Baha "I heard what you said, Ducksly. #Baha 
 Cpt Baha "I gave you an order. You ignored it. #Baha
 
-Emperor Ducklsy "No no no Captain like I said the expri- #Ducksly
+Emperor Ducklsy "No, no, no, Captain. It's as I said, the experi - #Ducksly
 
 Cpt Baha "I don't care that your experiments provide more data! #Baha
 
-Emperor Ducksly "But isn't that the whole point #Ducksly
+Emperor Ducksly "But isn't the data the whole point? #Ducksly
 
-Cpt Baha "Ducksly let me put this as succinctly as possible: When your captain gives you orders, you follow them. #Baha
-
-Cpt Baha "Do you understand me Ducksly? #Baha
+Cpt Baha "Let me put this as succinctly as possible for you: When your captain gives you orders, you follow them. #Baha
+Cpt Baha "Am I understood? #Baha
 
 Emperor Ducksly "... #Ducksly
 
-Emperor Ducksly "Yes Captain. #Ducksly
+Emperor Ducksly "Yes, Captain. #Ducksly
 
+-> DONE
+
+
+=== D3_Ducksly_Baha_END ===
+
+// -> Day3_PrivateConvoChoice
 -> DONE

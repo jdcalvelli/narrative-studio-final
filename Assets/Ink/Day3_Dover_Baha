@@ -1,81 +1,95 @@
 === Day3_Dover_Baha ===
 //Day 2: DOVER connects for a private conversation with BAHA.
 
-//TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
+Lt Dover "Yo, Captain! We've almost reached the Edge! Are you excited? #Dover 
 
-Lt Dover "Yo Captain! We've almost reached the Edge! Are you excited?
+Cpt Baha "Yes, the air around the ship is certainly jubilant to say the least. #Baha
+Cpt Baha "Feeling some of that joy myself. #Baha 
 
-Cpt Baha "Yes the air around the ship is certainly jubilant to say the least. 
+Lt Dover "So...what's up Captain? #Dover 
 
-Lt Dover "So what's up Captain?
+//COMMENT THIS OUT WHEN FINISHED IN THIS FILE
+~ day3_sceneChoice = true
 
-{day3_sceneChoice == true: //false = Ducksly & JV spoke
+{day3_sceneChoice == true: //true = Ducksly & JV spoke
     -> D3_B_DJV
 - else: //false = Ducklsy & Baha spoke
     -> D3_B_DB
 }
 
-=== D3_B_DJV === //Day 2, JV spoke to Baha
+=== D3_B_DJV === //Day 3, Ducksly & JV spoke
+Cpt Baha "J.V. didn't take my call. #Baha
+Cpt Baha "I worry I've been too dependent on her. #Baha
+Cpt Baha "Pushed her away. #Baha
 
+Lt Dover "Pushed, pulled, a group effort really. #Dover 
+
+Cpt Baha "There's not much time left, I feel I've done her a disservice asking her to come all the way out here. #Baha 
+
+* I don't think she'd say that. #Dover
+    ~ B_JV_relCount ++ //raise Baha & JV rel by 1
+* She might agree with you there. #Dover 
+    ~ B_JV_relCount -- //raise Baha & JV rel by 1
+    
+- Cpt Baha "
 // -> Finale_1
--> DONE
+-> Day3_Dover_Baha_END
 
-=== D3_B_DB === //Day 2, JV spoke to Ducksly
+=== D3_B_DB === //Day 3, Ducksly & Baha spoke 
 
-Cpt Baha "I just spoke with Ducksly again...because they still didn't get their checklist in.
+//COMMENT THIS OUT WHEN FINISHED IN THIS FILE
+// ~ day1_sceneChoice = true 
+Cpt Baha "I just spoke with Ducksly{day1_sceneChoice == true: again}...they still didn't get their checklist in. #Baha
 
-Lt Dover "Oop. I hope everything was sorted out.
+Lt Dover "Oop. I hope everything was sorted out? #Dover 
 
-Cpt Baha "More or less.
+Cpt Baha "More or less... #Baha
 
-Lt Dover "I'm sensing there's more to this?
+Lt Dover "I'm sensing there's more to this? #Dover 
 
-Cpt Baha "I told them something, and I think they were more excited than they should be.
+Cpt Baha "I told them something, and I think they were more excited than they should be. #Baha
 
-*Oh what was it?
-*You mind sharing? No pressure.
+* Oh? What was it? #Dover 
+* You mind sharing? No pressure. #Dover 
 
--Cpt Baha "It doesn't really matter. I guess it was weird having such an intimate moment with them.
+- Cpt Baha "It...doesn't really matter. I suppose it was weird to have such a 'heart-to-heart' moment with them. #Baha
 
-Lt Dover "Huh, you and Ducksly? Never would've seen that coming.
+Lt Dover "Between you and Ducksly? Did not see that coming. #Dover 
 
-Cpt Baha "I think the thing that surprised me was just how understanding of the whole situation they were, despite their reaction. 
+Cpt Baha "I think the thing that surprised me most was just how understanding of the whole situation they were, despite their oddly joyous reaction. #Baha
 
 Lt Dover "I've heard a lot of things about Ducksly, them being empathetic is not one of them. #Dover
 
-Cpt Baha "Part of me thinks though that they'll find some way to rub this in J.V's face.
+Cpt Baha "(Chuckles) I think they'll find some way to rub this in J.V's face a bit. #Baha
 
-*What's JV have to do with this?
-*He would do something like that.
+* What's J.V. have to do with this? #Dover 
+* He would do something like that. #Dover 
 
--Cpt Baha "Ducksly has always had this weird one-sided competition with J.V over gaining the most favor from me.
+- Cpt Baha "Ducksly has always had this weird one-sided competition with J.V over gaining the most favor from me. #Baha
+Cpt Baha "Tell me something, Lieutenant Dover: If you were in my boots, what would you do with Ducksly? #Baha
 
-Cpt Baha "Tell me something, Lieutenant Dover: If you were in my position, what would you do with Ducksly?
+* Ducksly might just need a friend. #Dover 
+    ~ B_Duck_relCount ++ //raise baha & Ducksly rel count by 1
+* I think they only care about personal glory. Best to ignore them. #Dover 
+    ~ B_Duck_relCount -- //lower baha & Ducksly rel count by 1
 
-Lt Dover "Me? Why do you care what I think?
+- Cpt Baha "You really think that? #Baha
 
-Cpt Baha "If I didn't care what you think I wouldn't come to you and talk to you like this.
-Lt Dover "Hmm.
+Lt Dover "I do. #Dover 
+Lt Dover "Ducksly is definitely a special character, with their own quirks for sure. #Dover 
 
-*Ducksly might just need a friend. #Dover 
-~ B_Duck_relCount ++
-*I think they only care about personal glory. Best to ignore them. #Dover 
-~ B_Duck_relCount --
+Cpt Baha "Thank you, Dover. I've truly appreciated our time together. #Baha
 
--Cpt Baha "You really think that?
-
-Lt Dover "I do. 
-
-Lt Dover "Ducksly is definitely a special character, with their own quirks for sure.
-
-Cpt Baha "Thank you, Dover. I've truly appreciated our time together. 
-
-Lt Dover "Aw shucks, Captain! You're gonna make me blush!
+Lt Dover "Aw shucks, Captain! You're gonna make me blush! #Dover 
 
 Cpt Baha "See you on the Bridge to meet the Edge. #Baha
 
 Lt Dover "Looking forward to it, Captain. #Dover 
 
 //baha sings off. 
+
+-> Day3_Dover_Baha_END
+
+=== Day3_Dover_Baha_END ===
 // -> Finale_1
--> DONE
+-> DONE 
