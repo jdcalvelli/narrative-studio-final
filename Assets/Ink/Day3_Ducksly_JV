@@ -3,7 +3,7 @@
 ~ day3_sceneChoice = true
     //Ducksly_Baha = false
     //Ducksly_JV = true
-~ prankChoice = "donaldduck" 
+
 Officer JV "Yo Ducksly you got a sec?
 
 Emperor Ducksly "What could I possibly do for Officer Veldspar?
@@ -26,14 +26,50 @@ Emperor Ducksly "Quack! Is that so?! I doubt it compares to mine in dubiousness!
     <- JVD_BadPranked
 }
 
+Emperor Ducksly "I think we can safely call ourselves even? A tie if you will. 
+
+Officer JV "Mmm are we though?
+
+Emperor Ducksly "Certainly, we have done the pranks on each other. Pranks of equal stature of course. 
+
+Officer JV "Ducksly you'll never beat the master.
+
+Emperor Ducksly "I-
+
+Officer Ducksly " Bye Ducksly!
+
+//signs off. 
 
 ->DONE
 ===JVD_GoodPranked===
-Officer JV "
+Officer JV "It's one I did a while ago. I'm surprised you never realized it was me.
 
-{prankChoice == "beakoil": dklaj;sdklfjas}
-{prankChoice == "feathermousse": lkasdjf;lksdjf;lak}
+Emperor Ducksly "QUACK!
 
+Officer JV "You wanna know what it is?
+
+Emperor Ducksly "Yes you devilish deviant! Tell 
+
+{pastPrankChoice == "beakoil": Officer JV "Ever wonder how you go through beak oil so fast?}
+{pastPrankChoice == "feathermousse": <-FeatherMousse}
+
+Emperor Ducksly "QUACK! That was you?!
+
+Officer JV "Yuh. Now tell me where my tools are!
+
+Emperor Ducksly "There in the drawer at my desk.
+
+Officer JV "Can I have them back?
+
+Emperor Ducksly "I can have someone bring them to you. 
+->DONE
+
+===FeatherMousse
+Officer JV "Remember when your feather mousse suddenly vanished?
+
+Emperor Ducksly "When my coif was unruley for a week!
+
+Officer JV "Yeah that was glorious!
 ->DONE
 ===JVD_BadPranked===
 
@@ -48,8 +84,50 @@ Emperor Ducksly "I refuse to provide any information about your tools until you 
 
 Emperor Ducksly "Quack! Like it or not Officer Veldspar I am not the one who needs their tools. 
 
-{prankChoice == "dinonuggets": dklaj;sdklfjas}
-{prankChoice == "donaldduck": lkasdjf;lksdjf;lak}
+{prankChoice == "dinonuggets": <- dinonuggies}
+{prankChoice == "donaldduck": <- donaldduck}
 
+Emperor Ducksly "I hope you know this means war!
+
+Officer JV "A deal's a deal Ducksly. Where are my tools?
+
+Emperor Ducksly "You'll be happy to know that I, jettisoned your tools out of the airlock!
+
+Emperor Ducksly "How's that for a prank!
+
+Officer JV "....You did WHAT!?
+
+Emperor Ducksly "It's OK, you can compliment my genius whenever you're ready. 
+
+Officer JV "Dude what the hell?
+
+Emperor Ducksly "Ahaha lets see you get me back for that.
+
+Emperor Ducksly "I believe you call those that are inferiror to you weenie?
+
+Emperor Ducksly "So take that WEENIE! QUA-QUACK!
+
+->DONE
+===dinonuggies
+Officer JV "Remember those Dino Nuggets you ate earlier?
+
+Emperor Ducksly "QUACK! You tampered with my sacred vegan dino nuggies?
+
+Officer JV "Absolutely Goose-man. You know what normal dino nuggies are made of right?
+
+Emperor Ducksly "No...
+
+Officer JV "Yep. 
+
+Officer JV "Cluck Cluck Ducksly. How's it feel to eat your cousins?
 // ->Day3_PrivateConvoChoice
 -> DONE
+
+===donaldduck
+Officer JV "Feeling the breeze between your tailfeathers ducksly?
+
+Emperor Ducksly "QUACK! QUACK! You're the reason I have to waddle around with my duck cheeks out?!
+
+Officer JV "Don't mess with the Master Duck. 
+
+->DONE
