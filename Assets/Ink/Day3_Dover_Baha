@@ -9,7 +9,7 @@ Cpt Baha "Feeling some of that joy myself. #Baha
 Lt Dover "So...what's up Captain? #Dover 
 
 //COMMENT THIS OUT WHEN FINISHED IN THIS FILE
-~ day3_sceneChoice = true
+// ~ day3_sceneChoice = true
 
 {day3_sceneChoice == true: //true = Ducksly & JV spoke
     -> D3_B_DJV

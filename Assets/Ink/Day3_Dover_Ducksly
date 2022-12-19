@@ -7,7 +7,7 @@ Lt Dover "Yo Yo, Ducksly! #Dover
 
 Emperor Ducksly "Quackcelsior, Lieutenant Dover! #Ducksly
 
-Lt Dover "We're coming up on the end of our journey, you excited? #Dover
+Lt Dover "We're coming up on the end of our journey. You excited? #Dover
 
 Emperor Ducksly "Am I excited to be one of the first beings to discover what lies beyond the Edge? #Ducksly
 Emperor Ducksly "To see how infinite creation sprouts from infinite nothingness? #Ducksly
@@ -22,7 +22,7 @@ Emperor Ducksly "Absolutely, positutely. #Ducksly
 Lt Dover "Well, that's very good to hear. #Dover
 
 //COMMENT THIS OUT WHEN DONE
-~ day3_sceneChoice = true 
+// ~ day3_sceneChoice = true 
 
 {day3_sceneChoice == true: //true = Ducksly & JV spoke
     -> D3_D_DJV

@@ -100,8 +100,14 @@ Officer JV "Not until you tell me where you put my tools. #JV
 Emperor Ducksly "I refuse to provide any information about your tools until you tell me what you've done. #Ducksly
 Emperor Ducksly "QUACK! Like it or not Officer Veldspar I am not the one who needs their tools. #Ducksly
 
-{prankChoice == "dinonuggets": <- dinonuggies}
-{prankChoice == "donaldduck": <- donaldduck}
+{
+- prankChoice == "dinonuggets": 
+    <- dinonuggies
+- prankChoice == "donaldduck": 
+    <- donaldduck
+- else:
+    <- donaldduck
+}
 
 Emperor Ducksly "I hope you know this means war! #Ducksly
 
@@ -138,7 +144,7 @@ Officer JV "Cluck, cluck, Ducksly. How's it feel to eat your cousins? #JV
 
 -> DONE
 
-===donaldduck
+===donaldduck === //THREAD
 Officer JV "How's that breeze feel between your tailfeathers, Ducksly? #JV
 
 Emperor Ducksly "QUACK! QUACK! You're the reason I have to waddle around with my duck cheeks out?! #Ducksly

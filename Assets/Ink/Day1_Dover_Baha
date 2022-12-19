@@ -1,6 +1,6 @@
 === Day1_Dover_Baha ===
 //TESTING PURPOSES, COMMENT OUT WHEN DONE IN THIS FILE
-    ~ day1_sceneChoice = true 
+    // ~ day1_sceneChoice = true 
         //Baha_Ducksly = true
     // ~ day1_sceneChoice = false 
         //Baha_JV = false

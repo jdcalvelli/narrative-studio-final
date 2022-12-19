@@ -138,12 +138,12 @@ Lt Dover "Oh my god, you're serious? #Dover
 
 Emperor Ducksly "I am completely serious. Which do you think I should do? #Ducksly
 
-*Start off simple. Hiding her tools will show her.
-~JV_Duck_relCount ++
-*The tools, jettison them.
-~JV_Duck_relCount --
+* Start off simple. Hiding her tools will show her.
+    ~JV_Duck_relCount ++
+* The tools, jettison them.
+    ~JV_Duck_relCount --
 
--Emperor Ducksly "Perfect! Thank you, Dover. Your help has proved most fruitful. I'll be sure to keep you updated. #Ducksly
+- Emperor Ducksly "Perfect! Thank you, Dover. Your help has proved most fruitful. I'll be sure to keep you updated. #Ducksly
 
 Lt Dover "Uh, yeah...happy to help. #Dover
 

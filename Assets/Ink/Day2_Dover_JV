@@ -62,9 +62,9 @@ Officer JV "No... #JV
 // ~ d1JVBahaChoice = "distance"
 
 Lt Dover "J.V., come on. #Dover
-
-{d1JVBahaChoice == "distance": Lt Dover "We talked about this. You were supposed to distance yourself.} #Dover
-{d1JVBahaChoice == "reconcile": Lt Dover "We talked about this. You were supposed to set things right.} #Dover
+// {d1JVBahaChoice == "distance": Lt Dover "We talked about this. You were supposed to distance yourself.} #Dover
+// {d1JVBahaChoice == "reconcile": Lt Dover "We talked about this. You were supposed to set things right.} #Dover
+//this is creating a weirld lull of space to click through in this scene, i'm commenting it out for now. 
 
 Officer JV "I know, I know. #JV
 Officer JV "But feelings are hard. #JV
