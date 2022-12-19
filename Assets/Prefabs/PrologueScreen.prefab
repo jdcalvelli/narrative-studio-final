@@ -200,10 +200,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1600, y: 800}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -273,6 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a55c7450d2b4bcbabb631c413f0e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManagerRef: {fileID: 0}
+  gameplayScene: {fileID: 0}
   compiledInkStory: {fileID: 4900000, guid: 44785c7c8e2db435a88ef6e8713f1c84, type: 3}
   prologueText: {fileID: 2271321232827327290}
 --- !u!1 &5529294425671096632

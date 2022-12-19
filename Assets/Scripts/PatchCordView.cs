@@ -18,6 +18,9 @@ public class PatchCordView : MonoBehaviour
     private void Update()
     {
         _lr.SetPosition(0, cordStartPos);
-        _lr.SetPosition(1, gameObject.transform.position);
+        _lr.SetPosition(1, new Vector3(
+            gameObject.transform.position.x, 
+            gameObject.transform.position.y - 0.1f,
+            gameObject.transform.position.z));
     }
 }
