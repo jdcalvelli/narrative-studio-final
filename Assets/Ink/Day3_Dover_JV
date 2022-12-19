@@ -61,6 +61,52 @@ Officer JV "Thanks Dover!
 -> DONE
 
 === D3_JV_DB === //Day 2, JV spoke to Ducksly
+Officer JV "Well I needed to find my tools from Ducksly but he didn't answer. And Baha is busy, I'm assuming speaking to Ducksly so...Here I am.
 
+Lt Dover "Oh well, how are things going with you?
+
+Officer JV "Eh it's ok. We're getting closer to the Edge and it's given me a lot to think about.
+
+Lt Dover "I'm the undisputed prank Queen. But over the course of our journey, I don't know, I feel like everyone just see me as this silly quirky character on the ship.
+
+*You are just a silly quirky character.
+*You didn't just say silly and quirky in the same sentence.
+
+-Officer JV "I don't mean to be this way.
+
+Lt Dover "Did someone say this to you? Do I need to beat them up?
+
+Officer JV "I mean I guess if you want to beat the Captain and Ducksly then go ahead.
+
+*Let's rethink this. 
+*Bring them on...
+
+-Officer JV "I think after this I'm retiring.
+
+Lt Dover "Woah.
+
+Officer JV "I mean it's not like society will exist after we return. Do we even return after this?
+
+Lt Dover "I don't know. That's above my paygrade.
+
+Officer JV "I guess the question now is how do I break the news to Baha?
+
+*I think you should defintely find some time to sit down with him.
+~B_JV_relCount ++
+*Don't tell him. Did he ever truly appreciate you?
+~B_JV_relCount --
+-Officer JV "You really think so?
+
+Lt Dover "YoU rEaLlY tHiNk So? Why ask me if your just gonna ask that?
+
+Officer JV "Sassy! Fair enough.
+
+Officer JV "You've been a really good friend Dover. I'm so lucky to have you.
+
+Lt Dover "Oh man, I'd hug you if you were here.
+
+Officer JV "Give me a sec and I'll run over. 
+
+//signs off. 
 // -> Finale_1
 -> DONE
