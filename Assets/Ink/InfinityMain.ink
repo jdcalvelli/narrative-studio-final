@@ -103,9 +103,9 @@ VAR totalRelCount = "" //all relCounts added together
 // -> Day3_Ducksly_Baha
 // -> Day3_Ducksly_JV
 // -> Day3_PrivateConvoChoice
--> Day3_Dover_Baha
+// -> Day3_Dover_Baha
 // -> Day3_Dover_JV
-// -> Day3_Dover_Ducksly
+-> Day3_Dover_Ducksly
 
 // FINALE
 // -> Finale_1
