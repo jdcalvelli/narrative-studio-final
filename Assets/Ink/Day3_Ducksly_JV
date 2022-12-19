@@ -11,9 +11,9 @@ Emperor Ducksly "What could I possibly do for you, Officer Veldspar? #Ducksly
 Officer JV "My tools have turned up missing. I've been asking around the crew if anyone's seen them. #JV
 
 Emperor Ducksly "What business would I have with your tools? Go ask someone else! #Ducksly
-Emperor Ducksly "Quack quacl quack. #Ducksly
+Emperor Ducksly "Quack quack quack. #Ducksly
 
-Officer JV "Hmm...Are you sure about that it? A little birdie told me they saw you waddling around with them, laughing to yourself. #JV
+Officer JV "Hmm...Are you sure about that? A little birdie told me they saw you waddling around with them, laughing to yourself. #JV
 
 Emperor Ducksly "QUACK! Which one of my avian brethren betrayed me? #Ducksly
 
@@ -37,7 +37,7 @@ Emperor Ducksly "I think we can safely call ourselves even? A tie if you will. #
 
 Officer JV "Mmm, are we though? #JV
 
-Emperor Ducksly "Certainly, we have done the pranks on each other. Pranks of equal stature of course. #Ducksly
+Emperor Ducksly "Certainly, we have done "the pranks" on each other. Pranks of equal stature of course. #Ducksly
 
 Officer JV "Ducksly, you'll never beat the master. #JV
 
@@ -60,14 +60,20 @@ Officer JV "You wanna know what it is? #JV
 
 Emperor Ducksly "Yes, you devilish deviant! #JV
 
-{pastPrankChoice == "beakoil": Officer JV "Ever wonder how you go through beak oil so fast?} #JV
-{pastPrankChoice == "feathermousse": <-FeatherMousse}
+{
+- pastPrankChoice == "beakoil": 
+    Officer JV "Ever wonder how you go through beak oil so fast? #JV
+- pastPrankChoice == "feathermousse": 
+    <-FeatherMousse
+- else:
+    <-FeatherMousse
+}
 
 Emperor Ducksly "QUACK! That was you?! #Ducksly
 
 Officer JV "Yuh. Now, tell me where my tools are! #JV
 
-Emperor Ducksly "There in the drawer at my desk. #Ducksly
+Emperor Ducksly "They're in the drawer at my desk. #Ducksly
 
 Officer JV "Can I have them back? #JV
 
@@ -75,7 +81,7 @@ Emperor Ducksly "I can have someone bring them to you. #Ducksly
 
 ->DONE
 
-===FeatherMousse
+=== FeatherMousse === //THREAD
 Officer JV "Remember when your feather mousse suddenly vanished? #JV
 
 Emperor Ducksly "My coif was unruly for a week! #Ducksly

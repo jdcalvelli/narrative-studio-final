@@ -43,7 +43,7 @@ Lt Dover "How was it?
 - Lt Dover "Was it any good, though? #Dover
 
 //COMMENT THIS VARIABLE OUT WHEN DONE
-~ jvReview = "pos"
+// ~ jvReview = "pos"
 {jvReview == "pos": //jv gave a positive review to Baha
     <- D2_posReview
 - else: //jv gave a negative review to Baha
@@ -59,9 +59,9 @@ Officer JV "No... #JV
 
 //COMMENT THIS OUT WHEN DONE. 
 // ~ d1JVBahaChoice = "reconcile"
-~ d1JVBahaChoice = "distance"
+// ~ d1JVBahaChoice = "distance"
 
-Lt Dover "JV, come on. #Dover
+Lt Dover "J.V., come on. #Dover
 
 {d1JVBahaChoice == "distance": Lt Dover "We talked about this. You were supposed to distance yourself.} #Dover
 {d1JVBahaChoice == "reconcile": Lt Dover "We talked about this. You were supposed to set things right.} #Dover
