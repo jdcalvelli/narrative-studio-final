@@ -3,80 +3,131 @@
 
 //TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
 
-Lt Dover "Yo Yo Ducksly!
+Lt Dover "Yo Yo, Ducksly! #Dover
 
-Emperor Ducksly "Quackcelsior Lieutenant Dover!
+Emperor Ducksly "Quackcelsior, Lieutenant Dover! #Ducksly
 
-Lt Dover "We're coming up on the end of our journey Ducksly. You excited?
+Lt Dover "We're coming up on the end of our journey, you excited? #Dover
 
-Emperor Ducksly "Am I excited to be one of the first to discover what lies beyond the Edge?
+Emperor Ducksly "Am I excited to be one of the first beings to discover what lies beyond the Edge? #Ducksly
+Emperor Ducksly "To see how infinite creation sprouts from infinite nothingness? #Ducksly
+Emperor Ducksly "To pass a boundary that no mortal creature since time immemorial has ever done before? #Ducksly
 
-Emperor Ducksly "To see how infinite creation sprouts from infinite nothingness? 
+Lt Dover "Uh... #Dover
+// Emperor Ducksly "The place where life's very questions become infinitely irrelevant?
+Lt Dover "I'll take that as a yes? #Dover
 
-Emperor Ducksly "To pass a boundry that no mortal creature since time immemorial?
+Emperor Ducksly "Absolutely, positutely. #Ducksly
 
-Lt Dover "Uh...
+Lt Dover "Well, that's very good to hear. #Dover
 
-Emperor Ducksly "The place where life's very questions become infinitely irrelevant?
+//COMMENT THIS OUT WHEN DONE
+~ day3_sceneChoice = true 
 
-Lt Dover "Yes?
-
-Emperor Ducksly "Absolutely I'm excited. 
-
-Lt Dover "Well that's good to hear. 
-
-{day3_sceneChoice == true: //false = Ducksly & JV spoke
+{day3_sceneChoice == true: //true = Ducksly & JV spoke
     -> D3_D_DJV
 - else: //false = Ducklsy & Baha spoke
     -> D3_D_DB
 }
 
-=== D3_D_DJV === //Day 2, JV spoke to Baha
+=== D3_D_DJV === //Day 3, Ducksly & JV spoke
+Emperor Ducksly "I have news that you might be thrilled to hear. #Ducksly
 
-// -> Finale_1
--> DONE
+Lt Dover "Oh, and what's that? #Ducksly
 
+Emperor Ducksly "It would appear that J.V. and I have come to a bit of a truce. #Ducksly
+
+Lt Dover "You're lying. #Ducksly
+
+Emperor Ducksly "I would never, Dover. I would simply "omit", never lie. #Ducksly
+
+Lt Dover "How did that come to be? #Ducksly
+
+Emperor Ducksly "Mutually assured prank-struction. #Ducksly
+
+Lt Dover "That is the stupidest think I've ever heard...but... #Ducksly
+
+* I'm glad you've buried the hatchet, so to speak. #Dover
+    <- D3_improveDJV
+* Now would be the perfect time to take her down. #Dover 
+    <- D3_worsenDJV
+
+- Emperor Ducksly "Lieutenant Dover, you truly have some wise words. You would have a welcome place within the Quacking Emperium. #Ducksly
+
+Lt Dover "Aw shucks, you oversized duck. #Dover
+Lt Dover "See you at the Edge. #Dover
+
+Emperor Ducksly "Quackcelsior! #Ducksly
+
+-> Day3_Dover_Ducksly_END
+
+///////DUCKSLY & JV THREADS ////////////
+=== D3_improveDJV ===
+~ JV_Duck_relCount ++ //Raise the JV & Ducksly rel by 1
+Emperor Ducksly "Me as well. Our powers combined may help me look better to Captain Baha. #Ducksly
+
+Lt Dover "There you go again with the Baha stuff. 
+Lt Dover "Try asking J.V. 'nicely' about what he actually likes? And he can see you getting along for once. 
+
+-> DONE 
+
+=== D3_worsenDJV ===
+~ JV_Duck_relCount -- //Lower the JV & Ducksly rel by 1
+Emperor Ducksly "There's that calculated mind of yours at work again, Dover. #Ducksly
+
+Lt Dover "She'll never see it coming.
+
+Emperor Ducksly "QUACK. I shall craft and set more dubiously ducky plans in motion. #Ducksly
+
+-> DONE 
+
+////////////////////////////////////////////////////////////
 === D3_D_DB === //Day 2, Ducksly spoke to Baha
-Emperor Ducksly "Quack! Qu-Quack! I have something exciting to share!
+Emperor Ducksly "QUACK! Qu-Quack! I have something exciting to share! #Ducksly
 
-Lt Dover "Oh man, two and a half quacks. Must be crazy. 
+Lt Dover "Oh man, two and a half quacks. Must be crazy. #Dover
 
-Emperor Ducksly "The Captain shared with a me a secret so secret that not even Officer Veldspar knows it!
+Emperor Ducksly "The Captain shared with a me a secret sooo secret that not even Officer Veldspar knows it! #Ducksly
 
-Lt Dover "Um yeah?
+Lt Dover "You don't say? #Dover
 
-Emperor Ducksly "Quack! Yes! I only learned about it through my experiments. 
+Emperor Ducksly "QUACK! Yes! #Ducksly
+Emperor Ducksly "I only learned about it through my experiments that the Captain didn't even want me to complete. #Ducksly
+Emperor Ducksly "Regardless, I've finally achieved some level of respect and recognition from him that not even J.V. could hope achieve! #Ducksly
 
-Emperor Ducksly "Regardless, I've finally achieved some level of respect and recognition from the Captain that not even J.V could achieve!
+Lt Dover "What is with this weird obession you have with J.V.? #Dover
 
-Lt Dover "What is this weird obession with J.V you have?
+Emperor Ducksly "Oh, please. It has nothing to do with J.V. #Ducksly
+Emperor Ducksly "I just wished that Captain Baha would recognize the talent that I had. #Ducksly
 
-Emperor Ducksly "Oh please. It's not to do with J.V, I just wished that Captain Baha would recognize the talent that I had. 
+Lt Dover "Sure, ok. I just figured it was like some kinda deep-seated rivalry. #Dover
+Lt Dover "You're just a brown-noser...or I guess brown-beaker. #Dover
+Lt Dover "So...what now? #Dover
 
-Lt Dover "Sure, ok. I just figured it was like some kinda deep seeded rivalry. You're just a brown-noser. Or I guess brown-beaker.
+Emperor Ducksly "How do you mean? #Ducksly
 
-Lt Dover "So what now?
-
-Emperor Ducksly "How do you mean?
-
-Lt Dover "Well, You've got the sacred trust of Captain Baha in the form of this secret you know. 
-    Do you feel complete?
+Lt Dover "Well, you've got the 'sacred trust' of Captain Baha in the form of this secret that only 'you' know. #Dover
+Lt Dover "Do you feel complete? #Dover
     
-Emperor Ducksly "Quack! I- Hmm. I suppose... Quack!
+Emperor Ducksly "QUACK! I - hmm. I suppose... QUACK! #Ducksly
+Emperor Ducksly "I'd never stopped to consider what I would do afterwards... #Ducksly
 
-Lt Dover "Oh my..
+* It's ok if that's all you wanted to do! #Dover
+    ~ B_Duck_relCount ++
+* Sounds like you want to hang this secret over everyone. #Dover
+    ~ B_Duck_relCount --
+    
+- Emperor Ducksly "I'd never thought something like this would happen... #Ducksly
+Emperor Ducksly "Lieutenant Dover, you truly have some wise words. You would have a welcome place within the Quacking Emperium. #Ducksly
 
-Emperor Ducksly "I haven't even stopped to consider what I would do afterwards.
+Lt Dover "Aw shucks, you oversized duck. #Dover
+Lt Dover "See you at the Edge. #Dover
 
-*It's ok if that's all you wanted to do!
-~B_Duck_relCount ++
-*I think you want to hang it over everyone that you know the Captain's secret.
-~B_Duck_relCount --
+Emperor Ducksly "Quackcelsior! #Ducksly
 
--Emperor Ducksly "Honestly, a part of me never really thought something like this would happen.
+-> Day3_Dover_Ducksly_END
 
-Emperor Ducksly "Lieutenant Dover, you truly have some wise words. You would have a welcome place within the Quacking emperium. 
+=== Day3_Dover_Ducksly_END ===
 
-Lt Dover "Aw shucks you oversized duck. 
 // -> Finale_1
 -> DONE
