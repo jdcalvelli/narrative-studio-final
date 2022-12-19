@@ -1,15 +1,13 @@
 === Day3_Dover_JV ===
 //Day 2: DOVER connects for a private conversation with JV.
 
-//TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
+Officer JV "Lieutenant Dover, This is Maintenance Officer July Veldspar, might I request a smidgen of your time? #JV
 
-Officer JV "Lieutenant Dover, This is Maintenance Officer July Veldspar, might I request a smidgen of your time?
+Lt Dover "Ew. Why are you talking like that? #Dover
 
-Lt Dover "Ew. Why are you talking like that?
+Officer JV "Hehe, sorry I was just in a silly, goofy mood. #JV
 
-Officer JV "Hehe, sorry I was just in a silly-goofy mood.
-
-Lt Dover "I can tell, what do you want?
+Lt Dover "I can tell. What's up? #Dover
 
 {day3_sceneChoice == true: //false = Ducksly & JV spoke
     -> D3_JV_DJV
@@ -18,95 +16,104 @@ Lt Dover "I can tell, what do you want?
 }
 
 === D3_JV_DJV === //Day 2, JV spoke to ducksly 
-Officer JV "Let me tell you about this exchange I just had with this fool Ducksly.
+Officer JV "Let me just tell you about this exchange I just had with this fool Ducksly. #JV
 
-Lt Dover "Wow, usually Ducksly is the one complaining about you.
+Lt Dover "Wow, usually Ducksly is the one complaining about you. #Dover
 
-Officer JV "Yeah well I guess it's about time I do so.
+Officer JV "Yeah, well I guess it's about time it was my turn. #JV
 
-Lt Dover "Alright, I got nothing else going on so feel free to splurge.
+Lt Dover "I got nothing else going on right now, splurge away. #Dover
 
-Officer JV "Well it appears we've gotten in a bit of a prank war.
+Officer JV "It appears we've gotten in a bit of a prank war. #JV
 
-Lt Dover "Woah! I didn't know they had it in them. 
+Lt Dover "I didn't know they had it in them. #Dover
 
-Officer JV "That's what I thought too! 
+Officer JV "Same! #JV
+Officer JV "They've got big feathers now, thinking they're some kind of prank master. #JV
+Officer JV "Unfortunately for them, they're messing with the Vespira's champion prankster! #JV
 
-Officer JV "Fortunately, they're messing with a prank master!
+Lt Dover "Will J.V. lose her title as 'prank master' to the up-and-coming rookie Emperor Ducksly?! #Dover
 
-Officer JV "The downside is they've gotten big feathers now, they think they are also some prank master. 
+Officer JV "...Dover... please...when you look at me, what do you see? #JV
 
-Lt Dover "Will JV's title as prank master to the up-and-coming rookie Emperor Ducksly?!
+* A dweeb. #Dover
+* An ego is almost as bloated as Ducksly's. #Dover
 
-Officer JV "...Dover... Please...Look at me. What do you see?
+- Officer JV "Oh hardy har... Shut up. #JV
 
-*A dweeb.
-*Someone who's ego is almost as bloated as Ducksly's.
+Lt Dover "Hehe, you asked. I answered. #Dover
 
--Officer JV "Aha ha ha... Shut up. 
+Officer JV "I guess I could be merciful and let this one go. #JV
+Officer JV "It would definitely liven up the ship a bit. What do you think Dover? #JV
 
-Lt Dover "You asked. I answered hehe. 
+* A good-hearted bit of prank banter never hurt anyone. #Dover
+    ~JV_Duck_relCount ++ //raise the JV & ducksly relationship by 1
+* Put them in their place. You are the prank god. #Dover
+    ~JV_Duck_relCount -- //lower the JV & ducksly relationship by 1
 
-Officer JV "I guess I could let this go one. It would definitely liven up the ship a bit more. What do you think Dover?
+- Officer JV "Mmm yes, you're right. I'm starting to get some ideas...  #JV
+Officer JV "Mwahahaha! #JV
+Officer JV "Thanks, Dove! #JV
 
-*A good bit of prank banter never hurt anyone.
-~JV_Duck_relCount ++
-*Put them in their place. You are the prank god.
-~JV_Duck_relCount --
-
--Officer JV "Mmm Yes, you're right. I "m starting to get some ideas Mwahahaha!
-
-Officer JV "Thanks Dover!
-// -> Finale_1
--> DONE
+-> Day3_Dover_JV_END
 
 === D3_JV_DB === //Day 2, JV spoke to Ducksly
-Officer JV "Well I needed to find my tools from Ducksly but he didn't answer. And Baha is busy, I'm assuming speaking to Ducksly so...Here I am.
+Officer JV "Well, I needed to find my tools from Ducksly, but he didn't answer. #JV
+Officer JV "And Baha is busy, so I'm assuming Ducksly's talking his ear off sooo...here I be. #JV
 
-Lt Dover "Oh well, how are things going with you?
+Lt Dover "Things OK with you? #Dover
 
-Officer JV "Eh it's ok. We're getting closer to the Edge and it's given me a lot to think about.
+Officer JV "Eh, yeah. We're getting closer to the Edge and it's just given me a lot to think about. #JV
 
-Lt Dover "I'm the undisputed prank Queen. But over the course of our journey, I don't know, I feel like everyone just see me as this silly quirky character on the ship.
+Officer JV "Over the course of our misssion, I feel like...I don't know, everyone just sees me as this little silly quirky character on the ship. #JV
 
-*You are just a silly quirky character.
-*You didn't just say silly and quirky in the same sentence.
+* You ARE just a silly, quirky character. #Dover
+* You didn't just say silly and quirky in the same sentence. #Dover
 
--Officer JV "I don't mean to be this way.
+- Officer JV "I don't mean to be this way. #JV
 
-Lt Dover "Did someone say this to you? Do I need to beat them up?
+Lt Dover "Did someone say this to you? Do I need to beat them up? #Dover
 
-Officer JV "I mean I guess if you want to beat the Captain and Ducksly then go ahead.
+Officer JV "I mean I guess if you want to punch on the Captain and Ducksly then go ahead. #JV
 
-*Let's rethink this. 
-*Bring them on...
+* Actually, let's rethink this. #Dover
+* Bring it on... #Dover
 
--Officer JV "I think after this I'm retiring.
+- Officer JV "I'm retiring after this mission. #JV
 
-Lt Dover "Woah.
+Lt Dover "Woah. #Dover
 
-Officer JV "I mean it's not like society will exist after we return. Do we even return after this?
+Officer JV "I mean, so we really think society as we knew it will exist once we return. IF we return? #JV
 
-Lt Dover "I don't know. That's above my paygrade.
+Lt Dover "I don't know, that's above my paygrade. #Dover
 
-Officer JV "I guess the question now is how do I break the news to Baha?
+Officer JV "I guess the question now is how do I break the news to Baha? #JV
 
-*I think you should defintely find some time to sit down with him.
-~B_JV_relCount ++
-*Don't tell him. Did he ever truly appreciate you?
-~B_JV_relCount --
--Officer JV "You really think so?
+* I think you should defintely find some time to sit down with him. #Dover
+    ~ B_JV_relCount ++ //raise Baha and JV rel count by 1
+* Don't tell him. Did he ever truly appreciate you? #Dover
+    ~ B_JV_relCount -- //lower Baha and JV rel count by 1
+    
+- Officer JV "You really think so? #JV
 
-Lt Dover "YoU rEaLlY tHiNk So? Why ask me if your just gonna ask that?
+Lt Dover "YoU rEaLlY tHiNk So? #Dover
+Lt Dover "Why ask me what I think if your just gonna second guess what I think? #Dover
 
-Officer JV "Sassy! Fair enough.
+Officer JV "Sassyyyy! Fair enough. #JV
+Officer JV "You've been a really good friend Dover. I'm so lucky to have you. #JV
 
-Officer JV "You've been a really good friend Dover. I'm so lucky to have you.
+Lt Dover "Oh man, I'd hug you if you were here. #Dover
 
-Lt Dover "Oh man, I'd hug you if you were here.
+//Officer JV "Give me a sec and I'll run over. 
+Officer JV "Hug me on the Bridge when we meet the Edge? #JV
 
-Officer JV "Give me a sec and I'll run over. 
+Lt Dover "Deal. #Dover
 
 //signs off. 
+
+-> Day3_Dover_JV_END
+
+=== Day3_Dover_JV_END ===
+
 // -> Finale_1
 -> DONE
