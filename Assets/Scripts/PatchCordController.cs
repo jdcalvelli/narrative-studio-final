@@ -13,6 +13,9 @@ public class PatchCordController : MonoBehaviour
     
     private bool _isColliding;
     private Collider2D _collidedHole;
+    
+    [SerializeField]
+    private AudioSource patchSound;
 
     [SerializeField] private string cordValue;
 
@@ -50,6 +53,9 @@ public class PatchCordController : MonoBehaviour
                     _collidedHole.transform.position.x,
                     _collidedHole.transform.position.y,
                     gameObject.transform.position.z);
+                    
+                    
+                patchSound.Play();
             
                 // pass info to game manager
                 switch (cordValue)
