@@ -5754,6 +5754,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781803657}
     m_Modifications:
+    - target: {fileID: 412000920194840578, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: cordStartPos.x
+      value: -2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 412000920194840578, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: cordStartPos.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157467027847435778, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2157467027847435778, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: m_Positions.Array.data[0].y
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157467027847435778, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: m_Positions.Array.data[1].y
+      value: -3.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157467027847435778, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157467027847435778, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157467027847435778, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.10325908
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105541760661457587, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: cordStartPos.y
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 3279993214936854824, guid: 5253aff1b15154b5897c43439357853b, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5817,6 +5853,14 @@ PrefabInstance:
     - target: {fileID: 6568330293080711653, guid: 5253aff1b15154b5897c43439357853b, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789660529661614078, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 8789660529661614078, guid: 5253aff1b15154b5897c43439357853b, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.10325908
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5253aff1b15154b5897c43439357853b, type: 3}
