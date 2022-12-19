@@ -3,14 +3,60 @@
 
 //TORI NOTE: I'VE JUST GONE THROUGH AND SET UP THESE POST-CONVO VARIABLE DIVERTS, ALTER AS THE SCENE REQUIRES. 
 
+Officer JV "Lieutenant Dover, This is Maintenance Officer July Veldspar, might I request a smidgen of your time?
+
+Lt Dover "Ew. Why are you talking like that?
+
+Officer JV "Hehe, sorry I was just in a silly-goofy mood.
+
+Lt Dover "I can tell, what do you want?
+
 {day3_sceneChoice == true: //false = Ducksly & JV spoke
     -> D3_JV_DJV
 - else: //false = Ducklsy & Baha spoke
     -> D3_JV_DB
 }
 
-=== D3_JV_DJV === //Day 2, JV spoke to Baha
+=== D3_JV_DJV === //Day 2, JV spoke to ducksly 
+Officer JV "Let me tell you about this exchange I just had with this fool Ducksly.
 
+Lt Dover "Wow, usually Ducksly is the one complaining about you.
+
+Officer JV "Yeah well I guess it's about time I do so.
+
+Lt Dover "Alright, I got nothing else going on so feel free to splurge.
+
+Officer JV "Well it appears we've gotten in a bit of a prank war.
+
+Lt Dover "Woah! I didn't know they had it in them. 
+
+Officer JV "That's what I thought too! 
+
+Officer JV "Fortunately, they're messing with a prank master!
+
+Officer JV "The downside is they've gotten big feathers now, they think they are also some prank master. 
+
+Lt Dover "Will JV's title as prank master to the up-and-coming rookie Emperor Ducksly?!
+
+Officer JV "...Dover... Please...Look at me. What do you see?
+
+*A dweeb.
+*Someone who's ego is almost as bloated as Ducksly's.
+
+-Officer JV "Aha ha ha... Shut up. 
+
+Lt Dover "You asked. I answered hehe. 
+
+Officer JV "I guess I could let this go one. It would definitely liven up the ship a bit more. What do you think Dover?
+
+*A good bit of prank banter never hurt anyone.
+~JV_Duck_relCount ++
+*Put them in their place. You are the prank god.
+~JV_Duck_relCount --
+
+-Officer JV "Mmm Yes, you're right. I "m starting to get some ideas Mwahahaha!
+
+Officer JV "Thanks Dover!
 // -> Finale_1
 -> DONE
 

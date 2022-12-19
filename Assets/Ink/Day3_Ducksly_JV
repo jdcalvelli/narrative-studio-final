@@ -4,21 +4,28 @@
     //Ducksly_Baha = false
     //Ducksly_JV = true
 
-Officer JV "Yo Ducksly you got a sec?
+Officer JV "Yo, Ducksly you got a sec? #JV
 
-Emperor Ducksly "What could I possibly do for Officer Veldspar?
+Emperor Ducksly "What could I possibly do for you, Officer Veldspar? #Ducksly
 
-Officer JV "My tools have turned up missing. I've been asking around the crew if anyone's seen them. 
+Officer JV "My tools have turned up missing. I've been asking around the crew if anyone's seen them. #JV
 
-Emperor Ducksly "What business would I have with your tools. Go ask someone else! He he.
+Emperor Ducksly "What business would I have with your tools? Go ask someone else! #Ducksly
+Emperor Ducksly "Quack quacl quack. #Ducksly
 
-Officer JV "Hmm... I- Are you sure about that it? Some have told me they so you waddling around with them laughing by yourself.
+Officer JV "Hmm...Are you sure about that it? A little birdie told me they saw you waddling around with them, laughing to yourself. #JV
 
-Emperor Ducksly "Ha Ha! I must confess it WAS me! I've pulled an ellaborate prank on you. You, Officer Veldspar, just got Duckslied!
+Emperor Ducksly "QUACK! Which one of my avian brethren betrayed me? #Ducksly
 
-Officer JV "Aha, yeah that's great, that's great. You know I layed a neat lil' prank on you too. 
+Officer JV "I cannot reveal my sources. #JV
 
-Emperor Ducksly "Quack! Is that so?! I doubt it compares to mine in dubiousness!
+Emperor Ducksly "Then, I must confess! It WAS me! I've pulled an elaborate prank on you! #Ducksly
+Emperor Ducksly "You, Officer Veldspar, just got Duckslied! #Ducksly
+
+Officer JV "Aha, yeah that's great, that's great. #JV 
+Officer JV "Ya know, I layed a neat lil' prank on you, too. #JV
+
+Emperor Ducksly "QUACK! Is that so?! I doubt it compares to mine in deviousness! #Ducksly
 
 {JV_Duck_relCount >= 3: //Baha & JV's relationship was improved
     <- JVD_GoodPranked
@@ -26,108 +33,115 @@ Emperor Ducksly "Quack! Is that so?! I doubt it compares to mine in dubiousness!
     <- JVD_BadPranked
 }
 
-Emperor Ducksly "I think we can safely call ourselves even? A tie if you will. 
+Emperor Ducksly "I think we can safely call ourselves even? A tie if you will. #Ducksly
 
-Officer JV "Mmm are we though?
+Officer JV "Mmm, are we though? #JV
 
-Emperor Ducksly "Certainly, we have done the pranks on each other. Pranks of equal stature of course. 
+Emperor Ducksly "Certainly, we have done the pranks on each other. Pranks of equal stature of course. #Ducksly
 
-Officer JV "Ducksly you'll never beat the master.
+Officer JV "Ducksly, you'll never beat the master. #JV
 
-Emperor Ducksly "I-
+Emperor Ducksly "I - #Ducksly
 
-Officer Ducksly " Bye Ducksly!
+Officer JV " Bye, Ducksly! #JV
 
 //signs off. 
 
+Emperor Ducksly "I am frightend. #Ducksly
+
 ->DONE
+
 ===JVD_GoodPranked===
-Officer JV "It's one I did a while ago. I'm surprised you never realized it was me.
+Officer JV "It's one I did a while ago. I'm surprised you never realized it was me. #JV
 
-Emperor Ducksly "QUACK!
+Emperor Ducksly "QUACK! #Ducksly
 
-Officer JV "You wanna know what it is?
+Officer JV "You wanna know what it is? #JV
 
-Emperor Ducksly "Yes you devilish deviant! Tell 
+Emperor Ducksly "Yes, you devilish deviant! #JV
 
-{pastPrankChoice == "beakoil": Officer JV "Ever wonder how you go through beak oil so fast?}
+{pastPrankChoice == "beakoil": Officer JV "Ever wonder how you go through beak oil so fast?} #JV
 {pastPrankChoice == "feathermousse": <-FeatherMousse}
 
-Emperor Ducksly "QUACK! That was you?!
+Emperor Ducksly "QUACK! That was you?! #Ducksly
 
-Officer JV "Yuh. Now tell me where my tools are!
+Officer JV "Yuh. Now, tell me where my tools are! #JV
 
-Emperor Ducksly "There in the drawer at my desk.
+Emperor Ducksly "There in the drawer at my desk. #Ducksly
 
-Officer JV "Can I have them back?
+Officer JV "Can I have them back? #JV
 
-Emperor Ducksly "I can have someone bring them to you. 
+Emperor Ducksly "I can have someone bring them to you. #Ducksly
+
 ->DONE
 
 ===FeatherMousse
-Officer JV "Remember when your feather mousse suddenly vanished?
+Officer JV "Remember when your feather mousse suddenly vanished? #JV
 
-Emperor Ducksly "When my coif was unruley for a week!
+Emperor Ducksly "My coif was unruly for a week! #Ducksly
 
-Officer JV "Yeah that was glorious!
+Officer JV "Yeah, that was glorious! #JV
+
 ->DONE
+
 ===JVD_BadPranked===
+Officer JV "Oh trust me, it's a doozy, he he... #JV
 
+Emperor Ducksly "You dastardly engineer, tell me what you've done! #Ducksly
 
-Officer JV "Trust me, it's a doozy he he...
+Officer JV "Not until you tell me where you put my tools. #JV
 
-Emperor Ducksly "Wait, tell me what you've done!
-
-Officer JV "Not until you tell me where you put my tools.
-
-Emperor Ducksly "I refuse to provide any information about your tools until you tell me what you've done.
-
-Emperor Ducksly "Quack! Like it or not Officer Veldspar I am not the one who needs their tools. 
+Emperor Ducksly "I refuse to provide any information about your tools until you tell me what you've done. #Ducksly
+Emperor Ducksly "QUACK! Like it or not Officer Veldspar I am not the one who needs their tools. #Ducksly
 
 {prankChoice == "dinonuggets": <- dinonuggies}
 {prankChoice == "donaldduck": <- donaldduck}
 
-Emperor Ducksly "I hope you know this means war!
+Emperor Ducksly "I hope you know this means war! #Ducksly
 
-Officer JV "A deal's a deal Ducksly. Where are my tools?
+Officer JV "A deal's a deal Ducksly. Where are my tools? #JV
 
-Emperor Ducksly "You'll be happy to know that I, jettisoned your tools out of the airlock!
+Emperor Ducksly "You'll be happy to know that I jettisoned your tools out of the airlock! #Ducksly
+Emperor Ducksly "How's that for a prank! #Ducksly
 
-Emperor Ducksly "How's that for a prank!
+Officer JV "....You did WHAT!?! #JV
 
-Officer JV "....You did WHAT!?
+Emperor Ducksly "It's OK, you can compliment my genius whenever you're ready. #Ducksly
 
-Emperor Ducksly "It's OK, you can compliment my genius whenever you're ready. 
+Officer JV "Dude, what the actual hell? #JV
 
-Officer JV "Dude what the hell?
+Emperor Ducksly "Quack quack quack! Let's see you get me back for that. #Ducksly
+Emperor Ducksly "I believe you humans call those that are inferiror to you a 'weenie'? #Ducksly
+Emperor Ducksly "So take that WEENIE! QUA-QUACK! #Ducksly
 
-Emperor Ducksly "Ahaha lets see you get me back for that.
+Officer JV "I'm gonna end you, bird! #JV
 
-Emperor Ducksly "I believe you call those that are inferiror to you weenie?
+-> DONE
+=== dinonuggies === //THREAD
+Officer JV "Remember those Dino Nuggets you ate earlier? #JV
 
-Emperor Ducksly "So take that WEENIE! QUA-QUACK!
+Emperor Ducksly "QUACK! You tampered with my sacred vegan Dino nuggies? #Ducksly
 
-->DONE
-===dinonuggies
-Officer JV "Remember those Dino Nuggets you ate earlier?
+Officer JV "Absolutely, Goose-man. You know what normal Dino nuggies are made of right? #JV
 
-Emperor Ducksly "QUACK! You tampered with my sacred vegan dino nuggies?
+Emperor Ducksly "No... #Ducksly
 
-Officer JV "Absolutely Goose-man. You know what normal dino nuggies are made of right?
+Officer JV "Yep. #JV
 
-Emperor Ducksly "No...
+Officer JV "Cluck, cluck, Ducksly. How's it feel to eat your cousins? #JV
 
-Officer JV "Yep. 
-
-Officer JV "Cluck Cluck Ducksly. How's it feel to eat your cousins?
-// ->Day3_PrivateConvoChoice
 -> DONE
 
 ===donaldduck
-Officer JV "Feeling the breeze between your tailfeathers ducksly?
+Officer JV "How's that breeze feel between your tailfeathers, Ducksly? #JV
 
-Emperor Ducksly "QUACK! QUACK! You're the reason I have to waddle around with my duck cheeks out?!
+Emperor Ducksly "QUACK! QUACK! You're the reason I have to waddle around with my duck cheeks out?! #Ducksly
 
-Officer JV "Don't mess with the Master Duck. 
+Officer JV "Don't mess with the master prankster, Duck. #JV
 
 ->DONE
+
+=== Day3_Ducksly_JV_END ===
+
+// -> Day3_PrivateConvoChoice
+-> DONE

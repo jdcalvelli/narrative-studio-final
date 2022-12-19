@@ -20,19 +20,35 @@ Lt Dover "So...what's up Captain? #Dover
 === D3_B_DJV === //Day 3, Ducksly & JV spoke
 Cpt Baha "J.V. didn't take my call. #Baha
 Cpt Baha "I worry I've been too dependent on her. #Baha
-Cpt Baha "Pushed her away. #Baha
+Cpt Baha "Pushed her away... #Baha
 
 Lt Dover "Pushed, pulled, a group effort really. #Dover 
 
-Cpt Baha "There's not much time left, I feel I've done her a disservice asking her to come all the way out here. #Baha 
+Cpt Baha "There's not much time left, I feel I've done her a disservice, bringing her all the way out here. #Baha 
 
 * I don't think she'd say that. #Dover
     ~ B_JV_relCount ++ //raise Baha & JV rel by 1
+    Cpt Baha "Really? #Baha
+    Lt Dover "I know you've known eachother a long time, but I think it's pretty apparent you're more than just co-workers at this point. #Dover 
 * She might agree with you there. #Dover 
     ~ B_JV_relCount -- //raise Baha & JV rel by 1
+    // Lt Dover "If she doesn't want to talk to you, then let her b
+    Cpt Baha "I'd hate for her to hate me. #Baha
     
-- Cpt Baha "
-// -> Finale_1
+-  Lt Dover "I'd hate for you to have any regrets at the end of all this. You've led us so well and we've all worked so hard. #Dover
+
+Cpt Baha "I wish I could speak to her one last time...before - #Baha 
+Lt Dover "Before the Edge? #Dover
+
+Cpt Baha "Yes...the Edge. #Baha
+Cpt Baha "I suppose I'll see you all on the Bridge shortly to meet it. #Baha 
+
+Lt Dover "Looking forward to it, Captain. #Dover 
+
+Cpt Baha "Thank you, Lieutenant. #Baha
+
+//Baha disconnects 
+
 -> Day3_Dover_Baha_END
 
 === D3_B_DB === //Day 3, Ducksly & Baha spoke 
